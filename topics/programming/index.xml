@@ -10,28 +10,6 @@
     <atom:link href="https://jarrywangcn.github.io/topics/programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>使用github为图床在静态博客中插入图片</title>
-      <link>https://jarrywangcn.github.io/post/githubalbum/</link>
-      <pubDate>Thu, 08 Dec 2016 20:21:25 +0800</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/post/githubalbum/</guid>
-      <description>&lt;p&gt;用wordpress, medium之类的博客服务，想要在文章中插入图片，网站有自己的服务器可以上传图片。如果自己假设网站，就需要把照片上传到互联网，获取网址，才能利用markdown语法在文章中插入图片。
-可以选择例如flickr这样的网络相册（会提供照片外链网址），考虑到flickr已经被墙了，遂放弃，也不想为此重新注册一个网络相册。
-也可以选择例如七牛、github，把图片上传到服务器，获得外链。习惯了github和git，我又选择了后者。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;在github中创建album的项目（我就用了album这个名字）&lt;/li&gt;
-&lt;li&gt;用sourcetree clone项目到本地，目录我放在了hugo生成的我的博客下&lt;/li&gt;
-&lt;li&gt;本地把要用的图片放入文件夹，push到远程&lt;/li&gt;
-&lt;li&gt;在github项目的网站上获取照片的地址&lt;/li&gt;
-&lt;li&gt;在次文章下使用此链接插入图片&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://github.com/jarrywangcn/album/blob/master/IMG_0830.JPG&#34; alt=&#34;alt text&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>build personal blog</title>
       <link>https://jarrywangcn.github.io/post/buildnewblog/</link>
       <pubDate>Thu, 08 Dec 2016 17:16:37 +0800</pubDate>
