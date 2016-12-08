@@ -15,7 +15,9 @@
       <pubDate>Thu, 08 Dec 2016 17:16:37 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/post/buildnewblog/</guid>
-      <description>&lt;p&gt;之前尝试过很多次搭建个人博客，看到Wilson Lee的网站使用format做portfolio，效果很棒，但收费挺高。买过几个域名，挺久之前买过jarry.wang 到期了也没用过一次，七月买了jarrywang.de。花了挺大功夫，自建博客很多人推荐用wordpress，但我觉得wordpress相当麻烦，很厚重，用了个其他的（忘记叫啥）。当时托管在亚马逊aws，创建instance解析ip地址又弄了很久，但还是搞定了。就是在网址上输入xx.xx.xx，能看到网页。死在了最后一步，把解析的ip地址和域名绑定，forward只能跳转，还是会显示ip地址。弄了三天左右，最后放弃了&amp;hellip;&lt;/p&gt;
+      <description>
+
+&lt;p&gt;之前尝试过很多次搭建个人博客，看到Wilson Lee的网站使用format做portfolio，效果很棒，但收费挺高。买过几个域名，挺久之前买过jarry.wang 到期了也没用过一次，七月买了jarrywang.de。花了挺大功夫，自建博客很多人推荐用wordpress，但我觉得wordpress相当麻烦，很厚重，用了个其他的（忘记叫啥）。当时托管在亚马逊aws，创建instance解析ip地址又弄了很久，但还是搞定了。就是在网址上输入xx.xx.xx，能看到网页。死在了最后一步，把解析的ip地址和域名绑定，forward只能跳转，还是会显示ip地址。弄了三天左右，最后放弃了&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;今天下午弄了四个小时，就全部搞定了。方法是用hugo搭建网站，托管在github pages上，github会自动生成一个可访问的网站 &lt;code&gt;your_username.github.io&lt;/code&gt;，在域名管理中加入三个DNS设置，要在project中加一个文件。&lt;/p&gt;
 
@@ -27,97 +29,11 @@
 
 &lt;p&gt;这两个月也习惯了看文档学东西，今天除了有些用户写的中文教程还看hugo的文档，碰到bug学会差stackoverflow，还去hugo的community里问了&amp;hellip; 感天动地！&lt;/p&gt;
 
-&lt;p&gt;参考链接：
-&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34;&gt;使用hugo搭建个人博客站点&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;参考链接&#34;&gt;参考链接：&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34;&gt;使用hugo搭建个人博客站点&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/31377141/answer/103056861&#34;&gt;github怎么绑定自己的域名&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://jarrywangcn.github.io/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/post/hugoisforlovers/</guid>
-      <description>
-
-&lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
-
-&lt;p&gt;Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
-appropriate version for your os and architecture.&lt;/p&gt;
-
-&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
-
-&lt;p&gt;More complete instructions are available at &lt;a href=&#34;https://jarrywangcn.github.io/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;step-2-build-the-docs&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;
-
-&lt;p&gt;Hugo has its own example site which happens to also be the documentation site
-you are reading right now.&lt;/p&gt;
-
-&lt;p&gt;Follow the following steps:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Clone the &lt;a href=&#34;http://github.com/spf13/hugo&#34;&gt;hugo repository&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Go into the repo&lt;/li&gt;
-&lt;li&gt;Run hugo in server mode and build the docs&lt;/li&gt;
-&lt;li&gt;Open your browser to &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&amp;gt; 29 pages created
-&amp;gt; 0 tags index created
-&amp;gt; in 27 ms
-&amp;gt; Web Server is available at http://localhost:1313
-&amp;gt; Press ctrl+c to stop
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p&gt;
-
-&lt;h2 id=&#34;step-3-change-the-docs-site&#34;&gt;Step 3. Change the docs site&lt;/h2&gt;
-
-&lt;p&gt;Stop the Hugo process by hitting ctrl+c.&lt;/p&gt;
-
-&lt;p&gt;Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&amp;gt; 29 pages created
-&amp;gt; 0 tags index created
-&amp;gt; in 27 ms
-&amp;gt; Web Server is available at http://localhost:1313
-&amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&amp;gt; Press ctrl+c to stop
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Open your &lt;a href=&#34;http://vim.spf13.com&#34;&gt;favorite editor&lt;/a&gt; and change one of the source
-content pages. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Content files are found in &lt;code&gt;docs/content/&lt;/code&gt;. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-&lt;code&gt;docs/content/overview/quickstart.md&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Change and save this file.. Notice what happened in your terminal.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; Change detected, rebuilding site
-
-&amp;gt; 29 pages created
-&amp;gt; 0 tags index created
-&amp;gt; in 26 ms
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Refresh the browser and observe that the typo is now fixed.&lt;/p&gt;
-
-&lt;p&gt;Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building.. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p&gt;
-
-&lt;h2 id=&#34;step-4-have-fun&#34;&gt;Step 4. Have fun&lt;/h2&gt;
-
-&lt;p&gt;The best way to learn something is to play with it.&lt;/p&gt;
 </description>
     </item>
     
