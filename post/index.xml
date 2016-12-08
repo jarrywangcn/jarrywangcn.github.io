@@ -12,15 +12,17 @@
     
     <item>
       <title>使用七牛云&#43;dropzone在静态博客中插入图片</title>
-      <link>https://jarrywangcn.github.io/post/githubalbum/</link>
+      <link>https://jarrywangcn.github.io/post/upload_photos/</link>
       <pubDate>Thu, 08 Dec 2016 20:21:25 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/githubalbum/</guid>
+      <guid>https://jarrywangcn.github.io/post/upload_photos/</guid>
       <description>
 
-&lt;p&gt;用wordpress, medium之类的博客服务，想要在文章中插入图片，网站有自己的服务器可以上传图片。如果自己假设网站，就需要把照片上传到互联网，获取网址，才能利用markdown语法在文章中插入图片。
-可以选择例如flickr这样的网络相册（会提供照片外链网址），考虑到flickr已经被墙了，遂放弃，也不想为此重新注册一个网络相册。
-也可以选择例如七牛、github，把图片上传到服务器，获得外链。本来想选github后来听说官方不支持这种用法，外加看到一篇使用七牛云+dropzone拖拽上传图片自动复制外链到剪贴板的&lt;a href=&#34;http://yansu.org/2015/01/10/use-dropzone-and-qiniu-to-store-blog-images.html&#34;&gt;文章&lt;/a&gt;，就决定使用七牛云。&lt;/p&gt;
+&lt;p&gt;用wordpress, medium之类的博客服务，想要在文章中插入图片，网站有自己的服务器可以上传图片。如果自己架设网站，就需要把照片上传到互联网，获取网址，才能利用markdown语法在文章中插入图片。&lt;/p&gt;
+
+&lt;p&gt;可以选择例如flickr这样的网络相册（会提供照片外链网址），考虑到flickr已经被墙了，遂放弃，也不想为此重新注册一个网络相册。&lt;/p&gt;
+
+&lt;p&gt;也可以选择例如七牛、github，把图片上传到服务器，获得外链。本来想选github后来听说官方不支持这种用法，外加看到一篇使用七牛云+dropzone拖拽上传图片自动复制外链到剪贴板的&lt;a href=&#34;http://yansu.org/2015/01/10/use-dropzone-and-qiniu-to-store-blog-images.html&#34;&gt;文章&lt;/a&gt;，就决定使用七牛云。&lt;/p&gt;
 
 &lt;h3 id=&#34;操作步骤&#34;&gt;操作步骤&lt;/h3&gt;
 

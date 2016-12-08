@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.17" />
 
-  <title>build personal blog &middot; 99 problems</title>
+  <title>Qiniu &middot; 99 problems</title>
 
   
   
@@ -36,6 +36,8 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
+  
+  <link rel="alternate" type="application/rss+xml" title="99 problems" href="https://jarrywangcn.github.io/tags/qiniu/index.xml" />
   
 
   
@@ -105,6 +107,10 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://jarrywangcn.github.io/tags/qiniu/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
     
 
     
@@ -204,16 +210,20 @@
 
 
 <div class="header">
-  <h1>build personal blog</h1>
-  <h2></h2>
+  <h1>Qiniu</h1>
 </div>
-<div class="content">
 
-  <div class="post-meta">
+<div class="content">
+  
+    <article>
+  <header>
+    <h2><a href="https://jarrywangcn.github.io/post/upload_photos/">使用七牛云&#43;dropzone在静态博客中插入图片</a></h2>
+
+    <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>08 Dec 2016, 17:16</time>
+    <time>08 Dec 2016, 20:21</time>
   </div>
 
   
@@ -236,11 +246,9 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://jarrywangcn.github.io/tags/programming">programming</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://jarrywangcn.github.io/tags/qiniu">qiniu</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://jarrywangcn.github.io/tags/hugo">hugo</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://jarrywangcn.github.io/tags/github">github</a>
+      <a class="post-taxonomy-tag" href="https://jarrywangcn.github.io/tags/dropzone">dropzone</a>
     
   </div>
   
@@ -248,74 +256,19 @@
 
 </div>
 
-  
+  </header>
 
-<p>之前尝试过很多次搭建个人博客，看到Wilson Lee的网站使用format做portfolio，效果很棒，但收费挺高。买过几个域名，挺久之前买过jarry.wang 到期了也没用过一次，七月买了jarrywang.de。花了挺大功夫，自建博客很多人推荐用wordpress，但我觉得wordpress相当麻烦，很厚重，用了个其他的（忘记叫啥）。当时托管在亚马逊aws，创建instance解析ip地址又弄了很久，但还是搞定了。就是在网址上输入xx.xx.xx，能看到网页。死在了最后一步，把解析的ip地址和域名绑定，forward只能跳转，还是会显示ip地址。弄了三天左右，最后放弃了&hellip;</p>
-
-<p>今天下午弄了四个小时，就全部搞定了。方法是用hugo搭建网站，托管在github pages上，github会自动生成一个可访问的网站 <code>your_username.github.io</code>，在域名管理中加入三个DNS设置，要在project中加一个文件。</p>
-
-<p>现在每次更新是先创建一个markdown文件，run hugo生成public文件夹，用git推送到在github托管的项目（目前用的是source tree，一款gui方式使用git的软件）。</p>
-
-<p>总结：</p>
-
-<p>今天弄的这么顺利和这两个月学会的命令行、git、github起到了很大的作用。如果是之前只会用gui的话，可能真的要被wordpress弄死！dependency很重要！</p>
-
-<p>这两个月也习惯了看文档学东西，今天除了有些用户写的中文教程还看hugo的文档，碰到bug学会差stackoverflow，还去hugo的community里问了&hellip; 感天动地！</p>
-
-<h3 id="参考链接">参考链接：</h3>
-
-<p><a href="http://blog.coderzh.com/2015/08/29/hugo/">使用hugo搭建个人博客站点</a></p>
-
-<p><a href="https://www.zhihu.com/question/31377141/answer/103056861">github怎么绑定自己的域名</a></p>
-
+  <p>
+   用wordpress, medium之类的博客服务，想要在文章中插入图片，网站有自己的服务器可以上传图片。如果自己架设网站，就需要把照片上传到互联网，获取网址，才能利用markdown语法在文章中插入图片。
+可以选择例如flickr这样的网络相册（会提供照片外链网址），考虑到flickr已经被墙了，遂放弃，也不想为此重新注册一个网络相册。
+也可以选择例如七牛、github，把图片上传到服务器，获得外链。本来想选github后来听说官方不支持这种用法，外加看到一篇使用七牛云+dropzone拖拽上传图片自动复制外链到剪贴板的文章，就决定使用七牛云。
+操作步骤  注册七牛云，并创建存储空间 在appstore上购买dropzone 3 (12人民币)，再去官网下载沙箱版dropzone3 在untested action中选择qiniu插件install 配置插件，操作见使用Dropzone和七牛优化博客图床 尝试拖拽上传文件，生成外链，使用⬇️(在第四步中选择了本地图片备份，在选择的目录下也出现了上传的文件)  还存在的问题  如何压缩图片之后上传 图片如何整理  
+  </p>
 
   
-<div class="prev-next-post pure-g">
-  <div class="pure-u-1-24" style="text-align: left;">
-    
-  </div>
-  <div class="pure-u-10-24">
-    
-  </div>
-  <div class="pure-u-2-24">
-    &nbsp;
-  </div>
-  <div class="pure-u-10-24">
-    
-    <nav class="next">
-      <a href="https://jarrywangcn.github.io/post/upload_photos/">使用七牛云&#43;dropzone在静态博客中插入图片</a>
-    </nav>
-    
-  </div>
-  <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://jarrywangcn.github.io/post/upload_photos/"><i class="fa fa-chevron-right"></i></a>
-    
-  </div>
-</div>
-
-
+</article>
 
   
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-
-(function() {
-    
-    
-    if (window.location.hostname == "localhost")
-        return;
-
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = 'Your Disqus shortname';
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
 </div>
 
 </div>
@@ -338,4 +291,3 @@
 
 </body>
 </html>
-
