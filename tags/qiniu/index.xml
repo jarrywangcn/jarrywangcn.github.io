@@ -39,8 +39,13 @@
 
 &lt;p&gt;目前使用的是苹果的预览工具，想要在dropzone里实现&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;苹果预览修改尺寸效果如下
-&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/IMG_09190.JPG&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;苹果预览修改尺寸效果如下&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/IMG_09190.JPG&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;update&#34;&gt;update&lt;/h3&gt;
+
+&lt;p&gt;使用dropzone插件1024px，但感觉1024像素在博客中还是有些大，自己修改了代码调成800，缺陷是自动覆盖原文件，所以最好是先备份再压缩，但已经挺方便了，满足。&lt;/p&gt;
 </description>
     </item>
     
