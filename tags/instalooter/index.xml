@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>99 problems</title>
-    <link>https://jarrywangcn.github.io/topics/programming/index.xml</link>
+    <link>https://jarrywangcn.github.io/tags/instalooter/index.xml</link>
     <description>Recent content on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <atom:link href="https://jarrywangcn.github.io/topics/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jarrywangcn.github.io/tags/instalooter/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>使用python下载instagram图片（中国大陆）</title>
@@ -114,74 +114,6 @@ proxychains4 instaLooter jarrywan9 ./Downloads/jarrywan9
 &lt;p&gt;最后晒一张成果 instagram@will_yinan&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/Screen%20Shot%202017-01-21%20at%209.58.43%20PM.png&#34; alt=&#34;will_yinan&#34; /&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>使用七牛云&#43;dropzone在静态博客中插入图片</title>
-      <link>https://jarrywangcn.github.io/post/upload_photos/</link>
-      <pubDate>Thu, 08 Dec 2016 20:21:25 +0800</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/post/upload_photos/</guid>
-      <description>
-
-&lt;p&gt;用wordpress, medium之类的博客服务，想要在文章中插入图片，网站有自己的服务器可以上传图片。如果自己架设网站，就需要把照片上传到互联网，获取网址，才能利用markdown语法在文章中插入图片。&lt;/p&gt;
-
-&lt;p&gt;可以选择例如flickr这样的网络相册（会提供照片外链网址），考虑到flickr已经被墙了，遂放弃，也不想为此重新注册一个网络相册。&lt;/p&gt;
-
-&lt;p&gt;也可以选择例如七牛、github，把图片上传到服务器，获得外链。本来想选github后来听说官方不支持这种用法，外加看到一篇使用七牛云+dropzone拖拽上传图片自动复制外链到剪贴板的&lt;a href=&#34;http://yansu.org/2015/01/10/use-dropzone-and-qiniu-to-store-blog-images.html&#34;&gt;文章&lt;/a&gt;，就决定使用七牛云。&lt;/p&gt;
-
-&lt;h3 id=&#34;操作步骤&#34;&gt;操作步骤&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;注册七牛云，并创建存储空间&lt;/li&gt;
-&lt;li&gt;在appstore上购买dropzone 3 (12人民币)，再去官网下载沙箱版&lt;a href=&#34;https://aptonic.com&#34;&gt;dropzone3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;在&lt;a href=&#34;https://aptonic.com/actions/untested&#34;&gt;untested action&lt;/a&gt;中选择qiniu插件install&lt;/li&gt;
-&lt;li&gt;配置插件，操作见&lt;a href=&#34;http://yansu.org/2015/01/10/use-dropzone-and-qiniu-to-store-blog-images.html&#34;&gt;使用Dropzone和七牛优化博客图床&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;尝试拖拽上传文件，生成外链，使用⬇️(在第四步中选择了本地图片备份，在选择的目录下也出现了上传的文件)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/IMG_0919.JPG&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;压缩图片之后上传&#34;&gt;压缩图片之后上传&lt;/h2&gt;
-
-&lt;p&gt;目前使用的是苹果的预览工具，想要在dropzone里实现&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;苹果预览修改尺寸效果如下&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/IMG_09190.JPG&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;update&#34;&gt;update&lt;/h3&gt;
-
-&lt;p&gt;使用dropzone插件1024px，但感觉1024像素在博客中还是有些大，自己修改了代码调成800，缺陷是自动覆盖原文件，所以最好是先备份再压缩，但已经挺方便了，满足。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>使用hugo和github pages搭建个人博客</title>
-      <link>https://jarrywangcn.github.io/post/buildnewblog/</link>
-      <pubDate>Thu, 08 Dec 2016 17:16:37 +0800</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/post/buildnewblog/</guid>
-      <description>
-
-&lt;p&gt;之前尝试过很多次搭建个人博客，看到Wilson Lee的网站使用format做portfolio，效果很棒，但收费挺高。买过几个域名，挺久之前买过jarry.wang 到期了也没用过一次，七月买了jarrywang.de。花了挺大功夫，自建博客很多人推荐用wordpress，但我觉得wordpress相当麻烦，很厚重，用了个其他的（忘记叫啥）。当时托管在亚马逊aws，创建instance解析ip地址又弄了很久，但还是搞定了。就是在网址上输入xx.xx.xx，能看到网页。死在了最后一步，把解析的ip地址和域名绑定，forward只能跳转，还是会显示ip地址。弄了三天左右，最后放弃了&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;今天下午弄了四个小时，就全部搞定了。方法是用hugo搭建网站，托管在github pages上，github会自动生成一个可访问的网站 &lt;code&gt;your_username.github.io&lt;/code&gt;，在域名管理中加入三个DNS设置，要在project中加一个文件。&lt;/p&gt;
-
-&lt;p&gt;现在每次更新是先创建一个markdown文件，run hugo生成public文件夹，用git推送到在github托管的项目（目前用的是source tree，一款gui方式使用git的软件）。&lt;/p&gt;
-
-&lt;p&gt;总结：&lt;/p&gt;
-
-&lt;p&gt;今天弄的这么顺利和这两个月学会的命令行、git、github起到了很大的作用。如果是之前只会用gui的话，可能真的要被wordpress弄死！dependency很重要！&lt;/p&gt;
-
-&lt;p&gt;这两个月也习惯了看文档学东西，今天除了有些用户写的中文教程还看hugo的文档，碰到bug学会差stackoverflow，还去hugo的community里问了&amp;hellip; 感天动地！&lt;/p&gt;
-
-&lt;h3 id=&#34;参考链接&#34;&gt;参考链接：&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34;&gt;使用hugo搭建个人博客站点&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/31377141/answer/103056861&#34;&gt;github怎么绑定自己的域名&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
