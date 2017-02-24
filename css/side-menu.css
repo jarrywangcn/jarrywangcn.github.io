@@ -44,11 +44,12 @@ The content `<div>` is where all your content goes.
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.6em;
+    color: #888
 }
 
 .header {
      margin: 0;
-     color: #201e1e;
+     color: #434343;
      text-align: center;
      padding: 2.5em 2em 0;
      border-bottom: 1px solid #eee;
@@ -60,7 +61,7 @@ The content `<div>` is where all your content goes.
     }
      .header h2 {
         font-weight: 300;
-        color: #ccc;
+        color: #999;
         padding: 0;
         margin-top: 0;
     }
@@ -68,7 +69,7 @@ The content `<div>` is where all your content goes.
 .content-subhead {
     margin: 50px 0 20px 0;
     font-weight: 300;
-    color: #888;
+    color: #000;
 }
 
 
