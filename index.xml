@@ -217,6 +217,10 @@ SAR = max[SAR(n), HH(n), HH(n-1)]
 &lt;pre&gt;&lt;code&gt;ADX &amp;gt;30, falling SAR -&amp;gt; rising SAR, buy
 ADX &amp;gt;30, rising SAR -&amp;gt; falling SAR, sell
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;reference&#34;&gt;Reference:&lt;/h4&gt;
+
+&lt;p&gt;All example pictures are from &lt;a href=&#34;http://stockcharts.com/school/&#34;&gt;CHARTSCHOOL&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
