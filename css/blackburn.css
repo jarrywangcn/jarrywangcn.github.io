@@ -3,7 +3,7 @@
 }
 
 a {
-  color: #434343;
+  color: #444;
   text-decoration: none;
 }
 a:hover,
@@ -11,7 +11,7 @@ a:focus {
   text-decoration: underline;
 }
 a:visited {
-  color: #434343;
+  color: #555;
 }
 
 .small-print {
@@ -73,5 +73,5 @@ i {
 }
 
 .pagination a {
-  color: #434343;
+  color: #555;
 }

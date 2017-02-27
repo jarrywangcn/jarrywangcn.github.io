@@ -44,12 +44,11 @@ The content `<div>` is where all your content goes.
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.6em;
-    color: #666
 }
 
 .header {
      margin: 0;
-     color: #434343;
+     color: #333;
      text-align: center;
      padding: 2.5em 2em 0;
      border-bottom: 1px solid #eee;
@@ -61,7 +60,7 @@ The content `<div>` is where all your content goes.
     }
      .header h2 {
         font-weight: 300;
-        color: #999;
+        color: #ccc;
         padding: 0;
         margin-top: 0;
     }
@@ -69,7 +68,7 @@ The content `<div>` is where all your content goes.
 .content-subhead {
     margin: 50px 0 20px 0;
     font-weight: 300;
-    color: #000;
+    color: #888;
 }
 
 
@@ -87,7 +86,7 @@ appears on the left side of the page.
     left: 0;
     bottom: 0;
     z-index: 1000; /* so the menu or its navicon stays above all content */
-    background: #000000;
+    background: #191818;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -135,7 +134,7 @@ appears on the left side of the page.
         This styles a link within a selected menu item `<li>`.
         */
         #menu .pure-menu-selected a {
-            color: #ccc;
+            color: #fff;
         }
 
     /*
@@ -185,7 +184,7 @@ small screens.
     .menu-link span,
     .menu-link span:before,
     .menu-link span:after {
-        background-color: #000;
+        background-color: #fff;
         width: 100%;
         height: 0.2em;
     }
@@ -246,3 +245,4 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         left: 150px;
     }
 }
+
