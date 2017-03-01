@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>99 problems</title>
+    <link>https://jarrywangcn.github.io/tags/wordpress/index.xml</link>
+    <description>Recent content on 99 problems</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <atom:link href="https://jarrywangcn.github.io/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>VPS主机上搭建Wordpress站点</title>
+      <link>https://jarrywangcn.github.io/post/bandwagon_wordpress/</link>
+      <pubDate>Wed, 01 Mar 2017 17:10:40 +0800</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/post/bandwagon_wordpress/</guid>
+      <description>
+
+&lt;p&gt;个站直接托管在github, 就绕过了买虚拟主机或者服务器的过程，这次&lt;a href=&#34;lookcn.org&#34;&gt;路客中国&lt;/a&gt;的建站一开始为了图省力，用了亚马逊的aws，没有考虑到国内用户的访问问题。&lt;/p&gt;
+
+&lt;p&gt;考虑到提供主要云服务的公司（amazon aws，google）都很容易被墙，所以只能买个主机。（个人偏好没有考虑国内的服务商，好像主机公园的风评还不错）。&lt;/p&gt;
+
+&lt;h2 id=&#34;一-购买虚拟主机&#34;&gt;一、购买虚拟主机&lt;/h2&gt;
+
+&lt;p&gt;国内访问亚马逊IP Ping测试&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;PING x.x.x.x (x.x.x.x): 56 data bytes
+Request timeout for icmp_seq 0
+Request timeout for icmp_seq 1
+Request timeout for icmp_seq 2
+Request timeout for icmp_seq 3
+Request timeout for icmp_seq 4
+Request timeout for icmp_seq 5
+--- x.x.x.x ping statistics ---
+7 packets transmitted, 0 packets received, 100.0% packet loss
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;丢包到崩溃&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;主机提供商的可选项真是多到爆炸&amp;hellip;最后在小伙伴的帮助下，考虑了速度、性价比等，选择使用bandwagon。买了虚拟主机后，一切才刚刚开始&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;国内访问bandwagon fermont IP Ping测试&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;PING x.x.x.x (x.x.x.x): 56 data bytes
+64 bytes from 98.142.135.33: icmp_seq=0 ttl=52 time=295.267 ms
+64 bytes from 98.142.135.33: icmp_seq=1 ttl=52 time=257.185 ms
+64 bytes from 98.142.135.33: icmp_seq=2 ttl=52 time=329.819 ms
+64 bytes from 98.142.135.33: icmp_seq=3 ttl=52 time=258.983 ms
+64 bytes from 98.142.135.33: icmp_seq=4 ttl=52 time=269.134 ms
+64 bytes from 98.142.135.33: icmp_seq=5 ttl=52 time=279.991 ms
+--- x.x.x.x ping statistics ---
+6 packets transmitted, 6 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 257.185/281.730/329.819/25.091 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;有点慢了 昨晚测试大约在180ms左右&lt;/p&gt;
+
+&lt;h2 id=&#34;二-安装虚拟主机控制系统&#34;&gt;二、安装虚拟主机控制系统&lt;/h2&gt;
+
+&lt;p&gt;一般动态网站的解决方案是LAMP，Linux+Apache+Mysql/MariaDB+Perl/PHP/Python。Linux为主机的操作系统，Apache为服务器，MySQL为数据库软件，PHP为动态网站编程语言。&lt;/p&gt;
+
+&lt;p&gt;bandwagon VPS便宜是因为它是&amp;rdquo;self-managed&amp;rdquo; VPS，意思是除了主机和一个没什么用的Kiwi Control Panel以外什么都要自己搞&amp;hellip; 而一般主机服务上（如主机公园）会提供cPanel,cPanel是一种虚拟主机控制系统（cPanel要收费）。虚拟主机控制系统是GUI，没有它你就只能用命令行（我对命令行的爱还没有那么深）。于是我使用了Webmin&amp;amp;Virtualmin作为cPanel的免费替代产品。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Virtualmin/Webmin面板是免费的基于Linux VPS/服务器可以使用的用户管理网站的应用程序。相当于WHM/Cpanel的功能，我们可以在安装后的VPS中进行站点的管理和创建。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;安装过程参考&lt;a href=&#34;http://www.itbulu.com/virtualmin-webmin-install.html&#34;&gt;Virtualmin/Webmin免费VPS主机/服务器网站管理面板安装及设置&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;首先要利用命令行ssh连接虚拟主机（搬瓦工里自带root shell不太好用&amp;hellip;）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh user@x.x.x.x -p 22
+# user: 用户名, x.x.x.x: IP地址, -p 22: 端口
+# 然后输入密码
+# 登录成功后在浏览器里输入 https://x.x.x.x:10000/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;执行下列命令：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget http://software.virtualmin.com/gpl/scripts/install.sh
+chmod +x install.sh
+./install.sh
+# 可能会提醒确认hostname, 输入IP地址即可安装
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;文章里有国内改良版的一键安装包，但不推荐，比如我就踩坑了，那个包安装完系统语言变成了乱码&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;三-安装wordpress插件&#34;&gt;三、安装Wordpress插件&lt;/h2&gt;
+
+&lt;p&gt;此步骤参考&lt;a href=&#34;https://aatayyab.wordpress.com/2015/08/31/wordpress-installer-script-on-virtualmin/&#34;&gt;WordPress Installer Script on Virtualmin&lt;/a&gt; 但我没有用命令行的方法（用了发现不行&amp;hellip;）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/Screen%20Shot%202017-03-01%20at%205.47.40%20PM.png&#34; alt=&#34;virtualminwordpress&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我是直接在virtualmin的system settings里点script installers，然后add script的选项里选&amp;rdquo;HTTP or FTP URL&amp;rdquo;输入 &lt;a href=&#34;https://s3.amazonaws.com/cgilligan-share/custompress.pl&#34;&gt;https://s3.amazonaws.com/cgilligan-share/custompress.pl&lt;/a&gt; (这个版本的wordpress比较旧 但之后可以很方便地更新 所以没有大碍)&lt;/p&gt;
+
+&lt;p&gt;安装完成后要create virtual server，再install scripts&lt;/p&gt;
+
+&lt;p&gt;有个非常重要的事是在install options的install sub-directory under public_html一定要选at top level，这样你的主域名就直接是wordpress页面，而不是你的虚拟主机。
+&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/Screen%20Shot%202017-03-01%20at%205.50.52%20PM.png&#34; alt=&#34;installwordpress&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;之后在浏览器输入你的IP地址,或者在域名解析完成后输入域名（请把virtual server的domain name改成主域名），都可直接出现wordpress页面。&lt;/p&gt;
+
+&lt;p&gt;其他：我域名服务商是godayy，域名解释用的是DSNpod，只需要更改DSNpod的IP地址就可以了。&lt;/p&gt;
+
+&lt;h2 id=&#34;四-wordpress迁移&#34;&gt;四、Wordpress迁移&lt;/h2&gt;
+
+&lt;p&gt;用的是官方的import, export功能，只能导入posts, pages, comments等内容，插件和主体配置不能导入&amp;hellip; 以后网站内容多了一定需要研究下整体迁移的方法。&lt;/p&gt;
+
+&lt;p&gt;最后的最后：DSN解析是分布式的，所以有些地方解析完了，有些地方没解析完&amp;hellip;最长24小时完成，所以只能睡一觉&amp;hellip; 睡一觉还不行就只能再睡一觉&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

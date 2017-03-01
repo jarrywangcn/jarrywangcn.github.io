@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.17" />
+
+  <title>VPS主机上搭建Wordpress站点 &middot; 99 problems</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://jarrywangcn.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://jarrywangcn.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://jarrywangcn.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://jarrywangcn.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://jarrywangcn.github.io/">JarryWang</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://jarrywangcn.github.io/about"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://jarrywangcn.github.io/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://jarrywangcn.github.io/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://jarrywangcn.github.io/topics/"><i class='fa fa-phone fa-fw'></i>Topics</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://jarrywangcn.github.io/tags/"><i class='fa fa-phone fa-fw'></i>Tags</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://instagram.com/jarrywan9" target="_blank"><i class="fa fa-instagram fa-fw"></i>Instagram</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/jarrywangcn" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>VPS主机上搭建Wordpress站点</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>01 Mar 2017, 17:10</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://jarrywangcn.github.io/topics/programming">programming</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://jarrywangcn.github.io/tags/bandwagon">bandwagon</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://jarrywangcn.github.io/tags/webmin">webmin</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://jarrywangcn.github.io/tags/virtualmin">virtualmin</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://jarrywangcn.github.io/tags/wordpress">wordpress</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<p>个站直接托管在github, 就绕过了买虚拟主机或者服务器的过程，这次<a href="lookcn.org">路客中国</a>的建站一开始为了图省力，用了亚马逊的aws，没有考虑到国内用户的访问问题。</p>
+
+<p>考虑到提供主要云服务的公司（amazon aws，google）都很容易被墙，所以只能买个主机。（个人偏好没有考虑国内的服务商，好像主机公园的风评还不错）。</p>
+
+<h2 id="一-购买虚拟主机">一、购买虚拟主机</h2>
+
+<p>国内访问亚马逊IP Ping测试</p>
+
+<pre><code>PING x.x.x.x (x.x.x.x): 56 data bytes
+Request timeout for icmp_seq 0
+Request timeout for icmp_seq 1
+Request timeout for icmp_seq 2
+Request timeout for icmp_seq 3
+Request timeout for icmp_seq 4
+Request timeout for icmp_seq 5
+--- x.x.x.x ping statistics ---
+7 packets transmitted, 0 packets received, 100.0% packet loss
+</code></pre>
+
+<p>丢包到崩溃&hellip;</p>
+
+<p>主机提供商的可选项真是多到爆炸&hellip;最后在小伙伴的帮助下，考虑了速度、性价比等，选择使用bandwagon。买了虚拟主机后，一切才刚刚开始&hellip;</p>
+
+<p>国内访问bandwagon fermont IP Ping测试</p>
+
+<pre><code>PING x.x.x.x (x.x.x.x): 56 data bytes
+64 bytes from 98.142.135.33: icmp_seq=0 ttl=52 time=295.267 ms
+64 bytes from 98.142.135.33: icmp_seq=1 ttl=52 time=257.185 ms
+64 bytes from 98.142.135.33: icmp_seq=2 ttl=52 time=329.819 ms
+64 bytes from 98.142.135.33: icmp_seq=3 ttl=52 time=258.983 ms
+64 bytes from 98.142.135.33: icmp_seq=4 ttl=52 time=269.134 ms
+64 bytes from 98.142.135.33: icmp_seq=5 ttl=52 time=279.991 ms
+--- x.x.x.x ping statistics ---
+6 packets transmitted, 6 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 257.185/281.730/329.819/25.091 ms
+</code></pre>
+
+<p>有点慢了 昨晚测试大约在180ms左右</p>
+
+<h2 id="二-安装虚拟主机控制系统">二、安装虚拟主机控制系统</h2>
+
+<p>一般动态网站的解决方案是LAMP，Linux+Apache+Mysql/MariaDB+Perl/PHP/Python。Linux为主机的操作系统，Apache为服务器，MySQL为数据库软件，PHP为动态网站编程语言。</p>
+
+<p>bandwagon VPS便宜是因为它是&rdquo;self-managed&rdquo; VPS，意思是除了主机和一个没什么用的Kiwi Control Panel以外什么都要自己搞&hellip; 而一般主机服务上（如主机公园）会提供cPanel,cPanel是一种虚拟主机控制系统（cPanel要收费）。虚拟主机控制系统是GUI，没有它你就只能用命令行（我对命令行的爱还没有那么深）。于是我使用了Webmin&amp;Virtualmin作为cPanel的免费替代产品。</p>
+
+<blockquote>
+<p>Virtualmin/Webmin面板是免费的基于Linux VPS/服务器可以使用的用户管理网站的应用程序。相当于WHM/Cpanel的功能，我们可以在安装后的VPS中进行站点的管理和创建。</p>
+</blockquote>
+
+<p>安装过程参考<a href="http://www.itbulu.com/virtualmin-webmin-install.html">Virtualmin/Webmin免费VPS主机/服务器网站管理面板安装及设置</a></p>
+
+<p>首先要利用命令行ssh连接虚拟主机（搬瓦工里自带root shell不太好用&hellip;）</p>
+
+<pre><code>ssh user@x.x.x.x -p 22
+# user: 用户名, x.x.x.x: IP地址, -p 22: 端口
+# 然后输入密码
+# 登录成功后在浏览器里输入 https://x.x.x.x:10000/
+</code></pre>
+
+<p>执行下列命令：</p>
+
+<pre><code>wget http://software.virtualmin.com/gpl/scripts/install.sh
+chmod +x install.sh
+./install.sh
+# 可能会提醒确认hostname, 输入IP地址即可安装
+</code></pre>
+
+<p>文章里有国内改良版的一键安装包，但不推荐，比如我就踩坑了，那个包安装完系统语言变成了乱码&hellip;</p>
+
+<h2 id="三-安装wordpress插件">三、安装Wordpress插件</h2>
+
+<p>此步骤参考<a href="https://aatayyab.wordpress.com/2015/08/31/wordpress-installer-script-on-virtualmin/">WordPress Installer Script on Virtualmin</a> 但我没有用命令行的方法（用了发现不行&hellip;）</p>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/Screen%20Shot%202017-03-01%20at%205.47.40%20PM.png" alt="virtualminwordpress" /></p>
+
+<p>我是直接在virtualmin的system settings里点script installers，然后add script的选项里选&rdquo;HTTP or FTP URL&rdquo;输入 <a href="https://s3.amazonaws.com/cgilligan-share/custompress.pl">https://s3.amazonaws.com/cgilligan-share/custompress.pl</a> (这个版本的wordpress比较旧 但之后可以很方便地更新 所以没有大碍)</p>
+
+<p>安装完成后要create virtual server，再install scripts</p>
+
+<p>有个非常重要的事是在install options的install sub-directory under public_html一定要选at top level，这样你的主域名就直接是wordpress页面，而不是你的虚拟主机。
+<img src="http://ohvamo1vj.bkt.clouddn.com/Screen%20Shot%202017-03-01%20at%205.50.52%20PM.png" alt="installwordpress" /></p>
+
+<p>之后在浏览器输入你的IP地址,或者在域名解析完成后输入域名（请把virtual server的domain name改成主域名），都可直接出现wordpress页面。</p>
+
+<p>其他：我域名服务商是godayy，域名解释用的是DSNpod，只需要更改DSNpod的IP地址就可以了。</p>
+
+<h2 id="四-wordpress迁移">四、Wordpress迁移</h2>
+
+<p>用的是官方的import, export功能，只能导入posts, pages, comments等内容，插件和主体配置不能导入&hellip; 以后网站内容多了一定需要研究下整体迁移的方法。</p>
+
+<p>最后的最后：DSN解析是分布式的，所以有些地方解析完了，有些地方没解析完&hellip;最长24小时完成，所以只能睡一觉&hellip; 睡一觉还不行就只能再睡一觉</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://jarrywangcn.github.io/post/welles_wilder_indicators/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://jarrywangcn.github.io/post/welles_wilder_indicators/">Welles Wilder&#39;s four indicators</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="https://jarrywangcn.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking ID', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
