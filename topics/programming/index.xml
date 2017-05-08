@@ -15,11 +15,11 @@
       <pubDate>Wed, 01 Mar 2017 17:10:40 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/post/bandwagon_wordpress/</guid>
-      <description>
-
-&lt;p&gt;个站直接托管在github, 就绕过了买虚拟主机或者服务器的过程，这次&lt;a href=&#34;lookcn.org&#34;&gt;路客中国&lt;/a&gt;的建站一开始为了图省力，用了亚马逊的aws，没有考虑到国内用户的访问问题。&lt;/p&gt;
+      <description>&lt;p&gt;个站直接托管在github, 就绕过了买虚拟主机或者服务器的过程，这次&lt;a href=&#34;lookcn.org&#34;&gt;路客中国&lt;/a&gt;的建站一开始为了图省力，用了亚马逊的aws，没有考虑到国内用户的访问问题。&lt;/p&gt;
 
 &lt;p&gt;考虑到提供主要云服务的公司（amazon aws，google）都很容易被墙，所以只能买个主机。（个人偏好没有考虑国内的服务商，好像主机公园的风评还不错）。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;一-购买虚拟主机&#34;&gt;一、购买虚拟主机&lt;/h2&gt;
 
@@ -36,9 +36,9 @@ Request timeout for icmp_seq 5
 7 packets transmitted, 0 packets received, 100.0% packet loss
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;丢包到崩溃&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;主机提供商的可选项真是多到爆炸&amp;hellip;最后在小伙伴的帮助下，考虑了速度、性价比等，选择使用bandwagon。买了虚拟主机后，一切才刚刚开始&amp;hellip;&lt;/p&gt;
+&lt;p&gt;丢包到崩溃&amp;hellip;
+​&lt;br /&gt;
+主机提供商的可选项真是多到爆炸&amp;hellip;最后在小伙伴的帮助下，考虑了速度、性价比等，选择使用bandwagon。买了虚拟主机后，一切才刚刚开始&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;国内访问bandwagon fermont IP Ping测试&lt;/p&gt;
 
@@ -76,13 +76,12 @@ round-trip min/avg/max/stddev = 257.185/281.730/329.819/25.091 ms
 # 登录成功后在浏览器里输入 https://x.x.x.x:10000/
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;执行下列命令：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget http://software.virtualmin.com/gpl/scripts/install.sh
-chmod +x install.sh
-./install.sh
-# 可能会提醒确认hostname, 输入IP地址即可安装
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;执行下列命令：
+​&lt;br /&gt;
+    wget &lt;a href=&#34;http://software.virtualmin.com/gpl/scripts/install.sh&#34;&gt;http://software.virtualmin.com/gpl/scripts/install.sh&lt;/a&gt;
+    chmod +x install.sh
+    ./install.sh
+    # 可能会提醒确认hostname, 输入IP地址即可安装&lt;/p&gt;
 
 &lt;p&gt;文章里有国内改良版的一键安装包，但不推荐，比如我就踩坑了，那个包安装完系统语言变成了乱码&amp;hellip;&lt;/p&gt;
 
@@ -107,8 +106,7 @@ chmod +x install.sh
 
 &lt;p&gt;用的是官方的import, export功能，只能导入posts, pages, comments等内容，插件和主体配置不能导入&amp;hellip; 以后网站内容多了一定需要研究下整体迁移的方法。&lt;/p&gt;
 
-&lt;p&gt;最后的最后：DSN解析是分布式的，所以有些地方解析完了，有些地方没解析完&amp;hellip;最长24小时完成，所以只能睡一觉&amp;hellip; 睡一觉还不行就只能再睡一觉&lt;/p&gt;
-</description>
+&lt;p&gt;最后的最后：DSN解析是分布式的，所以有些地方解析完了，有些地方没解析完&amp;hellip;最长24小时完成，所以只能睡一觉&amp;hellip; 睡一觉还不行就只能再睡一觉&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -117,11 +115,11 @@ chmod +x install.sh
       <pubDate>Sat, 21 Jan 2017 20:47:56 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/post/download_from_instagram/</guid>
-      <description>
-
-&lt;h1 id=&#34;0&#34;&gt;0.&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;0&#34;&gt;0.&lt;/h1&gt;
 
 &lt;p&gt;本科毕业论文做的是默克尔和奥巴马instagram形象对比分析，当年半点程序背景都没有（拿chrome查看源代码找图片链接到是会的）但instagram似乎挺不支持这个行为，源代码里都找不到图片地址。所以，当初我手动截图（加排序）了两个人官方账号里的所有图片。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;所以，稍微学习了一点编程就想把这件事实现了。&lt;/p&gt;
 
@@ -135,11 +133,10 @@ chmod +x install.sh
 
 &lt;p&gt;但这个项目已经停止维护了，instaRaider的作者在readme里推荐了另一个项目&lt;a href=&#34;https://github.com/althonos/InstaLooter&#34;&gt;instaLooter&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;当我看到instaLooter的readme里使用方式只有两行代码时我的内心好喜悦啊&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ instaLooter &amp;lt;username&amp;gt; &amp;lt;directory&amp;gt; [options]
-$ instaLooter hashtag &amp;lt;hashtag&amp;gt; &amp;lt;directory&amp;gt; [options]
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;当我看到instaLooter的readme里使用方式只有两行代码时我的内心好喜悦啊
+​&lt;br /&gt;
+    $ instaLooter &lt;username&gt; &lt;directory&gt; [options]
+    $ instaLooter hashtag &lt;hashtag&gt; &lt;directory&gt; [options]&lt;/p&gt;
 
 &lt;p&gt;然后就报错了&amp;hellip;&lt;/p&gt;
 
@@ -215,8 +212,7 @@ proxychains4 instaLooter jarrywan9 ./Downloads/jarrywan9
 
 &lt;p&gt;最后晒一张成果 instagram@will_yinan&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/Screen%20Shot%202017-01-21%20at%209.58.43%20PM.png&#34; alt=&#34;will_yinan&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/Screen%20Shot%202017-01-21%20at%209.58.43%20PM.png&#34; alt=&#34;will_yinan&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -225,9 +221,9 @@ proxychains4 instaLooter jarrywan9 ./Downloads/jarrywan9
       <pubDate>Thu, 08 Dec 2016 20:21:25 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/post/upload_photos/</guid>
-      <description>
+      <description>&lt;p&gt;用wordpress, medium之类的博客服务，想要在文章中插入图片，网站有自己的服务器可以上传图片。如果自己架设网站，就需要把照片上传到互联网，获取网址，才能利用markdown语法在文章中插入图片。&lt;/p&gt;
 
-&lt;p&gt;用wordpress, medium之类的博客服务，想要在文章中插入图片，网站有自己的服务器可以上传图片。如果自己架设网站，就需要把照片上传到互联网，获取网址，才能利用markdown语法在文章中插入图片。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;可以选择例如flickr这样的网络相册（会提供照片外链网址），考虑到flickr已经被墙了，遂放弃，也不想为此重新注册一个网络相册。&lt;/p&gt;
 
@@ -255,8 +251,7 @@ proxychains4 instaLooter jarrywan9 ./Downloads/jarrywan9
 
 &lt;h3 id=&#34;update&#34;&gt;update&lt;/h3&gt;
 
-&lt;p&gt;使用dropzone插件1024px，但感觉1024像素在博客中还是有些大，自己修改了代码调成800，缺陷是自动覆盖原文件，所以最好是先备份再压缩，但已经挺方便了，满足。&lt;/p&gt;
-</description>
+&lt;p&gt;使用dropzone插件1024px，但感觉1024像素在博客中还是有些大，自己修改了代码调成800，缺陷是自动覆盖原文件，所以最好是先备份再压缩，但已经挺方便了，满足。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -265,9 +260,11 @@ proxychains4 instaLooter jarrywan9 ./Downloads/jarrywan9
       <pubDate>Thu, 08 Dec 2016 17:16:37 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/post/buildnewblog/</guid>
-      <description>
+      <description>&lt;p&gt;之前尝试过很多次搭建个人博客，看到Wilson Lee的网站使用format做portfolio，效果很棒，但收费挺高。买过几个域名，挺久之前买过jarry.wang 到期了也没用过一次，七月买了jarrywang.de。&lt;/p&gt;
 
-&lt;p&gt;之前尝试过很多次搭建个人博客，看到Wilson Lee的网站使用format做portfolio，效果很棒，但收费挺高。买过几个域名，挺久之前买过jarry.wang 到期了也没用过一次，七月买了jarrywang.de。花了挺大功夫，自建博客很多人推荐用wordpress，但我觉得wordpress相当麻烦，很厚重，用了个其他的（忘记叫啥）。当时托管在亚马逊aws，创建instance解析ip地址又弄了很久，但还是搞定了。就是在网址上输入xx.xx.xx，能看到网页。死在了最后一步，把解析的ip地址和域名绑定，forward只能跳转，还是会显示ip地址。弄了三天左右，最后放弃了&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;花了挺大功夫，自建博客很多人推荐用wordpress，但我觉得wordpress相当麻烦，很厚重，用了个其他的（忘记叫啥）。当时托管在亚马逊aws，创建instance解析ip地址又弄了很久，但还是搞定了。就是在网址上输入xx.xx.xx，能看到网页。死在了最后一步，把解析的ip地址和域名绑定，forward只能跳转，还是会显示ip地址。弄了三天左右，最后放弃了&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;今天下午弄了四个小时，就全部搞定了。方法是用hugo搭建网站，托管在github pages上，github会自动生成一个可访问的网站 &lt;code&gt;your_username.github.io&lt;/code&gt;，在域名管理中加入三个DNS设置，要在project中加一个文件。&lt;/p&gt;
 
@@ -283,8 +280,7 @@ proxychains4 instaLooter jarrywan9 ./Downloads/jarrywan9
 
 &lt;p&gt;&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34;&gt;使用hugo搭建个人博客站点&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/31377141/answer/103056861&#34;&gt;github怎么绑定自己的域名&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/31377141/answer/103056861&#34;&gt;github怎么绑定自己的域名&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

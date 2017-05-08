@@ -15,11 +15,11 @@
       <pubDate>Sat, 21 Jan 2017 20:47:56 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/post/download_from_instagram/</guid>
-      <description>
-
-&lt;h1 id=&#34;0&#34;&gt;0.&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;0&#34;&gt;0.&lt;/h1&gt;
 
 &lt;p&gt;本科毕业论文做的是默克尔和奥巴马instagram形象对比分析，当年半点程序背景都没有（拿chrome查看源代码找图片链接到是会的）但instagram似乎挺不支持这个行为，源代码里都找不到图片地址。所以，当初我手动截图（加排序）了两个人官方账号里的所有图片。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;所以，稍微学习了一点编程就想把这件事实现了。&lt;/p&gt;
 
@@ -33,11 +33,10 @@
 
 &lt;p&gt;但这个项目已经停止维护了，instaRaider的作者在readme里推荐了另一个项目&lt;a href=&#34;https://github.com/althonos/InstaLooter&#34;&gt;instaLooter&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;当我看到instaLooter的readme里使用方式只有两行代码时我的内心好喜悦啊&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ instaLooter &amp;lt;username&amp;gt; &amp;lt;directory&amp;gt; [options]
-$ instaLooter hashtag &amp;lt;hashtag&amp;gt; &amp;lt;directory&amp;gt; [options]
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;当我看到instaLooter的readme里使用方式只有两行代码时我的内心好喜悦啊
+​&lt;br /&gt;
+    $ instaLooter &lt;username&gt; &lt;directory&gt; [options]
+    $ instaLooter hashtag &lt;hashtag&gt; &lt;directory&gt; [options]&lt;/p&gt;
 
 &lt;p&gt;然后就报错了&amp;hellip;&lt;/p&gt;
 
@@ -113,8 +112,7 @@ proxychains4 instaLooter jarrywan9 ./Downloads/jarrywan9
 
 &lt;p&gt;最后晒一张成果 instagram@will_yinan&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/Screen%20Shot%202017-01-21%20at%209.58.43%20PM.png&#34; alt=&#34;will_yinan&#34; /&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/Screen%20Shot%202017-01-21%20at%209.58.43%20PM.png&#34; alt=&#34;will_yinan&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

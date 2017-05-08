@@ -15,11 +15,11 @@
       <pubDate>Wed, 01 Mar 2017 17:10:40 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/post/bandwagon_wordpress/</guid>
-      <description>
-
-&lt;p&gt;个站直接托管在github, 就绕过了买虚拟主机或者服务器的过程，这次&lt;a href=&#34;lookcn.org&#34;&gt;路客中国&lt;/a&gt;的建站一开始为了图省力，用了亚马逊的aws，没有考虑到国内用户的访问问题。&lt;/p&gt;
+      <description>&lt;p&gt;个站直接托管在github, 就绕过了买虚拟主机或者服务器的过程，这次&lt;a href=&#34;lookcn.org&#34;&gt;路客中国&lt;/a&gt;的建站一开始为了图省力，用了亚马逊的aws，没有考虑到国内用户的访问问题。&lt;/p&gt;
 
 &lt;p&gt;考虑到提供主要云服务的公司（amazon aws，google）都很容易被墙，所以只能买个主机。（个人偏好没有考虑国内的服务商，好像主机公园的风评还不错）。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;一-购买虚拟主机&#34;&gt;一、购买虚拟主机&lt;/h2&gt;
 
@@ -36,9 +36,9 @@ Request timeout for icmp_seq 5
 7 packets transmitted, 0 packets received, 100.0% packet loss
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;丢包到崩溃&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;主机提供商的可选项真是多到爆炸&amp;hellip;最后在小伙伴的帮助下，考虑了速度、性价比等，选择使用bandwagon。买了虚拟主机后，一切才刚刚开始&amp;hellip;&lt;/p&gt;
+&lt;p&gt;丢包到崩溃&amp;hellip;
+​&lt;br /&gt;
+主机提供商的可选项真是多到爆炸&amp;hellip;最后在小伙伴的帮助下，考虑了速度、性价比等，选择使用bandwagon。买了虚拟主机后，一切才刚刚开始&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;国内访问bandwagon fermont IP Ping测试&lt;/p&gt;
 
@@ -76,13 +76,12 @@ round-trip min/avg/max/stddev = 257.185/281.730/329.819/25.091 ms
 # 登录成功后在浏览器里输入 https://x.x.x.x:10000/
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;执行下列命令：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget http://software.virtualmin.com/gpl/scripts/install.sh
-chmod +x install.sh
-./install.sh
-# 可能会提醒确认hostname, 输入IP地址即可安装
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;执行下列命令：
+​&lt;br /&gt;
+    wget &lt;a href=&#34;http://software.virtualmin.com/gpl/scripts/install.sh&#34;&gt;http://software.virtualmin.com/gpl/scripts/install.sh&lt;/a&gt;
+    chmod +x install.sh
+    ./install.sh
+    # 可能会提醒确认hostname, 输入IP地址即可安装&lt;/p&gt;
 
 &lt;p&gt;文章里有国内改良版的一键安装包，但不推荐，比如我就踩坑了，那个包安装完系统语言变成了乱码&amp;hellip;&lt;/p&gt;
 
@@ -107,8 +106,7 @@ chmod +x install.sh
 
 &lt;p&gt;用的是官方的import, export功能，只能导入posts, pages, comments等内容，插件和主体配置不能导入&amp;hellip; 以后网站内容多了一定需要研究下整体迁移的方法。&lt;/p&gt;
 
-&lt;p&gt;最后的最后：DSN解析是分布式的，所以有些地方解析完了，有些地方没解析完&amp;hellip;最长24小时完成，所以只能睡一觉&amp;hellip; 睡一觉还不行就只能再睡一觉&lt;/p&gt;
-</description>
+&lt;p&gt;最后的最后：DSN解析是分布式的，所以有些地方解析完了，有些地方没解析完&amp;hellip;最长24小时完成，所以只能睡一觉&amp;hellip; 睡一觉还不行就只能再睡一觉&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -15,9 +15,11 @@
       <pubDate>Thu, 08 Dec 2016 17:16:37 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/post/buildnewblog/</guid>
-      <description>
+      <description>&lt;p&gt;之前尝试过很多次搭建个人博客，看到Wilson Lee的网站使用format做portfolio，效果很棒，但收费挺高。买过几个域名，挺久之前买过jarry.wang 到期了也没用过一次，七月买了jarrywang.de。&lt;/p&gt;
 
-&lt;p&gt;之前尝试过很多次搭建个人博客，看到Wilson Lee的网站使用format做portfolio，效果很棒，但收费挺高。买过几个域名，挺久之前买过jarry.wang 到期了也没用过一次，七月买了jarrywang.de。花了挺大功夫，自建博客很多人推荐用wordpress，但我觉得wordpress相当麻烦，很厚重，用了个其他的（忘记叫啥）。当时托管在亚马逊aws，创建instance解析ip地址又弄了很久，但还是搞定了。就是在网址上输入xx.xx.xx，能看到网页。死在了最后一步，把解析的ip地址和域名绑定，forward只能跳转，还是会显示ip地址。弄了三天左右，最后放弃了&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;花了挺大功夫，自建博客很多人推荐用wordpress，但我觉得wordpress相当麻烦，很厚重，用了个其他的（忘记叫啥）。当时托管在亚马逊aws，创建instance解析ip地址又弄了很久，但还是搞定了。就是在网址上输入xx.xx.xx，能看到网页。死在了最后一步，把解析的ip地址和域名绑定，forward只能跳转，还是会显示ip地址。弄了三天左右，最后放弃了&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;今天下午弄了四个小时，就全部搞定了。方法是用hugo搭建网站，托管在github pages上，github会自动生成一个可访问的网站 &lt;code&gt;your_username.github.io&lt;/code&gt;，在域名管理中加入三个DNS设置，要在project中加一个文件。&lt;/p&gt;
 
@@ -33,8 +35,7 @@
 
 &lt;p&gt;&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34;&gt;使用hugo搭建个人博客站点&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/31377141/answer/103056861&#34;&gt;github怎么绑定自己的域名&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;a href=&#34;https://www.zhihu.com/question/31377141/answer/103056861&#34;&gt;github怎么绑定自己的域名&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

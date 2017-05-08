@@ -263,13 +263,11 @@
   </header>
 
   <p>
-  个站直接托管在github, 就绕过了买虚拟主机或者服务器的过程，这次路客中国的建站一开始为了图省力，用了亚马逊的aws，没有考虑到国内用户的访问问题。
-考虑到提供主要云服务的公司（amazon aws，google）都很容易被墙，所以只能买个主机。（个人偏好没有考虑国内的服务商，好像主机公园的风评还不错）。
-一、购买虚拟主机 国内访问亚马逊IP Ping测试
-PING x.x.x.x (x.x.x.x): 56 data bytes Request timeout for icmp_seq 0 Request timeout for icmp_seq 1 Request timeout for icmp_seq 2 Request timeout for icmp_seq 3 Request timeout for icmp_seq 4 Request timeout for icmp_seq 5 --- x.x.x.x ping statistics --- 7 packets transmitted, 0 packets received, 100.0% packet loss  丢包到崩溃&hellip;
-主机提供商的可选项真是多到爆炸&hellip;最后在小伙伴的帮助下，考虑了速度、性价比等，选择使用bandwagon。买了虚拟主机后，一切才刚刚开始&hellip;
-国内访问bandwagon fermont IP Ping测试
-PING x.x.x.x (x.x.x.x): 56 data bytes 64 bytes from 98.
+  <p>个站直接托管在github, 就绕过了买虚拟主机或者服务器的过程，这次<a href="lookcn.org">路客中国</a>的建站一开始为了图省力，用了亚马逊的aws，没有考虑到国内用户的访问问题。</p>
+
+<p>考虑到提供主要云服务的公司（amazon aws，google）都很容易被墙，所以只能买个主机。（个人偏好没有考虑国内的服务商，好像主机公园的风评还不错）。</p>
+
+<p></p>
   </p>
 
   
@@ -330,18 +328,11 @@ PING x.x.x.x (x.x.x.x): 56 data bytes 64 bytes from 98.
   </header>
 
   <p>
-  0. 本科毕业论文做的是默克尔和奥巴马instagram形象对比分析，当年半点程序背景都没有（拿chrome查看源代码找图片链接到是会的）但instagram似乎挺不支持这个行为，源代码里都找不到图片地址。所以，当初我手动截图（加排序）了两个人官方账号里的所有图片。
-所以，稍微学习了一点编程就想把这件事实现了。
-1. instaRaider &amp; instaLooter 谷歌搜索了下，发现已经有人造好了轮子instaRaider，而且把怎么造轮子的过程都写清楚了。
-How to download photos from Instagram – A Hack
-这个项目吸引我的地方是它不需要instagram的api，所以也不需要授权(authentication)。
-但这个项目已经停止维护了，instaRaider的作者在readme里推荐了另一个项目instaLooter
-当我看到instaLooter的readme里使用方式只有两行代码时我的内心好喜悦啊
-$ instaLooter &lt;username&gt; &lt;directory&gt; [options] $ instaLooter hashtag &lt;hashtag&gt; &lt;directory&gt; [options]  然后就报错了&hellip;
-requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.instagram.com', port=443): Max retries exceeded with url: /jarrywan9/ (Caused by NewConnectionError('&lt;requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x10402a4d0&gt;: Failed to establish a new connection: [Errno 65] No route to host',))  原因是我instagram在国内被封了&hellip;而我翻墙走的是shadowsocks
-2. 利用proxychains解决shadowsocks非全局代理问题 下面开始感恩前室友小讲堂：
- 代理通常分两步：
- 把线路搞起来 e.
+  <h1 id="0">0.</h1>
+
+<p>本科毕业论文做的是默克尔和奥巴马instagram形象对比分析，当年半点程序背景都没有（拿chrome查看源代码找图片链接到是会的）但instagram似乎挺不支持这个行为，源代码里都找不到图片地址。所以，当初我手动截图（加排序）了两个人官方账号里的所有图片。</p>
+
+<p></p>
   </p>
 
   
@@ -396,14 +387,15 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.instagram.com
   </header>
 
   <p>
-  用wordpress, medium之类的博客服务，想要在文章中插入图片，网站有自己的服务器可以上传图片。如果自己架设网站，就需要把照片上传到互联网，获取网址，才能利用markdown语法在文章中插入图片。
-可以选择例如flickr这样的网络相册（会提供照片外链网址），考虑到flickr已经被墙了，遂放弃，也不想为此重新注册一个网络相册。
-也可以选择例如七牛、github，把图片上传到服务器，获得外链。本来想选github后来听说官方不支持这种用法，外加看到一篇使用七牛云+dropzone拖拽上传图片自动复制外链到剪贴板的文章，就决定使用七牛云。
-操作步骤  注册七牛云，并创建存储空间 在appstore上购买dropzone 3 (12人民币)，再去官网下载沙箱版dropzone3 在untested action中选择qiniu插件install 配置插件，操作见使用Dropzone和七牛优化博客图床 尝试拖拽上传文件，生成外链，使用⬇️(在第四步中选择了本地图片备份，在选择的目录下也出现了上传的文件)  压缩图片之后上传 目前使用的是苹果的预览工具，想要在dropzone里实现&hellip;
-苹果预览修改尺寸效果如下
-update 使用dropzone插件1024px，但感觉1024像素在博客中还是有些大，自己修改了代码调成800，缺陷是自动覆盖原文件，所以最好是先备份再压缩，但已经挺方便了，满足。
+  <p>用wordpress, medium之类的博客服务，想要在文章中插入图片，网站有自己的服务器可以上传图片。如果自己架设网站，就需要把照片上传到互联网，获取网址，才能利用markdown语法在文章中插入图片。</p>
+
+<p></p>
   </p>
 
+  
+  <footer>
+    <a href="https://jarrywangcn.github.io/post/upload_photos/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
   
 </article>
 
@@ -454,16 +446,15 @@ update 使用dropzone插件1024px，但感觉1024像素在博客中还是有些�
   </header>
 
   <p>
-  之前尝试过很多次搭建个人博客，看到Wilson Lee的网站使用format做portfolio，效果很棒，但收费挺高。买过几个域名，挺久之前买过jarry.wang 到期了也没用过一次，七月买了jarrywang.de。花了挺大功夫，自建博客很多人推荐用wordpress，但我觉得wordpress相当麻烦，很厚重，用了个其他的（忘记叫啥）。当时托管在亚马逊aws，创建instance解析ip地址又弄了很久，但还是搞定了。就是在网址上输入xx.xx.xx，能看到网页。死在了最后一步，把解析的ip地址和域名绑定，forward只能跳转，还是会显示ip地址。弄了三天左右，最后放弃了&hellip;
-今天下午弄了四个小时，就全部搞定了。方法是用hugo搭建网站，托管在github pages上，github会自动生成一个可访问的网站 your_username.github.io，在域名管理中加入三个DNS设置，要在project中加一个文件。
-现在每次更新是先创建一个markdown文件，run hugo生成public文件夹，用git推送到在github托管的项目（目前用的是source tree，一款gui方式使用git的软件）。
-总结：
-今天弄的这么顺利和这两个月学会的命令行、git、github起到了很大的作用。如果是之前只会用gui的话，可能真的要被wordpress弄死！dependency很重要！
-这两个月也习惯了看文档学东西，今天除了有些用户写的中文教程还看hugo的文档，碰到bug学会查stackoverflow，还去hugo的community里问了&hellip; 感天动地！
-参考链接： 使用hugo搭建个人博客站点
-github怎么绑定自己的域名
+  <p>之前尝试过很多次搭建个人博客，看到Wilson Lee的网站使用format做portfolio，效果很棒，但收费挺高。买过几个域名，挺久之前买过jarry.wang 到期了也没用过一次，七月买了jarrywang.de。</p>
+
+<p></p>
   </p>
 
+  
+  <footer>
+    <a href="https://jarrywangcn.github.io/post/buildnewblog/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
   
 </article>
 

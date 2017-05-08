@@ -250,11 +250,11 @@
 
 </div>
 
-  
-
-<p>个站直接托管在github, 就绕过了买虚拟主机或者服务器的过程，这次<a href="lookcn.org">路客中国</a>的建站一开始为了图省力，用了亚马逊的aws，没有考虑到国内用户的访问问题。</p>
+  <p>个站直接托管在github, 就绕过了买虚拟主机或者服务器的过程，这次<a href="lookcn.org">路客中国</a>的建站一开始为了图省力，用了亚马逊的aws，没有考虑到国内用户的访问问题。</p>
 
 <p>考虑到提供主要云服务的公司（amazon aws，google）都很容易被墙，所以只能买个主机。（个人偏好没有考虑国内的服务商，好像主机公园的风评还不错）。</p>
+
+<p></p>
 
 <h2 id="一-购买虚拟主机">一、购买虚拟主机</h2>
 
@@ -271,9 +271,9 @@ Request timeout for icmp_seq 5
 7 packets transmitted, 0 packets received, 100.0% packet loss
 </code></pre>
 
-<p>丢包到崩溃&hellip;</p>
-
-<p>主机提供商的可选项真是多到爆炸&hellip;最后在小伙伴的帮助下，考虑了速度、性价比等，选择使用bandwagon。买了虚拟主机后，一切才刚刚开始&hellip;</p>
+<p>丢包到崩溃&hellip;
+​<br />
+主机提供商的可选项真是多到爆炸&hellip;最后在小伙伴的帮助下，考虑了速度、性价比等，选择使用bandwagon。买了虚拟主机后，一切才刚刚开始&hellip;</p>
 
 <p>国内访问bandwagon fermont IP Ping测试</p>
 
@@ -311,13 +311,12 @@ round-trip min/avg/max/stddev = 257.185/281.730/329.819/25.091 ms
 # 登录成功后在浏览器里输入 https://x.x.x.x:10000/
 </code></pre>
 
-<p>执行下列命令：</p>
-
-<pre><code>wget http://software.virtualmin.com/gpl/scripts/install.sh
-chmod +x install.sh
-./install.sh
-# 可能会提醒确认hostname, 输入IP地址即可安装
-</code></pre>
+<p>执行下列命令：
+​<br />
+    wget <a href="http://software.virtualmin.com/gpl/scripts/install.sh">http://software.virtualmin.com/gpl/scripts/install.sh</a>
+    chmod +x install.sh
+    ./install.sh
+    # 可能会提醒确认hostname, 输入IP地址即可安装</p>
 
 <p>文章里有国内改良版的一键安装包，但不推荐，比如我就踩坑了，那个包安装完系统语言变成了乱码&hellip;</p>
 
@@ -343,7 +342,6 @@ chmod +x install.sh
 <p>用的是官方的import, export功能，只能导入posts, pages, comments等内容，插件和主体配置不能导入&hellip; 以后网站内容多了一定需要研究下整体迁移的方法。</p>
 
 <p>最后的最后：DSN解析是分布式的，所以有些地方解析完了，有些地方没解析完&hellip;最长24小时完成，所以只能睡一觉&hellip; 睡一觉还不行就只能再睡一觉</p>
-
 
   
 <div class="prev-next-post pure-g">
