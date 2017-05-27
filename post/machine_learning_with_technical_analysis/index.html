@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.17" />
+
+  <title>机器学习应用于技术分析交易的思考（一） &middot; 99 problems</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://jarrywangcn.github.io/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://jarrywangcn.github.io/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://jarrywangcn.github.io/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://jarrywangcn.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://jarrywangcn.github.io/">JarryWang</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://jarrywangcn.github.io/about"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://jarrywangcn.github.io/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://jarrywangcn.github.io/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://jarrywangcn.github.io/topics/"><i class='fa fa-phone fa-fw'></i>Topics</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://jarrywangcn.github.io/tags/"><i class='fa fa-phone fa-fw'></i>Tags</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://instagram.com/jarrywan9" target="_blank"><i class="fa fa-instagram fa-fw"></i>Instagram</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/jarrywangcn" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>机器学习应用于技术分析交易的思考（一）</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>27 May 2017, 09:02</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="https://jarrywangcn.github.io/topics/trading">trading</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://jarrywangcn.github.io/tags/machine-learning">machine learning</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://jarrywangcn.github.io/tags/trading">trading</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://jarrywangcn.github.io/tags/programming">programming</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<p>本文所指的交易仅限于纯技术分析的中低频交易。</p>
+
+<h2 id="1-人工交易系统的程序化转换">1. 人工交易系统的程序化转换</h2>
+
+<p>近半年做的一个项目是对几个现成的人工交易系统的程序化转换。一个是道氏理论加K线形态的趋势波段系统，一个是布林带加K线形态的反转波段系统。两个系统的原型在人工交易圈都已流传多年，不论是回测还是实盘，都有较好的盈利能力。</p>
+
+<h3 id="1-1-反转波段系统-蜡烛图局部形态的识别">1.1 反转波段系统 蜡烛图局部形态的识别</h3>
+
+<p>先从第二个反转波段系统说起，交易逻辑简单来说，就是当价格触碰布林带上轨且出现反转形态后卖空，当价格触碰布林带下轨且出现反转形态后买多。</p>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/xauusd%202015%20canle%20pattern%20040%20small.png" alt="candlepattern" /></p>
+
+<p>布林带上轨出现黄昏星，卖空</p>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/xauusd%202015%20canle%20pattern%20001%20small.png" alt="candle_pattern" /></p>
+
+<p>布林带下轨出现看涨吞没，买多</p>
+
+<p>系统定义的看多信号是看涨吞没和启明星，看空信号是看跌吞没和黄昏星，对这几种经典形态早已有了&rdquo;明确&rdquo;的定义，如《期货市场技术分析》中对吞没形态的反转星线形态的判断标准是：</p>
+
+<blockquote>
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%889.37.07.png" alt="img" /></p>
+
+<ol>
+<li>在吞没形态之前，市场必须处在清晰可辨的上升趋势或下降趋势中，哪怕这个趋势只是短期的。</li>
+<li>吞没形态必须由2条蜡烛线组成。其中第二根蜡烛线的实体必须覆盖第一根蜡烛线的实体（但是不一定需要吞没前者的上下影线）</li>
+<li>吞没形态的第二个实体必须与第一个实体的颜色相反。这一条标准有例外的情况，条件是，第一条蜡烛线的实体的必须非常小，小得几乎构成了一根十字线（或者它就是一根十字线）。如此一来，如果在长期的下降趋势之后，一个小小的白色实体为一个巨大的白色实体所吞没，那么也可能构成了底部反转形态。反之，在上升趋势中，如果一个小小的黑色实体为一个巨大的黑色实体所吞没，那么也可能构成了顶部反转形态。</li>
+</ol>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%889.45.50.png" alt="up_reverse" /></p>
+
+<p>启明星形态：</p>
+
+<p>先是一根长长的黑色实体，随后是一根小小的实体，并且在这两个实体之间形成一个向下跳空，第三天是一根白色实体，它明显地向上推进了第一天的黑色实体之内。</p>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%889.45.59.png" alt="img" /></p>
+
+<p>黄昏星形态：</p>
+
+<p>第一根是一根长长的白色实体，后一根是一根星线。第三根蜡烛线具有黑色实体，它剧烈地向下扎入第一天的白色实体的内部。</p>
+</blockquote>
+
+<p>只要根据开盘价，收盘价，最高价，最低价计算出每根K线的实体长度，再对实体长度的长中短进行定义，比如这样：</p>
+
+<ol>
+<li>计算之前平均七根K线实体长度的平均值（avg），颜色（收盘价高于开盘价为1，收盘价低于开盘价为-1）</li>
+<li>K线的实体 &gt; 1.5 * avg，为长实体，&lt; 0.5 * avg，为小实体，其余为中实体</li>
+</ol>
+
+<h3 id="定义一">定义一</h3>
+
+<p>之后，对看涨吞没的定义可以是：</p>
+
+<ol>
+<li>第一根K线颜色为-1，实体长度没有要求</li>
+<li>第二根K线颜色为1，实体长度非小实体，且收盘价高于第一根K线的开盘价</li>
+</ol>
+
+<p>对启明星的定义可以是：</p>
+
+<ol>
+<li>第一根K线颜色为-1，实体长度为长实体</li>
+<li>第二根K线颜色没有要求，实体长度为小实体</li>
+<li>第三根K线颜色为1，实体长度为长实体，且收盘价高于第一根K线实体的一半（open+close)/2</li>
+</ol>
+
+<p>是不是看起来很简单，妈妈，赚钱好像很容易的样子[doge] 但是，并不</p>
+
+<p>经典书籍中定义的蜡烛图形态在实际应用中会出现很多变形，比如在外汇和黄金市场，跳空极少出现，因此启明星形态和黄昏星形态的星线并不需要跳空的限制。再比如，启明星和黄昏星形态经常不是三根，也可能是四根，五根，六根，甚至十根K线组成。</p>
+
+<p>于是我们在定义一的基础上尝试使用正则表达式</p>
+
+<h3 id="定义二">定义二</h3>
+
+<pre><code class="language-python">self.symbol = bt.If(bt.And(candle.color == -1, candle.body_type == 1), 1, 0)
+# 颜色为黑 且实体为长的K线 标记为第一类
+self.symbol = bt.If(candle.body_type != 1, 2, self.symbol)                
+# 不是长实体的K线标记为第二类
+self.symbol = bt.If(bt.And(candle.color == 1, candle.body_type == 1), 3, self.symbol)
+# 颜色为白 且实体为长的K线 标记为第三类
+
+arr = [str(int(self.symbol[i])) for i in range(-8, 1)]
+word = ''.join(arr)    
+match = re.search('12{1,6}3{1,2}$', word) 
+# 第一类K线只能由一根1组成，第二类K线可由1-6根2组成，第三类K线可由1-2根3组成
+</code></pre>
+
+<p>但它依然不足够好，有好几个方面的问题，1. 在行情冷淡时，由于近期K线的实体都很小，对实体长度的分类会变得非常敏感，出现某些人类不希望看到的结果，2. 这种定义对K线的位置几乎没有要求，判断出一些奇怪的形态（懒得找例子了） 3. 单独的K线并不满足长实体要求，两根合并才满足</p>
+
+<h3 id="定义三">定义三</h3>
+
+<p>在定义二的基础上，由第一根长实体和第二根长实体的代表价做一条直线，如启明星，在这条直线上的实体长度计算出score，如果高于一个边界，即判断形态不成立。</p>
+
+<pre><code class="language-python">def __score(self, i, numsign):
+    arr = np.zeros(i-1)
+    for j in range(1, i):
+        lamb = (j - 0.5)/(i - 1)
+        ref = lamb * self.data0.close[-i] + (1 - lamb) * self.data0.open[0]
+        if numsign == 1:
+            temp = max(self.rep[-j] - ref, 0)
+            elif numsign == -1:
+                temp = max(ref - self.rep[-j], 0)
+                arr[j-1] = math.pow(temp / max(self.data1.candle_body[-i], self.data1.candle_body[0]), self.p.penalty_time)
+    return np.average(arr)
+</code></pre>
+
+<p>差不多是这个意思…（我好像把黑色和白色画错了） 目前的效果差不多达到人工判断的85%左右。</p>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%8810.32.08.png" alt="img" /></p>
+
+<p>15%的问题主要出在这样局部的形态判断是不考虑更大时间周期的，市场是这样的，还是那样的，对它来说没有差别。</p>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%8810.37.50.png" alt="img" /></p>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%8810.38.10.png" alt="img" /></p>
+
+<p>这就牵扯出更大时间周期的问题</p>
+
+<h3 id="1-2-趋势波段系统-道氏理论主要趋势的判断">1.2 趋势波段系统 道氏理论主要趋势的判断</h3>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/%E6%B3%A2%E5%B3%B0%E6%B3%A2%E8%B0%B7%20002.png" alt="img" /></p>
+
+<p>在这篇文章中，我不能解释判断主要趋势的全部规则，并不是出于保密的目的，就是有些太复杂了，</p>
+
+<p>作为人类，我很简单地就遴选出一些峰值，并进行分段，在每一段行情中又遴选出了一些次要的局部极值。我为什么选择了某些局部极值，而没有选择另一些？</p>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/%E6%B3%A2%E5%B3%B0%E6%B3%A2%E8%B0%B7_002.png" alt="img" /></p>
+
+<p>很明显，在矩形1中，我使用了更短的时间周期来寻找局部极值。在矩形2中，使用了更长的时间周期。为什么？我他妈也不知道啊🙂</p>
+
+<p>我之前觉得这事挺简单的，我的脑子很清楚，因为这份规则严谨到对同一幅图判断主要趋势，让一百个人判断，99%的情况下能保持一致性。但当我开始尝试程序化这件事，我发现这件事并没有那么简单…我的脑子到底是怎么回事😤</p>
+
+<p>我们尝试了一些方法，比如说用<a href="https://en.wikipedia.org/wiki/Butterworth_filter">butterworth filter</a>，过滤出低频信号，再用zigzag画出极值，结果粗看还不错</p>
+
+<p><strong>0.2hz</strong></p>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%8811.10.00.png" alt="img" /></p>
+
+<p><strong>0.1hz</strong></p>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%8811.08.51.png" alt="IMG" /></p>
+
+<p><strong>0.05hz</strong></p>
+
+<p><img src="http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%8811.10.46.png" alt="IMG" /></p>
+
+<p>但最后还是放弃了&hellip; 因为如果出于复刻的目的，它和原版的很不一样，我也不知道它到底是怎样运作的。那还不如换个正常的量化指标来判断趋势。</p>
+
+<p>to be continued…</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://jarrywangcn.github.io/post/twenty_billion_light_years_of_loneliness/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://jarrywangcn.github.io/post/twenty_billion_light_years_of_loneliness/">二十億光年的孤獨</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="https://jarrywangcn.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking ID', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
