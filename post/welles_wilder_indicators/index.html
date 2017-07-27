@@ -280,10 +280,9 @@ Current ATR = ([(Prior ATR)*13] + current ATR)/14
 
 <h3 id="1-3-usage">1.3 Usage</h3>
 
-<p><strong>Usage 1</strong></p>
-
-<pre><code>as stop value
-</code></pre>
+<p><strong>Usage 1</strong>
+​<br />
+    as stop value</p>
 
 <p><strong>Usage 2</strong></p>
 
@@ -351,23 +350,20 @@ Average Loss = [(pervious Average Loss)*13 + current Loss] / 14
 
 <h3 id="2-3-usage">2.3 Usage</h3>
 
-<p><strong>Usage 1</strong></p>
+<p><strong>Usage 1</strong>
+​<br />
+    ADX &lt; 30, oversold, buy
+    ADX &lt; 30, overbought, sell</p>
 
-<pre><code>ADX &lt; 30, oversold, buy
-ADX &lt; 30, overbought, sell
-</code></pre>
+<p><strong>Usage 2</strong>
+​<br />
+    ADX &gt; 70, RSI cross over 60, buy
+    ADX &gt; 70, RSI cross below 40, sell</p>
 
-<p><strong>Usage 2</strong></p>
-
-<pre><code>ADX &gt; 70, RSI cross over 60, buy
-ADX &gt; 70, RSI cross below 40, sell
-</code></pre>
-
-<p><strong>Usage 3</strong></p>
-
-<pre><code>shorter RSI &gt; longer RSI, shorter RSI &lt; 30, buy
-shorter RSI &lt; longer RSI, shorter RSI &gt;70, sell
-</code></pre>
+<p><strong>Usage 3</strong>
+​<br />
+    shorter RSI &gt; longer RSI, shorter RSI &lt; 30, buy
+    shorter RSI &lt; longer RSI, shorter RSI &gt;70, sell</p>
 
 <h2 id="3-directional-movement-adx">3. Directional Movement (ADX)</h2>
 
@@ -423,15 +419,15 @@ SAR(n) = SAR(n-1) + AF(n-1)*(EP(n-1) - SAR(n-1))
 SAR = min[SAR(n), LL(n), LL(n-1)]
 </code></pre>
 
-<p>If close price is lower than SAR, trend becomes falling, start to calculate Falling SAR</p>
+<p>If close price is lower than SAR, trend becomes falling, start to calculate Falling SAR
+​<br />
+<strong>Falling SAR</strong>
+​<br />
+    parameter:(acceleration factor (AF): first AF, max AF, step)
+    EP: the lowest low of the current uptrend
+    AF: starting at 0.02, increased by 0.02 each time the EP makes a new low, the maximum is 0.2</p>
 
-<p><strong>Falling SAR</strong></p>
-
-<pre><code>parameter:(acceleration factor (AF): first AF, max AF, step)
-EP: the lowest low of the current uptrend
-AF: starting at 0.02, increased by 0.02 each time the EP makes a new low, the maximum is 0.2
-
-first SAR = high in period (eg. 4 ticks)
+<pre><code>first SAR = high in period (eg. 4 ticks)
 SAR(n) = SAR(n-1) + AF(n-1)*(EP(n-1) - SAR(n-1))
 SAR = max[SAR(n), HH(n), HH(n-1)]
 </code></pre>
@@ -452,11 +448,10 @@ SAR = max[SAR(n), HH(n), HH(n-1)]
 
 <h3 id="4-3-usage">4.3 Usage</h3>
 
-<p><strong>Usage 1</strong></p>
-
-<pre><code>ADX &gt;30, falling SAR -&gt; rising SAR, buy
-ADX &gt;30, rising SAR -&gt; falling SAR, sell
-</code></pre>
+<p><strong>Usage 1</strong>
+​<br />
+    ADX &gt;30, falling SAR -&gt; rising SAR, buy
+    ADX &gt;30, rising SAR -&gt; falling SAR, sell</p>
 
 <h4 id="reference">Reference:</h4>
 
@@ -467,13 +462,13 @@ ADX &gt;30, rising SAR -&gt; falling SAR, sell
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://jarrywangcn.github.io/post/download_from_instagram/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://jarrywangcn.github.io/post/motorcyles_story/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://jarrywangcn.github.io/post/download_from_instagram/">使用python下载instagram图片（中国大陆）</a>
+      <a href="https://jarrywangcn.github.io/post/motorcyles_story/">摩托车的故事</a>
     </nav>
     
   </div>
