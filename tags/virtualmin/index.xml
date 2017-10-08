@@ -11,10 +11,10 @@
     
     <item>
       <title>搬瓦工VPS上搭建Wordpress站点</title>
-      <link>https://jarrywangcn.github.io/post/bandwagon_wordpress/</link>
+      <link>https://jarrywangcn.github.io/post/false/bandwagon_wordpress/</link>
       <pubDate>Wed, 01 Mar 2017 17:10:40 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/bandwagon_wordpress/</guid>
+      <guid>https://jarrywangcn.github.io/post/false/bandwagon_wordpress/</guid>
       <description>&lt;p&gt;个站直接托管在github, 就绕过了买虚拟主机或者服务器的过程，这次&lt;a href=&#34;lookcn.org&#34;&gt;路客中国&lt;/a&gt;的建站一开始为了图省力，用了亚马逊的aws，没有考虑到国内用户的访问问题。&lt;/p&gt;
 
 &lt;p&gt;考虑到提供主要云服务的公司（amazon aws，google）都很容易被墙，所以只能买个主机。（个人偏好没有考虑国内的服务商，好像主机公园的风评还不错）。&lt;/p&gt;

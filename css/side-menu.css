@@ -82,7 +82,7 @@ appears on the left side of the page.
     margin-left: -100px; /* "#menu" width */
     width: 150px;
     position: fixed;
-    top: 25px;
+    top: 30px;
     left: 0;
     bottom: 0;
     z-index: 1000; /* so the menu or its navicon stays above all content */

@@ -11,10 +11,10 @@
     
     <item>
       <title>使用七牛云&#43;dropzone在静态博客中插入图片</title>
-      <link>https://jarrywangcn.github.io/post/upload_photos/</link>
+      <link>https://jarrywangcn.github.io/post/false/upload_photos/</link>
       <pubDate>Thu, 08 Dec 2016 20:21:25 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/upload_photos/</guid>
+      <guid>https://jarrywangcn.github.io/post/false/upload_photos/</guid>
       <description>&lt;p&gt;用wordpress, medium之类的博客服务，想要在文章中插入图片，网站有自己的服务器可以上传图片。如果自己架设网站，就需要把照片上传到互联网，获取网址，才能利用markdown语法在文章中插入图片。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;

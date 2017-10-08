@@ -11,10 +11,10 @@
     
     <item>
       <title>机器学习应用于技术分析交易的思考</title>
-      <link>https://jarrywangcn.github.io/post/machine_learning_with_technical_analysis/</link>
+      <link>https://jarrywangcn.github.io/post/false/machine_learning_with_technical_analysis/</link>
       <pubDate>Sat, 27 May 2017 09:02:39 +0700</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/machine_learning_with_technical_analysis/</guid>
+      <guid>https://jarrywangcn.github.io/post/false/machine_learning_with_technical_analysis/</guid>
       <description>&lt;p&gt;本文仅限于纯技术分析的中低频交易。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -232,10 +232,10 @@ match = re.search(&#39;12{1,6}3{1,2}$&#39;, word)
     
     <item>
       <title>使用hugo和github pages搭建个人博客</title>
-      <link>https://jarrywangcn.github.io/post/buildnewblog/</link>
+      <link>https://jarrywangcn.github.io/post/false/buildnewblog/</link>
       <pubDate>Thu, 08 Dec 2016 17:16:37 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/buildnewblog/</guid>
+      <guid>https://jarrywangcn.github.io/post/false/buildnewblog/</guid>
       <description>&lt;p&gt;之前尝试过很多次搭建个人博客，看到Wilson Lee的网站使用format做portfolio，效果很棒，但收费挺高。买过几个域名，挺久之前买过jarry.wang 到期了也没用过一次，七月买了jarrywang.de。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;

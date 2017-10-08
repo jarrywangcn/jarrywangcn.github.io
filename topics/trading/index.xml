@@ -10,224 +10,212 @@
     <atom:link href="https://jarrywangcn.github.io/topics/trading/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>机器学习应用于技术分析交易的思考</title>
-      <link>https://jarrywangcn.github.io/post/machine_learning_with_technical_analysis/</link>
-      <pubDate>Sat, 27 May 2017 09:02:39 +0700</pubDate>
+      <title>Welles Wilder&#39;s four indicators</title>
+      <link>https://jarrywangcn.github.io/post/false/welles_wilder_indicators/</link>
+      <pubDate>Fri, 24 Feb 2017 15:53:30 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/machine_learning_with_technical_analysis/</guid>
-      <description>&lt;p&gt;本文仅限于纯技术分析的中低频交易。&lt;/p&gt;
+      <guid>https://jarrywangcn.github.io/post/false/welles_wilder_indicators/</guid>
+      <description>
 
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;1978, Welles Wilder published a book named &lt;em&gt;New Concepts in Technical Trading Systems&lt;/em&gt;. In this book, he introduced four indicators to readers, including Average True Range, Relative Strength Index(RSI), Directional Movement Concept(ADX) and Parabolic SAR. Despite being developed many years ago, I am still surprised by their rigorous logics and practicality recent days.&lt;/p&gt;
 
-&lt;h2 id=&#34;1-人工交易系统的程序化转换&#34;&gt;1. 人工交易系统的程序化转换&lt;/h2&gt;
+&lt;h2 id=&#34;1-average-true-range-atr&#34;&gt;1. Average True Range (ATR)&lt;/h2&gt;
 
-&lt;p&gt;近半年做的一个项目是对几个现成的人工交易系统的程序化转换。一个是道氏理论加K线形态的趋势波段系统，一个是布林带加K线形态的反转波段系统。两个系统的原型在人工交易圈都已流传多年，不论是回测还是实盘，都有较好的盈利能力。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/atr-3-qqqqexam.png&#34; alt=&#34;atr&#34; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;1-1-反转波段系统-蜡烛图局部形态的识别&#34;&gt;1.1 反转波段系统 蜡烛图局部形态的识别&lt;/h3&gt;
+&lt;h3 id=&#34;1-1-calculation&#34;&gt;1.1 Calculation&lt;/h3&gt;
 
-&lt;p&gt;先从第二个反转波段系统说起，交易逻辑简单来说，就是当价格触碰布林带上轨且出现反转形态后卖空，当价格触碰布林带下轨且出现反转形态后买多。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;parameter: period = 14
 
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/xauusd%202015%20canle%20pattern%20040%20small.png&#34; alt=&#34;candlepattern&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;布林带上轨出现黄昏星，卖空&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/xauusd%202015%20canle%20pattern%20001%20small.png&#34; alt=&#34;candle_pattern&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;布林带下轨出现看涨吞没，买多&lt;/p&gt;
-
-&lt;p&gt;系统定义的看多信号是看涨吞没和启明星，看空信号是看跌吞没和黄昏星，对这几种经典形态早已有了&amp;rdquo;明确&amp;rdquo;的定义，如《期货市场技术分析》中对吞没形态的反转星线形态的判断标准是：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%889.37.07.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;在吞没形态之前，市场必须处在清晰可辨的上升趋势或下降趋势中，哪怕这个趋势只是短期的。&lt;/li&gt;
-&lt;li&gt;吞没形态必须由2条蜡烛线组成。其中第二根蜡烛线的实体必须覆盖第一根蜡烛线的实体（但是不一定需要吞没前者的上下影线）&lt;/li&gt;
-&lt;li&gt;吞没形态的第二个实体必须与第一个实体的颜色相反。这一条标准有例外的情况，条件是，第一条蜡烛线的实体的必须非常小，小得几乎构成了一根十字线（或者它就是一根十字线）。如此一来，如果在长期的下降趋势之后，一个小小的白色实体为一个巨大的白色实体所吞没，那么也可能构成了底部反转形态。反之，在上升趋势中，如果一个小小的黑色实体为一个巨大的黑色实体所吞没，那么也可能构成了顶部反转形态。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%889.45.50.png&#34; alt=&#34;up_reverse&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;启明星形态：&lt;/p&gt;
-
-&lt;p&gt;先是一根长长的黑色实体，随后是一根小小的实体，并且在这两个实体之间形成一个向下跳空，第三天是一根白色实体，它明显地向上推进了第一天的黑色实体之内。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%889.45.59.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;黄昏星形态：&lt;/p&gt;
-
-&lt;p&gt;第一根是一根长长的白色实体，后一根是一根星线。第三根蜡烛线具有黑色实体，它剧烈地向下扎入第一天的白色实体的内部。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;只要根据开盘价，收盘价，最高价，最低价计算出每根K线的实体长度，再对实体长度的长中短进行定义，比如这样：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;计算之前平均七根K线实体长度的平均值（avg），颜色（收盘价高于开盘价为1，收盘价低于开盘价为-1）&lt;/li&gt;
-&lt;li&gt;K线的实体 &amp;gt; 1.5 * avg，为长实体，&amp;lt; 0.5 * avg，为小实体，其余为中实体&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;定义一&#34;&gt;定义一&lt;/h3&gt;
-
-&lt;p&gt;之后，对看涨吞没的定义可以是：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;第一根K线颜色为-1，实体长度没有要求&lt;/li&gt;
-&lt;li&gt;第二根K线颜色为1，实体长度非小实体，且收盘价高于第一根K线的开盘价&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;对启明星的定义可以是：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;第一根K线颜色为-1，实体长度为长实体&lt;/li&gt;
-&lt;li&gt;第二根K线颜色没有要求，实体长度为小实体&lt;/li&gt;
-&lt;li&gt;第三根K线颜色为1，实体长度为长实体，且收盘价高于第一根K线实体的一半（open+close)/2&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;是不是看起来很简单，妈妈，赚钱好像很容易的样子[doge] 但是，并不&lt;/p&gt;
-
-&lt;p&gt;经典书籍中定义的蜡烛图形态在实际应用中会出现很多变形，比如在外汇和黄金市场，跳空极少出现，因此启明星形态和黄昏星形态的星线并不需要跳空的限制。再比如，启明星和黄昏星形态经常不是三根，也可能是四根，五根，六根，甚至十根K线组成。&lt;/p&gt;
-
-&lt;p&gt;于是我们在定义一的基础上尝试使用正则表达式&lt;/p&gt;
-
-&lt;h3 id=&#34;定义二&#34;&gt;定义二&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;self.symbol = bt.If(bt.And(candle.color == -1, candle.body_type == 1), 1, 0)
-# 颜色为黑 且实体为长的K线 标记为第一类
-self.symbol = bt.If(candle.body_type != 1, 2, self.symbol)                
-# 不是长实体的K线标记为第二类
-self.symbol = bt.If(bt.And(candle.color == 1, candle.body_type == 1), 3, self.symbol)
-# 颜色为白 且实体为长的K线 标记为第三类
-
-arr = [str(int(self.symbol[i])) for i in range(-8, 1)]
-word = &#39;&#39;.join(arr)    
-match = re.search(&#39;12{1,6}3{1,2}$&#39;, word) 
-# 第一类K线只能由一根1组成，第二类K线可由1-6根2组成，第三类K线可由1-2根3组成
+TR = max(current High - current Low, current High - previous Close, current Low - previous Close)
+Current ATR = ([(Prior ATR)*13] + current ATR)/14
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;但它依然不足够好，有好几个方面的问题，1. 在行情冷淡时，由于近期K线的实体都很小，对实体长度的分类会变得非常敏感，出现某些人类不希望看到的结果，2. 这种定义对K线的位置几乎没有要求，判断出一些奇怪的形态（懒得找例子了） 3. 单独的K线并不满足长实体要求，两根合并才满足&lt;/p&gt;
+&lt;h3 id=&#34;1-2-features&#34;&gt;1.2 Features&lt;/h3&gt;
 
-&lt;h3 id=&#34;定义三&#34;&gt;定义三&lt;/h3&gt;
+&lt;p&gt;ATR is not a directional indicator, it just measures volatility that reflects the degree of interest or disinterest in a move. A bullish reversal with an increase in ATR would show strong buying pressure and reinforce the reversal. A bearish support break with an increase in ATR would show strong selling pressure and reinforce the support break.&lt;/p&gt;
 
-&lt;p&gt;在定义二的基础上，由第一根长实体和第二根长实体的代表价做一条直线，如启明星，在这条直线上的实体长度计算出score，如果高于一个边界，即判断形态不成立。&lt;/p&gt;
+&lt;p&gt;ATR is absolute, not relative, high priced securities generally have higher ATR values, low priced securities generally have lower ATR values.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def __score(self, i, numsign):
-    arr = np.zeros(i-1)
-    for j in range(1, i):
-        lamb = (j - 0.5)/(i - 1)
-        ref = lamb * self.data0.close[-i] + (1 - lamb) * self.data0.open[0]
-        if numsign == 1:
-            temp = max(self.rep[-j] - ref, 0)
-            elif numsign == -1:
-                temp = max(ref - self.rep[-j], 0)
-                arr[j-1] = math.pow(temp / max(self.data1.candle_body[-i], self.data1.candle_body[0]), self.p.penalty_time)
-    return np.average(arr)
+&lt;h3 id=&#34;1-3-usage&#34;&gt;1.3 Usage&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Usage 1&lt;/strong&gt;
+​&lt;br /&gt;
+    as stop value&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Usage 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;the width of BB &amp;lt; a, ATR &amp;gt; m, buy
+the width of BB &amp;gt; b, ATR &amp;lt; n, sell
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;差不多是这个意思…（我好像把黑色和白色画错了） 目前的效果差不多达到人工判断的85%左右。&lt;/p&gt;
+&lt;h2 id=&#34;2-relative-strength-index-rsi&#34;&gt;2. Relative Strength Index (RSI)&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%8810.32.08.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-1-calculation&#34;&gt;2.1 Calculation&lt;/h3&gt;
 
-&lt;p&gt;15%的问题主要出在这样局部的形态判断是不考虑更大时间周期的，市场是这样的，还是那样的，对它来说没有差别。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;parameter: period = 14
 
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%8810.37.50.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+RSI = 100 - 100/(1+RS)
+RS = Average Gain / Average Loss
 
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%8810.38.10.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+First Average Gain = Sum of Gains over the past periods / 14
+First Average Loss = Sum of Losses over the past periods / 14
 
-&lt;p&gt;这就牵扯出更大时间周期的问题&lt;/p&gt;
+Average Gain = [(pervious Average Gain)*13 + current Gain] / 14
+Average Loss = [(pervious Average Loss)*13 + current Loss] / 14
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;1-2-趋势波段系统-道氏理论主要趋势的判断&#34;&gt;1.2 趋势波段系统 道氏理论主要趋势的判断&lt;/h3&gt;
+&lt;h3 id=&#34;2-2-features&#34;&gt;2.2 Features&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E6%B3%A2%E5%B3%B0%E6%B3%A2%E8%B0%B7%20002.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;RSI is a momentum oscillator that measures the speed and change of price movements. It is relative, can be compared among different securities. RSI oscillates between zero and 100. Traditionally, it&amp;rsquo;s considered overbought when above 70 and oversold below 30.&lt;/p&gt;
 
-&lt;p&gt;在这篇文章中，我不能解释判断主要趋势的全部规则，并不是出于保密的目的，就是有些太复杂了，&lt;/p&gt;
+&lt;p&gt;Signals can also be generated by looking for divergences, failure swings and centerline crossovers. RSI can also be used to identify the general trend.&lt;/p&gt;
 
-&lt;p&gt;作为人类，我很简单地就遴选出一些峰值，并进行分段，在每一段行情中又遴选出了一些次要的局部极值。我为什么选择了某些局部极值，而没有选择另一些？&lt;/p&gt;
+&lt;h4 id=&#34;divergence-and-positive-negative-reversal&#34;&gt;Divergence and Positive-negative Reversal&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E6%B3%A2%E5%B3%B0%E6%B3%A2%E8%B0%B7_002.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Divergences means that directional momentum does not confirm price. A bearish divergence occurs when the underlying security makes a higher high and RSI forms a lower high. A bullish divergence occurs when the underlying security makes a lower low and RSI forms a higher low.&lt;/p&gt;
 
-&lt;p&gt;很明显，在矩形1中，我使用了更短的时间周期来寻找局部极值。在矩形2中，使用了更长的时间周期。为什么？我他妈也不知道啊🙂&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/rsi-5-ebaydiverg.png&#34; alt=&#34;rsisuccessfuldivergence&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;我之前觉得这事挺简单的，我的脑子很清楚，因为这份规则严谨到对同一幅图判断主要趋势，让一百个人判断，99%的情况下能保持一致性。但当我开始尝试程序化这件事，我发现这件事并没有那么简单…我的脑子到底是怎么回事😤&lt;/p&gt;
+&lt;p&gt;A negative Reversal occurs when the underlying security makes a lower high and RSI forms a higher high.&lt;/p&gt;
 
-&lt;p&gt;我们尝试了一些方法，比如说用&lt;a href=&#34;https://en.wikipedia.org/wiki/Butterworth_filter&#34;&gt;butterworth filter&lt;/a&gt;，过滤出低频信号，再用zigzag画出极值，结果粗看还不错&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/rsi-12-sbuxprvsl.png&#34; alt=&#34;negativereversal&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;0.2hz&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A positive Reversal occurs when the underlying security makes a higher low and RSI forms a lower low.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%8811.10.00.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/rsi-11-mmmprvsl.png&#34; alt=&#34;positivereversal&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;0.1hz&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Divergences are misleading in a strong trend.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%8811.08.51.png&#34; alt=&#34;IMG&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/rsi-6-spydiverg.png&#34; alt=&#34;rsiwrongdivergence&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;0.05hz&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;failure-swing&#34;&gt;Failure Swing&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-05-27%20%E4%B8%8A%E5%8D%8811.10.46.png&#34; alt=&#34;IMG&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/rsi-7-rimmbfs.png&#34; alt=&#34;bullishfailureswing&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;但最后还是放弃了&amp;hellip; 因为如果出于复刻的目的，它和原版的很不一样，我也不知道它到底是怎样运作的。那还不如换个正常的量化指标来判断趋势。&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s like double or three bottom reversal at RSI.&lt;/p&gt;
 
-&lt;h2 id=&#34;2-k线系统在量化投资中的应用&#34;&gt;2. K线系统在量化投资中的应用&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/rsi-8-txnbfs.png&#34; alt=&#34;bearishfailureswing&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;计算机无与伦比的计算能力和执行能力使量化投资越来越火了。但绝大多数的量化投资策略是由各类指标和影响因子组成的模型，极少使用蜡烛图技术分析，就算使用，大多也局限在类似“定义一”的小时间周期形态的机械定义。&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s like double or three top reversal at RSI.&lt;/p&gt;
 
-&lt;p&gt;不谈基本面分析的各种数据，单从如macd, adx, rsi之类的指标来说，都是将价格经过公式的计算得到，是价格的衍生，平滑必然有延迟，相对于价格本身是滞后的，如果希望延迟小就会得到很多噪音和伪信号。&lt;/p&gt;
+&lt;h4 id=&#34;trade-id&#34;&gt;Trade ID&lt;/h4&gt;
 
-&lt;p&gt;当然，并不是说这些指标一无是处，两者都是描述市场行为的方法，在原先的人工交易系统中，我判断单边市快速移动的标准是：&lt;/p&gt;
+&lt;p&gt;Support in Bull market: RSI between 40 to 50
+&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/rsi-9-spybull.png&#34; alt=&#34;supportinbull&#34; /&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;单边市：&lt;/p&gt;
+&lt;p&gt;Resistance in Bear market: RSI between 50-60
+&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/rsi-10-usdbear.png&#34; alt=&#34;resistanceinbear&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;以单边上涨为例，单边 上涨的行情，相对于波浪式上涨（涨一大波，回调一小波），是一种线性上涨&lt;/p&gt;
+&lt;h3 id=&#34;2-3-usage&#34;&gt;2.3 Usage&lt;/h3&gt;
 
-&lt;p&gt;快速移动：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage 1&lt;/strong&gt;
+​&lt;br /&gt;
+    ADX &amp;lt; 30, oversold, buy
+    ADX &amp;lt; 30, overbought, sell&lt;/p&gt;
 
-&lt;p&gt;相对于慢速移动（斜率小于1），快速移动的斜率大于1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage 2&lt;/strong&gt;
+​&lt;br /&gt;
+    ADX &amp;gt; 70, RSI cross over 60, buy
+    ADX &amp;gt; 70, RSI cross below 40, sell&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%871small.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Usage 3&lt;/strong&gt;
+​&lt;br /&gt;
+    shorter RSI &amp;gt; longer RSI, shorter RSI &amp;lt; 30, buy
+    shorter RSI &amp;lt; longer RSI, shorter RSI &amp;gt;70, sell&lt;/p&gt;
 
-&lt;p&gt;而在程序化交易系统中，我结合了短周期（10）的布林带带宽与中等周期（20）的ADX作为判断标准。&lt;/p&gt;
+&lt;h2 id=&#34;3-directional-movement-adx&#34;&gt;3. Directional Movement (ADX)&lt;/h2&gt;
 
-&lt;p&gt;个人认为，K线（即蜡烛图技术）相对于指标最大的优势是，它通过四类价格（开盘价，收盘价，最高价，最低价）分析价格变动的交易行为和交易者心理。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/adx-4-mhsbull.png&#34; alt=&#34;whipsaws&#34; /&gt;&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%9B%BE%E7%89%87.png&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/adx-5-tbear.png&#34; alt=&#34;greatexamples&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;在分析倒锤子线时，有一点非常重要：当倒锤子线出现后，必须等待下一个时间单位的看涨信号对它加以验证。倒锤子线的验证信号可能采取下面这样的形式。&lt;/p&gt;
+&lt;h3 id=&#34;3-1-calculation&#34;&gt;3.1 Calculation&lt;/h3&gt;
 
-&lt;p&gt;倒锤子线次日的开市价向上跳空，超过了倒锤子线的实体。向上跳空的距离越大，验证信号就越强烈。还可能采取另外一种形式：倒锤子线次日是一根白色蜡烛线，并且它的价格均处在较高的水平。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;parameter: period = 14
 
-&lt;p&gt;在倒锤子蜡烛线当日，市场的开始价位于当日最低价处，或者接近最低价。&lt;/p&gt;
+1. Calculate True Range (TR), Plus Directional Movement (+DM), Minus Directional Movement (-DM)
+2. Calculate the sum of TR, +DM, -DM of the period. (TR14, +DM14, -DM14)
+3. 14-day Plus Directional Indicator (+DI14) = TR14/+DM14
+4. 14-day Plus Directional Indicator (+DI14) = TR14/-DM14
+5. DX = diff(+DI14, -DI14) / sum(+DI14, -DI14)
+6. current ADX = ((previous ADX)*13 + current DX) / 14  
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;后来，市场上涨了，但是牛方无力将上涨行情维持下去。最后，市场收市于当日最低价，或者在最低价的附近。为什么这样的蜡烛线竟然是潜在的看涨反转信号呢？其解答必须从下一天的行情中寻找。&lt;/p&gt;
+&lt;h3 id=&#34;3-2-features&#34;&gt;3.2 Features&lt;/h3&gt;
 
-&lt;p&gt;如果下一日市场开始于倒锤子线的实体之上，则意味着凡是在倒锤子线当日开市和收市时卖出做空的人现在统统处于亏损状态。市场维持在倒锤子线实体之上的时间越久，则上述空头止损出市的可能性越大。在这种情况下，首先可能引发空头平仓上涨行情，然后，空头平仓上涨行情可能促使企图抄底做多的人跟风买入。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;+DI, -DI determine the direction of the trend, ADX determine the strength of the trend.&lt;/p&gt;
 
-&lt;p&gt;一个主观交易员的交易系统是，他认为任何市场，都会有庄家（包括外汇市场）这些行为会在K线形态中留下信号，他的交易逻辑就是六类形态出现，进行交易。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ADX &amp;lt; 20, non-trending
+20 &amp;lt; ADX &amp;lt; 50, trending
+ADX &amp;gt; 50, strong trending
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;我认识不少只依靠K线的主观交易员，但他们不会写程序，认识一些程序员，他们更偏好于使用比较好量化的指标。&lt;/p&gt;
+&lt;h3 id=&#34;3-3-usage&#34;&gt;3.3 Usage&lt;/h3&gt;
 
-&lt;p&gt;当我接触到程序化交易时，最想做的是让计算机能够做形态识别，但第一部分介绍我在这个方向遇到的困难。即使是我的工程能力提高了（或者找到更厉害的程序员），也觉得没法把每条判断规则explicit地讲清楚。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Usage 1&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;3-机器学习在量化投资中的应用&#34;&gt;3. 机器学习在量化投资中的应用&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;ADX &amp;gt; 20, +DI cross above -DI, buy
+ADX &amp;gt; 20, -DI cross above +DI, sell
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;（这个部分很多都是二次转手的信息，应该存在很多错误…（期待三个月、半年后的进步）&lt;/p&gt;
+&lt;h2 id=&#34;4-parabolic-sar&#34;&gt;4. Parabolic SAR&lt;/h2&gt;
 
-&lt;p&gt;之前，工作伙伴曾经研究过好一段时间机器学习设计交易系统的可能性，后来说不行，因为金融数据不同于语言识别，图像分析，疾病检测等数据，不具有一致性（目前不知道一致性指的是什么）好像就是没有足够多的金融数据来训练，也不能运用一些统计方法生成一些训练样本。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/psar-8-bbyms10.png&#34; alt=&#34;sarlowms&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;以深度学习的人脸识别为例，输入训练样本，经过第一层得到一些feature（比如说边缘），再根据第一层的feature得到另一些feature（比如说五官的位置），依次类推，最后输出人脸识别的结果。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/psar-9-bbyms20.png&#34; alt=&#34;sarhighms&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;即使不考虑样本数据不足，运用机器学习设计交易系统，输入训练样本，因为信息中过多的噪音，经过第一层得到的feature可能就已经是错的了&amp;hellip; 之后，就不用说下去了&lt;/p&gt;
+&lt;h3 id=&#34;4-1-calculation&#34;&gt;4.1 Calculation&lt;/h3&gt;
 
-&lt;p&gt;但如果只是想用机器学习来判断出K线形态，如震荡市，横盘区，黄昏星，启明星，锤子线，这些是可以做到的，可以人为确认这些结果是否正确。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rising SAR&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;这应该是我之后一段时间想做的。虽然很多问题现在想的大概率是错的，也想不明白，比如说我给他的数据集是我遴选出的这些形态还是全部时间的数据扔给它… 如果有些情况下我也无法下明确的判断怎么办，对黑箱总是存在一些恐惧。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;parameter:(acceleration factor (AF): first AF, max AF, step)
+EP: The highest high of the current uptrend
+AF: starting at 0.02, increased by 0.02 each time the EP makes a new high, the maximum is 0.2
 
-&lt;h2 id=&#34;4-一些废话&#34;&gt;4. 一些废话&lt;/h2&gt;
+first SAR = low in period (eg. 4 ticks)
+SAR(n) = SAR(n-1) + AF(n-1)*(EP(n-1) - SAR(n-1))
+SAR = min[SAR(n), LL(n), LL(n-1)]
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;从顺化到胡志明长达二十多小时的大巴上，在睡眠与发呆的间隔中读完了乔治·奥威尔的《战时日记》，我很好奇奥威尔作为普通民众是如何面对社会转向过程中个人的渺小感，当然，他最后写出了《动物农场》和《一九八四》，证明了自己的智识和敏锐。与此同时，人类在与AI的围棋之争中落败，我并不是担忧AI有天统治了世界。而是你知道这个世界上在发生一些变化，有很多人在working on it，拓展人类知识甚至是世界的疆界，而你别说出力了，你连懂都听不懂😂&lt;/p&gt;
+&lt;p&gt;If close price is lower than SAR, trend becomes falling, start to calculate Falling SAR
+​&lt;br /&gt;
+&lt;strong&gt;Falling SAR&lt;/strong&gt;
+​&lt;br /&gt;
+    parameter:(acceleration factor (AF): first AF, max AF, step)
+    EP: the lowest low of the current uptrend
+    AF: starting at 0.02, increased by 0.02 each time the EP makes a new low, the maximum is 0.2&lt;/p&gt;
 
-&lt;p&gt;近两三年，特别是近一年非常明显，我对作为个体的人类以及过去的兴趣，越来越小了。我不再热衷于探访许多的历史遗迹，历史方面的书也读得越来越少，对于某些群体已经被抛下的事实，我抱有越来越少的关注。我更好奇现在这个世界在发生什么，将来可能会发生什么，有哪些是想象不到的。世界变得太快了，很容易就忘记往后看一眼。&lt;/p&gt;</description>
+&lt;pre&gt;&lt;code&gt;first SAR = high in period (eg. 4 ticks)
+SAR(n) = SAR(n-1) + AF(n-1)*(EP(n-1) - SAR(n-1))
+SAR = max[SAR(n), HH(n), HH(n-1)]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If close price is higher than SAR, trend becomes rising, start to calculate Falling SAR&lt;/p&gt;
+
+&lt;h3 id=&#34;4-2-features&#34;&gt;4.2 Features&lt;/h3&gt;
+
+&lt;p&gt;SAR stands for &amp;lsquo;stop and reverse&amp;rsquo;, it trails price as the trend extends over time. The indicator is below prices when prices are rising and above prices when prices are falling. It can protects profits.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;AF:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Step Increments: SAR sensitivity can be decreased by decreasing the Step. SAR sensitivity can be increased by increasing the step. The indicator will reverse too often if the step is set too high. This will produce whipsaws and fail to capture the trend.&lt;/p&gt;
+
+&lt;p&gt;Maximum Step: lower max step = less sensitivity, higher max step = more sensitivity and more reversals.&lt;/p&gt;
+
+&lt;p&gt;The Parabolic SAR works best with trending securities, Each security should be evaluated based on its own characteristics.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-3-usage&#34;&gt;4.3 Usage&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Usage 1&lt;/strong&gt;
+​&lt;br /&gt;
+    ADX &amp;gt;30, falling SAR -&amp;gt; rising SAR, buy
+    ADX &amp;gt;30, rising SAR -&amp;gt; falling SAR, sell&lt;/p&gt;
+
+&lt;h4 id=&#34;reference&#34;&gt;Reference:&lt;/h4&gt;
+
+&lt;p&gt;All example pictures are from &lt;a href=&#34;http://stockcharts.com/school/&#34;&gt;CHARTSCHOOL&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
