@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>99 problems</title>
-    <link>https://jarrywangcn.github.io/topics/programming/index.xml</link>
+    <link>https://jarrywangcn.github.io/tags/programing/index.xml</link>
     <description>Recent content on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <atom:link href="https://jarrywangcn.github.io/topics/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jarrywangcn.github.io/tags/programing/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Advent of Code 2018&amp;2019 上星之旅</title>
@@ -136,112 +136,6 @@ part2又考算法，又考时间复杂度，没做出来。&lt;/p&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;这两个月还是有进步一丢丢&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>使用python下载instagram图片（中国大陆）</title>
-      <link>https://jarrywangcn.github.io/post/download_from_instagram/</link>
-      <pubDate>Sat, 21 Jan 2017 20:47:56 +0800</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/post/download_from_instagram/</guid>
-      <description>&lt;h1 id=&#34;0&#34;&gt;0.&lt;/h1&gt;
-
-&lt;p&gt;本科毕业论文做的是默克尔和奥巴马instagram形象对比分析，当年半点程序背景都没有（拿chrome查看源代码找图片链接到是会的）但instagram似乎挺不支持这个行为，源代码里都找不到图片地址。所以，当初我手动截图（加排序）了两个人官方账号里的所有图片。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;所以，稍微学习了一点编程就想把这件事实现了。&lt;/p&gt;
-
-&lt;h1 id=&#34;1-instaraider-instalooter&#34;&gt;1. instaRaider &amp;amp; instaLooter&lt;/h1&gt;
-
-&lt;p&gt;谷歌搜索了下，发现已经有人造好了轮子&lt;a href=&#34;https://github.com/akurtovic/InstaRaider&#34;&gt;instaRaider&lt;/a&gt;，而且把怎么造轮子的过程都写清楚了。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.amirkurtovic.com/blog/how-to-download-photos-from-instagram-a-hack/&#34;&gt;How to download photos from Instagram – A Hack&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;这个项目吸引我的地方是它不需要instagram的api，所以也不需要授权(authentication)。&lt;/p&gt;
-
-&lt;p&gt;但这个项目已经停止维护了，instaRaider的作者在readme里推荐了另一个项目&lt;a href=&#34;https://github.com/althonos/InstaLooter&#34;&gt;instaLooter&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;当我看到instaLooter的readme里使用方式只有两行代码时我的内心好喜悦啊
-​&lt;br /&gt;
-    $ instaLooter &lt;username&gt; &lt;directory&gt; [options]
-    $ instaLooter hashtag &lt;hashtag&gt; &lt;directory&gt; [options]&lt;/p&gt;
-
-&lt;p&gt;然后就报错了&amp;hellip;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;requests.exceptions.ConnectionError: HTTPSConnectionPool(host=&#39;www.instagram.com&#39;, port=443): Max retries exceeded with url: /jarrywan9/ (Caused by NewConnectionError(&#39;&amp;lt;requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x10402a4d0&amp;gt;: Failed to establish a new connection: [Errno 65] No route to host&#39;,))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;原因是我instagram在国内被封了&amp;hellip;而我翻墙走的是shadowsocks&lt;/p&gt;
-
-&lt;h1 id=&#34;2-利用proxychains解决shadowsocks非全局代理问题&#34;&gt;2. 利用proxychains解决shadowsocks非全局代理问题&lt;/h1&gt;
-
-&lt;p&gt;下面开始感恩前室友小讲堂：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;代理通常分两步：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;把线路搞起来 e.g. shadowsocks或vpn&lt;/li&gt;
-&lt;li&gt;让程序流量走这个线路&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;代理可分为全局代理和非全局代理。&lt;/p&gt;
-
-&lt;p&gt;全局代理是全部程序的流量都走代理，譬如通常的vpn。&lt;/p&gt;
-
-&lt;p&gt;而shadowsocks是非全局的，默认是连上之后本地开一个服务端口 譬如1080，然后通常把浏览器流量设置到走这个端口。ss本质是一个socks5服务，需要监听一个本地端口，这个就是ss服务跑起来以后在你机器上面的服务端口(其他程序譬如浏览器会把流量发到这个端口，由ss发到境外服务器）（我目前用的shadowsocks软件是shadowsocksx2，端口是写死了的1080）&lt;/p&gt;
-
-&lt;p&gt;解决方案有两个：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;用一个全局的翻墙方案 譬如vpn 这样这个python脚本的流量默认翻墙了&lt;/li&gt;
-&lt;li&gt;仍然是shadowsocks 不过设置程序流量走ss这个服务端口&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;// 考虑第二个方案的实现成本比让前室友重新设置个vpn给我低一些 所以选择了方案二）&lt;/p&gt;
-
-&lt;p&gt;此时，要用到另外一个轮子 &lt;a href=&#34;https://github.com/haad/proxychains&#34;&gt;proxychains&lt;/a&gt;,
-设置方法参照了&lt;a href=&#34;http://www.tuicool.com/articles/rUNFF3&#34;&gt;利用proxychains在终端使用socks5代理&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# proxychains安装
-git clone https://github.com/rofl0r/proxychains-ng.git
-cd proxychains-ng
-./configure
-make &amp;amp;&amp;amp; make install
-cp ./src/proxychains.conf /etc/proxychians.conf
-cd .. &amp;amp;&amp;amp; rm -rf proxychains-ng
-
-# 编辑proxychains配置
-# 需要学习下vim的操作，配置文件修改需要管理员权限 mac环境下前面加sudo
-vim /etc/proxychains.conf
-
-# 将socks4 127.0.0.1 9095改为
-socks5  127.0.0.1 1080  //1080改为你自己的端口
-
-# 在需要代理的命令前加上 proxychains4，如：
-proxychains4 instaLooter jarrywan9 ./Downloads/jarrywan9
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;其他需要注意的一些事情：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;每个轮子都有Requirements，要确认下是否都安装了&lt;/li&gt;
-&lt;li&gt;proxychains用$ brew install proxychains 也可以安装，我是brew刚好需要更新，但死也更新不了&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;4-总结&#34;&gt;4. 总结&lt;/h1&gt;
-
-&lt;ol&gt;
-&lt;li&gt;学习编程时要尝试解决实际问题&lt;/li&gt;
-&lt;li&gt;有轮子的时候就用轮子，避免重复劳动（虽然现在我也写不出&amp;hellip;）&lt;/li&gt;
-&lt;li&gt;开源项目的readme要认真写，&lt;a href=&#34;https://github.com/althonos/InstaLooter&#34;&gt;instaLooter&lt;/a&gt;的小哥readme和代码写的都很干净&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;最后晒一张成果 instagram@will_yinan&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/Screen%20Shot%202017-01-21%20at%209.58.43%20PM.png&#34; alt=&#34;will_yinan&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
