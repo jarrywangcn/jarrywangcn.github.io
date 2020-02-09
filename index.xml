@@ -1,949 +1,313 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>99 problems</title>
-    <link>https://jarrywangcn.github.io/index.xml</link>
+    <link>http://example.org/</link>
     <description>Recent content on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <copyright>© Copyright notice</copyright>
     <lastBuildDate>Sun, 29 Dec 2019 19:35:15 +0800</lastBuildDate>
-    <atom:link href="https://jarrywangcn.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>二零一九小记</title>
-      <link>https://jarrywangcn.github.io/post/2019_summary/</link>
+      <link>http://example.org/posts/2019_summary/</link>
       <pubDate>Sun, 29 Dec 2019 19:35:15 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/2019_summary/</guid>
-      <description>&lt;p&gt;2018年没有写小记，现在对全年的状态已经有些恍惚。所以今年还是要写。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;19年的第一天说，&amp;rdquo;14年在和食欲、自我怀疑斗争 15-16年在和酒瘾、抑郁、自我否定斗争 17年在和焦虑、无意义感斗争 18年可以说是第一次获得inner peace的一年。&amp;rdquo; 这个年末最想说，自己是个幸福的人（？今年真的很开心，觉得一切都很好。特别是朋友们，每次见朋友心里可能都在唱歌（？）最大的感概是：二十岁以前都在和精神创伤struggle，时不时会伤害到身边的人，今年发现自己常常能给朋友们带来快乐和安慰，挺开心的。&lt;/li&gt;
-&lt;li&gt;负面影响是过于平和，甚至有点快乐的虚假。时常感到自己把负面的情绪或者是想法刻意地忽略。对细微之处的感受力也下降了。有时候都要对自己说：不要太开心，要思考！&lt;/li&gt;
-&lt;li&gt;香港的事对我影响很大，第一次想离开，中间有些应急创伤的表现，之一是年中对中国的东西有抵触的情绪，看书基本不看国内作者，小说读原文，也不想读国内历史。模模糊糊中在自我认知中突出了自己是南方人，感觉是在不喜欢主流中国叙事和喜欢中国的某些部分的折衷选择，毕竟我们江南人儒学都是黄宗羲顾炎武，还有东南互保。&lt;/li&gt;
-&lt;li&gt;上半年和下半年挺不一样的，上半年又拧巴了，浑浑噩噩的，一边喝了很多酒（可能超过三次喝多了），一边“疯狂跑步”，获得了5km25min以内的成就（这是今年最后一次说了，再也不说了&amp;hellip;）马来回来突然心变宽阔了，做了个决定，努力学习，九月很努力地学了雅思，考了7.5（我还挺擅长考试的&amp;hellip;）十月弄材料，十一月十二月是算法。一边工作一边学习，时间梭梭过去。下半年着实很忙碌，又要赚钱又要照顾弟弟又要学习还要锻炼/读书/喝酒etc&amp;hellip; 忙碌后很难有经历讨论抽象问题和大问题。&lt;/li&gt;
-&lt;li&gt;还是没有对象的一年，连和人建立友情关系都是每年一两个的。但也意识到，多元的关系支撑着我的生活。也想明白，在relationship上有点想settle down，但在生活上还不想settle down。我也不是能换个生活状态就换个对象的人，当然身边也有朋友辗转多年辗转世界各地最后生活上也都settle down的，这……我不奢求。&lt;/li&gt;
-&lt;li&gt;有天说“作为业余读者，我应该既不左派又不女权，自己给自己贴标签是历史社会和类型小说爱好者，平等自由观念的绝对主义者，在文化多样性上是个相对主义者，着迷于历史的细节和复杂性，可以聊抽象建构，可以解构但没推到极端的虚无。即使世界是幻象，这个幻想也足够真实。几乎讨厌所有的“本质”问题，可以快速地对事物下判断，即使是错了也没事，知道错了再调整就可以了。” 这差不多总结了现在的三观，还发现如果硬要套标签，以前我是个政治左，经济右，现在经济光谱逐渐左移。例如，以前我非常支持自由市场，不喜欢任何形式的税收和福利制度。但现在我的观点是：不是经济而是政治经济，经济力量会自然地寻找政治力量的合谋。在这种情况下，只有用理想的好的政治力量去建立保护弱者的制度。（假设制度合理）&lt;/li&gt;
-&lt;li&gt;《一七年小记》里说“去年一月的感受是“最好把所有的输入渠道都‘调教’成可流动的状态，大概的意思是社交上想要认识新朋友，渠道abc有一些备选，也会有些新的人加入；信息上控制信息源，关注的话题肯定有，另外也会时不时出现一些没接触的概念、问题。以此逐渐延伸自己的触角。”过了一年，这个想法依然持续。” 今年还想到沟通和理解的问题，思路有点像17年和朋友谈过的&lt;a href=&#34;https://jarrywangcn.github.io/post/whatsaboutmeaning/&#34;&gt;定义&lt;/a&gt;“所有对客观存在的评价都是一对客观存在（reality）和观点（viewpoint）的couple，客观存在只有一个，但观点会有我的观点（Vi），个体A的观点（Va），某些个体组成的某个群体的观点（Vgroup），主流的观点（Vmainstream）甚至理论上存在一个全集的观点（Vall）” 我想的是，如果两个人聊起同一个事物，脑内是不同的圆，并集有大有小。比方说性别，生理性别+心理性别都为女性，大家都认同是女性，很容易在并集里。但边缘的case，生理性别女+心理性别男在不同人的定义里更可能不一样。其他事物也是一样的。存在一段时间的领域，都有一些不能躲避的问题或者概念或者其他什么，不管是什么路径，总会遇到的。大多数领域都有经典化的整理过程，新领域就是一片混沌的战场了。既要看到作为结果的经典，也要看到结果之前的可能性。所以学习更多，把触角延伸到更多的领域，还可以增进和别人的交流（? 这也是我为什么越来越少不跟陌生人沟通，任何人的观念是受限于ta的成长经历甚至是其他学科知识，成年人是没法从单一点驳倒的，前置太多了，三观不是个纯思辨问题，是实践相关的。&lt;/li&gt;
-&lt;li&gt;不能适应国内大都市生活了。
-
-&lt;ol&gt;
-&lt;li&gt;这不是说我不爱城市了。我对城市的兴趣引导我读了很多书。&lt;a href=&#34;https://www.douban.com/doulist/45028941/&#34;&gt;城市研究 地方史 当代移民&lt;/a&gt;。至今也能享受大城市的快乐，每次去上海探亲找朋友玩都很开心。但知道我没有承受其中的代价，会让我有罪恶感。&lt;/li&gt;
-&lt;li&gt;我的三观就是反消费主义的。虽然偶尔在社交上为了做个平和的人，不怎么批判。在我的三观里，所有过度的买买买，占有超出自己需要的物品就是不好的。如果兴趣爱好是昆虫，收集了超多的标本，这是另一回事。这里我自己也没想清楚，或者说，我理想的是尽量把物品作为物品，而不是更看重它背后的符号和一些其他的东西。&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;有些特别开心的事：
-
-&lt;ol&gt;
-&lt;li&gt;二月在东湖公园发现特别美的梅花树（初恋梅花树）&lt;/li&gt;
-&lt;li&gt;跑了两次杭州两次上海，交到了两个新朋友！&lt;/li&gt;
-&lt;li&gt;旅行去了十多天广西，十多天马来西亚，短暂去了天台、泉州、广州、福州。&lt;/li&gt;
-&lt;li&gt;夏天的芒果和西瓜很好吃。&lt;/li&gt;
-&lt;li&gt;春天和夏天经常逛园子。&lt;/li&gt;
-&lt;li&gt;寄的杨梅朋友们都很喜欢。&lt;/li&gt;
-&lt;li&gt;隔了多年又从音乐中获得快乐。&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;还干了些乱七八糟的事：（发现自己真是个爱学习的人&amp;hellip;但通常玩到80分就懒得挖下去了&amp;hellip;
-
-&lt;ol&gt;
-&lt;li&gt;冬天练了一段时间瑜伽（上墙倒立！）&lt;/li&gt;
-&lt;li&gt;精酿啤酒的兴趣爱好有80分，基本上所有的品类，市面上能见到的大厂小厂都喝过吧。&lt;/li&gt;
-&lt;li&gt;咖啡就简单喝了下，会做手冲了。&lt;/li&gt;
-&lt;li&gt;是个出门会带跑鞋和茶具的没有条件也要创造条件的年轻人了。&lt;/li&gt;
-&lt;li&gt;做饭比去年好吃了一丢丢。&lt;/li&gt;
-&lt;li&gt;更新了12篇博客，3篇是读书总结，写了两篇认真的书评。（虽然不行，但好像还能写？）&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;看到年初的某个flag。
-
-&lt;ol&gt;
-&lt;li&gt;读12本英文书（10/12）&lt;/li&gt;
-&lt;li&gt;读5本德语书（0/5）&lt;/li&gt;
-&lt;li&gt;锻炼150次（151/150）&lt;/li&gt;
-&lt;li&gt;吉他200小时（8/200） 但我有认真听歌😂&lt;/li&gt;
-&lt;li&gt;最多买3个杯子（应该差不多，基本没买）&lt;/li&gt;
-&lt;li&gt;旅行20天（41/20）&lt;/li&gt;
-&lt;li&gt;见10次人类（89/10）&lt;/li&gt;
-&lt;li&gt;不买超过2斤茶叶，3磅咖啡，5瓶酒（这就不算了，起码比以前买的少&amp;hellip;）&lt;br /&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;2020年的flag：
-
-&lt;ol&gt;
-&lt;li&gt;顺利出行&lt;/li&gt;
-&lt;li&gt;学德语，在21年学三外前好好巩固二外😂 目标是德福4水平，现在估计是B2水平&lt;/li&gt;
-&lt;li&gt;读12本英文书&lt;/li&gt;
-&lt;li&gt;读5本德文书&lt;/li&gt;
-&lt;li&gt;锻炼150次&lt;/li&gt;
-&lt;li&gt;听jazz, funk, soul 努力学习乐理&lt;/li&gt;
-&lt;li&gt;做好计划，拍一组完成度较高的摄影项目&lt;/li&gt;
-&lt;li&gt;应该是学不动乐器的&amp;hellip;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;</description>
+      <guid>http://example.org/posts/2019_summary/</guid>
+      <description>&lt;p&gt;2018年没有写小记，现在对全年的状态已经有些恍惚。所以今年还是要写。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>爵士乐自听记录</title>
-      <link>https://jarrywangcn.github.io/post/portrait_in_jazz/</link>
+      <link>http://example.org/posts/portrait_in_jazz/</link>
       <pubDate>Fri, 27 Dec 2019 15:48:14 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/portrait_in_jazz/</guid>
-      <description>&lt;p&gt;倒是没想到今年能在音乐上说些什么。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;19年4月倒是整理过&lt;a href=&#34;https://www.douban.com/note/716092162/&#34;&gt;《音乐兴趣转向》&lt;/a&gt; 里面提到16开始听歌量暴跌，从原来的每年平均150张到16-18每年平均50张。也曾想过可能的原因，猜测可能是情绪上的开关关上了，很难或者说不想沉溺于从前音乐会带来的陷入感，毕竟年轻时是听don’t look back in anger会哭的。&lt;/p&gt;
-
-&lt;p&gt;拿书籍、图像、音乐三者比较，大多数书籍是自带reference的，即使不像学术专著一样有专门的列表，也会在文本中出现与其他文本有关的链接。一个有略微探索精神的人是比较容易的就可以在不同的书籍、作家里跳来跳去。&lt;/p&gt;
-
-&lt;p&gt;图像中自带的reference也比较少，但可以快速浏览，有大概的印象，摄影的历史较短，主要流派的脉络都比较清晰，经典作品并没有那么多。我大多数的自我教育都依靠书店里的摄影和画集专区。&lt;/p&gt;
-
-&lt;p&gt;音乐，如果考虑到现代电子乐的各种采样，reference可能是三者间最多的。但书籍的reference是你不知道它告诉你，音乐的reference你要先了解它refer的对象，还要在后继的歌曲中辨别出可能结果改变的版本。&lt;/p&gt;
-
-&lt;p&gt;如果让我现在总结，为什么听砖量暴跌，我会觉得是在那个阶段，我不知道该听什么了。找书靠书之间的reference，豆瓣还有多年来积累的书友，就算我不订阅任何书讯，每年增加的想读都远远超过能消耗的数量。摄影，知道自己在某个停滞的地方，每年花点时间关注追踪的摄影师或者摄影奖项就可以了。&lt;/p&gt;
-
-&lt;p&gt;音乐，中学时用songtaste，后来用虾米、豆瓣、网易云。16年那个阶段是，我不管用虾米和网易的算法推荐，还是豆瓣音乐”你可能喜欢的唱片“，找到的专辑往往都不对味，连着听了几张三星的专辑就不想找下去了。这个问题部分归罪于我的别扭，既不喜欢看摄影批评，也不喜欢看乐评，而上面说的音乐的特征必定是需要非音乐的媒介起链接的作用。
-另一方面是没有人可以交流。近几年书友倒是越来越多，自感在书友中也挣到了一些credit。高中时代还有一两个同学可以分享最近听到喜欢的专辑，大一时遇到个学姐说喜欢Suede就可以当朋友了，但自音乐品味越来越杂越来越偏后，就没有听友了。&lt;/p&gt;
-
-&lt;p&gt;我也忘了今年为什么突然想认真听爵士了。以前应该也有尝试过认真听古典和爵士，但失败了。可能是意识到了问题所在，我选中了村上的《爵士乐群英谱》（因为这是微信读书上唯一有资源的爵士乐相关书籍&amp;hellip;）我的读法是，不看内容，只看名字和唱片名&amp;hellip;每天选定一个乐手的专辑（可以是村上推荐的，也可以豆瓣上评价人数较多较高的），如果喜欢，再听该乐手更多的专辑，增加印象。在听歌过程中，查询下专辑乐器的配置、乐手名字、年代、风格。目前大致了解了几大传统爵士风格：Big Band, Swing, Bebop, Hardbop, Cool Jazz。偶尔和某友邻交流（感谢友邻！），跳到后面听了些Jazz Hiphop, Smooth, Funk 也很喜欢。&lt;/p&gt;
-
-&lt;p&gt;明年的计划就是往后往Postbop, Avant-garde, Free, Fusion, smooth, funk听。我应该会蛮喜欢Fusion和Funk。如果有能力的话，能学习些乐理知识是最好的了quq&lt;/p&gt;
-
-&lt;p&gt;必须承认，村上的品味还是不错的。&lt;/p&gt;
-
-&lt;p&gt;列一下书中喜欢的乐手：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Chet Baker&lt;/li&gt;
-&lt;li&gt;Charlie Parker&lt;/li&gt;
-&lt;li&gt;Art Blakey&lt;/li&gt;
-&lt;li&gt;Charles Mingus&lt;/li&gt;
-&lt;li&gt;Bill Evans&lt;/li&gt;
-&lt;li&gt;Miles Davis&lt;/li&gt;
-&lt;li&gt;Gerry Mulligan&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <guid>http://example.org/posts/portrait_in_jazz/</guid>
+      <description>&lt;p&gt;倒是没想到今年能在音乐上说些什么。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Advent of Code 2018&amp;2019 上星之旅</title>
-      <link>https://jarrywangcn.github.io/post/aoc_1819/</link>
+      <link>http://example.org/posts/aoc_1819/</link>
       <pubDate>Fri, 27 Dec 2019 09:41:55 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/aoc_1819/</guid>
+      <guid>http://example.org/posts/aoc_1819/</guid>
       <description>&lt;p&gt;aoc全称&lt;a href=&#34;https://adventofcode.com/2019&#34;&gt;&lt;strong&gt;advent of code&lt;/strong&gt;&lt;/a&gt;，是每年12月1日开始圣诞节结束的趣味编程比赛，每天两道题，第一道做出来才有机会做第二道，但前面日期的题没做出来也可以做后面日期的题。以数据结构和算法为主，11月cpy推荐我玩（被虐）一下，2018年做到d9，上了16颗星，2019年做到d16，也上了16颗星，d18涉及的吃豆人类似的路径查找实在不会做，就止步了。希望明年可以上更多的星。&lt;/p&gt;
-
-&lt;p&gt;aoc是最近刷题中趣味性最强，最好玩的题目，所以想整理一下上星心得。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;aoc-2018&#34;&gt;aoc 2018&lt;/h2&gt;
-
-&lt;h3 id=&#34;day1-day2&#34;&gt;day1-day2&lt;/h3&gt;
-
-&lt;p&gt;简单到不用说&lt;/p&gt;
-
-&lt;h3 id=&#34;day3&#34;&gt;day3&lt;/h3&gt;
-
-&lt;p&gt;考二维数组的计算，我用了np.array&lt;/p&gt;
-
-&lt;h3 id=&#34;day4&#34;&gt;day4&lt;/h3&gt;
-
-&lt;p&gt;这道题对当时的我还蛮难的，是给一串string数据，告诉你guard在哪个时刻睡觉，哪个时刻醒，要你根据数据判断哪个guard睡的最多，并且在哪个分钟睡的最多。
-part2是先判断哪个分钟睡的最多，用的都是dateframe groupby后的sort_values&lt;/p&gt;
-
-&lt;p&gt;写出了个bug是有行代码是验证切割分钟时间的左边界和右边界是否存在 结果边界=0，就是时间是0:00的时候&amp;hellip; 它当做不存在。。。&lt;/p&gt;
-
-&lt;p&gt;这个题目我用了很朴素的做法，cpy科普了离散化处理，但我太懒重新搞一遍，就过了&amp;hellip;&lt;/p&gt;
-
-&lt;h3 id=&#34;day5&#34;&gt;day5&lt;/h3&gt;
-
-&lt;p&gt;这道题叫消消乐&amp;hellip;第一个递归，bug遇到的是递归的return的结果是什么&amp;hellip;&lt;/p&gt;
-
-&lt;h3 id=&#34;day6&#34;&gt;day6&lt;/h3&gt;
-
-&lt;p&gt;还是二维数组，但还设计曼哈顿距离，这道题是判断边界的延伸（说起来比较抽象了）&lt;/p&gt;
-
-&lt;p&gt;判断是否延伸我先用了再生成几行Z，看两者的数据有没有差异，有差异的就是infinite，但这样不能解决左上的，一开始没想出来，后来是找出z里最左边和最上边行列unique的值，把这些值的都去掉。&lt;/p&gt;
-
-&lt;p&gt;一开始还想算出可以最小生成的矩阵，减少运算，但这样坐标要做相对处理&amp;hellip; 非常复杂，搞不出来，最后用了绝对的，但计算width和height还是有用&lt;/p&gt;
-
-&lt;h3 id=&#34;day7&#34;&gt;day7&lt;/h3&gt;
-
-&lt;p&gt;新的数据类型，图。之前没学过图&amp;hellip; 看了一天的资料才知道怎么下手。&lt;/p&gt;
-
-&lt;p&gt;两个bug：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;给的测试数据，一开始入度为0的只有一个，给的数据有4个，除了选择start还要在queue中添加剩余的&lt;/li&gt;
-&lt;li&gt;第一遍做出来答案已经是对的了，但忘了英语有26个字母，给的数据，邻接表左边有25个字母，右边有26个，最后的情况是 graph已经被消除等于零了，queue中还有最后一个值是“X”，按我的做法没有添加进去，结束条件是len(graph) == 0&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;day8&#34;&gt;day8&lt;/h3&gt;
-
-&lt;p&gt;这道题不是自己做出来的&amp;hellip; 知道要用递归，但就是写不出正确的。
-最后看了别人动态规划的思路&amp;hellip;&lt;/p&gt;
-
-&lt;h3 id=&#34;day9&#34;&gt;day9&lt;/h3&gt;
-
-&lt;p&gt;这道题还是挺朴素的模拟，第二题应该和算法复杂度有关，但我不会做，愣跑了三个半小时跑出了答案。&lt;/p&gt;
-
-&lt;h2 id=&#34;aoc-2019&#34;&gt;aoc 2019&lt;/h2&gt;
-
-&lt;h3 id=&#34;day1&#34;&gt;day1&lt;/h3&gt;
-
-&lt;p&gt;简单&lt;/p&gt;
-
-&lt;h3 id=&#34;day2&#34;&gt;day2&lt;/h3&gt;
-
-&lt;p&gt;part2题目差点看不懂。。。cpy说是图灵机，涉及如何避免可变对象的变化（list传递还要保持原先的list），最后用了暴力string生成新的list&amp;hellip; 来reset
-今年的aoc每隔两天都是An Intcode program的题目，又麻烦又只是模拟，只是更复杂的模拟，太不喜欢做了，把所有相关的题目都跳过了。。。&lt;/p&gt;
-
-&lt;h3 id=&#34;day3-1&#34;&gt;day3&lt;/h3&gt;
-
-&lt;p&gt;这道题考两个线段的相交点，用了离散化的处理做出来了呢。。。结果part2的题目，如果part1不是用离散化的处理会更好做，所有part2就没做。。。&lt;/p&gt;
-
-&lt;h3 id=&#34;day4-1&#34;&gt;day4&lt;/h3&gt;
-
-&lt;p&gt;不管它想考我什么，反正我用了正则表达式&lt;/p&gt;
-
-&lt;h3 id=&#34;day6-1&#34;&gt;day6&lt;/h3&gt;
-
-&lt;p&gt;图算法，用了递归，还涉及了全局函数要写句global&amp;hellip;
-part2还有最小公共祖先。&lt;/p&gt;
-
-&lt;h3 id=&#34;day8-1&#34;&gt;day8&lt;/h3&gt;
-
-&lt;p&gt;这道题挺简单的，但最后有个根据1/0的值生成出像素，看出密码。我是手动用excel画出来的。。。&lt;/p&gt;
-
-&lt;h3 id=&#34;day10&#34;&gt;day10&lt;/h3&gt;
-
-&lt;p&gt;题目是要算一个直线的斜率，用二元一次函数直接除出斜率会导致浮点数误差。搞得我去研究了下Decimal，结果最后是用了反三角函数atan才做对。&lt;/p&gt;
-
-&lt;h3 id=&#34;day12&#34;&gt;day12&lt;/h3&gt;
-
-&lt;p&gt;part2和去年的day9的part2很像，但如果朴素，计算次数是10^10次方&amp;hellip;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;一定要用O(1)的hashmap查找&lt;/li&gt;
-&lt;li&gt;优化思路不是数据结构类型的，而是算法类型的，这道题的x,y,z三个坐标是独立的，分别算循环周期，然后算三个周期的最小公倍数。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;day14&#34;&gt;day14&lt;/h3&gt;
-
-&lt;p&gt;图，考入度为0且有偏度的图遍历。
-part2又考算法，又考时间复杂度，没做出来。&lt;/p&gt;
-
-&lt;h3 id=&#34;day16&#34;&gt;day16&lt;/h3&gt;
-
-&lt;p&gt;很简单的模拟&lt;/p&gt;
-
-&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;个人认为aoc的题目比单纯刷题好，因为题目和最终答案经常绕了超过三个弯，我从一开始的看完题目就挣扎着写，到写代码前先想好几个主要步骤，每个步骤的函数输入输出分别是什么，什么格式的。aoc2018的题目基本每天我都要做个四五个小时，才能做出来，还动不动写出bug。aoc2019思路对的话，一小时多一点就能搞定了。&lt;/li&gt;
-&lt;li&gt;题目难度从一维列表，二维列表，到图，到递归，再往后不知道是什么了。一二维列表目前没问题，图和树只能做最简单的遍历或者最短路径。递归十个有九个想不清楚return回来的是什么&lt;/li&gt;
-&lt;li&gt;待深入：
-
-&lt;ol&gt;
-&lt;li&gt;做题经常不考虑复杂度分析（我连最朴素的都做不出来考虑啥复杂度分析）&lt;/li&gt;
-&lt;li&gt;树、图、动态规划、递归&amp;hellip;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;这两个月还是有进步一丢丢&amp;hellip;&lt;/p&gt;</description>
+&lt;p&gt;aoc是最近刷题中趣味性最强，最好玩的题目，所以想整理一下上星心得。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>当摄影师谈论摄影</title>
-      <link>https://jarrywangcn.github.io/post/when_photographers_talk_about_photography/</link>
+      <link>http://example.org/posts/when_photographers_talk_about_photography/</link>
       <pubDate>Mon, 09 Dec 2019 11:23:40 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/when_photographers_talk_about_photography/</guid>
+      <guid>http://example.org/posts/when_photographers_talk_about_photography/</guid>
       <description>&lt;p&gt;有图版见豆瓣 &lt;a href=&#34;https://book.douban.com/review/12078051/&#34;&gt;https://book.douban.com/review/12078051/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;文 / Jarry 编辑 / Weixi&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;作为半个摄影爱好者，我对学术界的摄影批评和摄影理论抱有偏见，以苏珊·桑塔格的《论摄影》为例，我没见过有哪位摄影师说：“《论摄影》对我造成了巨大的影响。”但除去这些，谈论摄影的书又相当少。个中缘由，一半归于摄影师通常都懒得解释自己的作品，张克纯在一次访谈中就说过“对我而言，我更喜欢用我擅长的方式表达，摄影它是我说话的方式，我觉得说清楚了，就没必要让它更复杂，好比我已经说过一遍话了，就不想再赘述一遍”；一半归于摄影师通常都不善写作，植田正治受《每日摄影》邀请，写名为《小传记》的连载文章时，便多次提到自己“不擅长写文章，是抱着出丑的心态写的，可想而知文笔有多差”。（不是谦虚，真的很差）所以，今年这本英国玛格南摄影师大卫·赫恩和比尔·杰伊的访谈录《摄影师手册》是意外的惊喜。作为同样文笔不好的摄影师，大卫·赫恩自小患有阅读障碍，因此他选择用访谈的方式讨论了若干重要的问题。&lt;/p&gt;
-
-&lt;p&gt;这本书适合不熟悉摄影的读者，书中并没有太多关于摄影技术的内容（器材、感光度等），而是阐述方法论，方法论是相通的，无论是关乎创作，还是用于做社会研究；也适合拍了一些照片，消耗了一些按快门的热情，对下一步如何进阶感兴趣的摄影爱好者，他们可以从书中得到可实践的建议：如何处理单张照片的内容和色彩，如何开展有主题的摄影项目？&lt;/p&gt;
-
-&lt;p&gt;一、谁是大卫·赫恩？&lt;/p&gt;
-
-&lt;p&gt;大卫·赫恩于1967年正式成为玛格南图片社成员，但他在中国的摄影圈却籍籍无名，至今没有出版过任何一本中文版摄影集。他的第一个重要摄影项目，是拍摄了1956年反抗苏联统治的匈牙利革命。&lt;/p&gt;
-
-&lt;p&gt;1955年12月，大卫·赫恩在桑赫斯特皇家军事学院服义务兵役，有一天，他偶然在杂志《图片邮报》上看到一张照片：一位苏联军官和妻子在莫斯科的百货商店里买帽子。他想起“二战”期间，父亲参军，每次回家，都会带全家去购物。他们会去卡迪夫的豪沃斯百货商店给妈妈买帽子。这是他第一次看到父亲与母亲之间的爱情——一起做某件事，分享彼此的快乐。&lt;/p&gt;
-
-&lt;p&gt;当时是冷战期间，苏联人在英国政治宣传中被塑造为会吃自己的孩子之类的可怕形象。那张照片让大卫意识到：“他们就像是我的爸爸和妈妈，他们都是普通人。”比起政治宣传，他更相信这张照片上的真实。那一刻起，他决定成为一位摄影师——走出去，用照片去诚实地记录所看到的一切，把自己的观察展示给别人。&lt;/p&gt;
-
-&lt;p&gt;很久之后，他才知道那张照片是布列松拍的。&lt;/p&gt;
-
-&lt;p&gt;二、“决定性瞬间”？&lt;/p&gt;
-
-&lt;p&gt;比起“决定性瞬间”，大卫·赫恩更相信孕育瞬间（pregnant moment）。他认为，一张好照片由两个要素决定，站在哪里拍以及何时拍。好的摄影师应当判断哪个画面可能孕育出好照片并耐心等待。在这里，他以自己拍摄的《漫步滕比》为例，谈到：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;这是一张看似复杂、实际上很简单的照片。
-我抵达那里之后，马上便看到一些元素：大炮、睡着的人、狗。我迅速调整到一个位置，以便让三个基本元素彼此独立却又能在整体上形成一道显著的对角线。这就是所要考虑的拍摄机位。我拍了一张，但明白这不是自己想要的，就我的风格来说，有点过于静态了。所以我走开，来到山的另一边，看出了几张有可能拍到的照片，便重返原先的地点。现在，热闹起来了。基本元素还在，但人们正在爬上大炮后面的山，一些人沿着地平线向左边走去，有人坐着，还有一个男孩骑在大炮上玩。我找到先前的位置，略做调整，以便能将坐着的人拍进去，这时候我就看着其余处于动态的人，看他们的互动所形成的各种视觉构图。我连拍了一组照片，因为不确定这些运动变量是否能在最恰当的一刻刚好被捕捉。唯有在接触印样上，我才能找出所有元素和谐交融的那一张。在这个例子中，关键的前景元素静止不动，因此我可以奢侈地只凝神于那些副元素。
-比尔·杰伊也讲了件轶事。在一场摄影展览中，有人拉住爱德华·斯泰肯，问道：“如果把所有那些‘偶然’的作品都拿掉，你还能留下几张呢？” “可能就没多少了，”爱德华·斯泰肯回答，“但你有没想过，伟大的摄影师拍到过多少张伟大的偶然？”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;三、主观的真实和风格&lt;/p&gt;
-
-&lt;p&gt;赫恩认为，照片中不存在客观，因为在摄影中只有两个基本把控：站在哪里，何时按下快门。两者都是主观的选择，所以最终的结果，即照片，自然也是主观的。摄影师唯一能做的是尽量忠实于拍摄主题。&lt;/p&gt;
-
-&lt;p&gt;这让我想到人类学和社会学的研究，这类研究往往在一开头就提醒我们研究者的局限性，因为每个人看到的世界都受限于自身观看的方式，而这也是“独特风格”的来源。&lt;/p&gt;
-
-&lt;p&gt;每位摄影师都有独特的个性，如果你选择那些对你有私人意义的主题，那么没有人可以模仿你。&lt;/p&gt;
-
-&lt;p&gt;赫恩认为摄影——以及所有创作的魔力，都在于此。每个人或多或少都有相似性，但如果你看十二张布列松、寇德卡或者罗伯特·弗兰克的照片，你也能轻易地分辨出他们是不同的人。&lt;/p&gt;
-
-&lt;p&gt;所以你应当专注于你的拍摄对象，思考如何通过照片呈现出自己不同的观点。&lt;/p&gt;
-
-&lt;p&gt;约翰·加德纳曾说：
-&amp;gt; 就讲述新鲜故事而言，文学已经枯竭了好几个世纪；但就讲述原型故事，再次尝试阐释其真理并向后代传递其智慧而言，只有当我们所有人因自己愚蠢的傲慢而将它抛弃时，文学才会真正枯萎。
-&amp;gt; 对摄影来说，也同样如此。&lt;/p&gt;
-
-&lt;p&gt;四、如何开展摄影项目？&lt;/p&gt;
-
-&lt;p&gt;赫恩对摄影项目的建议，让我想到写毕业论文时指导老师建议我们如何决定选题，除了成果不是文字，而是照片。&lt;/p&gt;
-
-&lt;p&gt;1.列出自己真正感兴趣的东西&lt;/p&gt;
-
-&lt;p&gt;摄影师必须对主题有强烈的好奇心，不能仅仅是一时的视觉兴趣。摄影师首先要做的决定是“拍什么”，你对主题的好奇、沉迷和狂热，都能通过所拍摄的图片传递给他人。&lt;/p&gt;
-
-&lt;p&gt;2.主题尽可能具体&lt;/p&gt;
-
-&lt;p&gt;比尔·杰伊给的例子是：“如果学生提出的是‘维多利亚时代的人像摄影’，我会建议改为‘刘易斯·卡罗尔的爱丽丝小像研究’。”&lt;/p&gt;
-
-&lt;p&gt;3.思考这些主题的可实践性&lt;/p&gt;
-
-&lt;p&gt;去除无法用图像表达的（比如说社交网络上的人际关系），正常情况下无法拍摄的（我是生活在中国的普通人，那我想拍某个非洲国家的内战，就是痴人做梦），再去除你对其一无所知的（你需要对拍摄对象有深入的研究），最后去除目标受众过小的。&lt;/p&gt;
-
-&lt;p&gt;4.长时间追踪选择的主题&lt;/p&gt;
-
-&lt;p&gt;这便于在你愿意并且有时间的时候，随时可以重返这个主题。&lt;/p&gt;
-
-&lt;p&gt;故乡威尔士是大卫·赫恩最长久、最丰富的拍摄项目，从二十世纪六十年代开始，他便持续拍摄煤矿产业日渐衰退的威尔士；而如今，他拍摄发展高科技、文化、旅游产业的威尔士。&lt;/p&gt;
-
-&lt;p&gt;五、如何对待外国文化？&lt;/p&gt;
-
-&lt;p&gt;2017年，赫恩出版了新的摄影集《亚利桑那之旅》，该项目拍摄了他在1979至2001年间拜访的美国亚利桑那州。&lt;/p&gt;
-
-&lt;p&gt;在《摄影师手册》的最后，大卫·赫恩和比尔·杰伊聊了几个经典的摄影误区，其中之一是：摄影师不该拍摄异域风情。这个观点的理由是：你无法真正理解另一种文化、另一个种族或群体，除非你生长在此地，因此，你拍下的照片无非是猎奇，并不真实。&lt;/p&gt;
-
-&lt;p&gt;赫恩认为，不管拍摄的是本国人还是外国人，都是在主观地表达自己的观点。如果按照这一误区的逻辑推演，最后的结论是摄影师什么人都不能拍。而事实上，人类彼此的相似性远甚于差异性。&lt;/p&gt;
-
-&lt;p&gt;我想，这也是为什么摄影发展的历史中，街拍或是拍摄普通人的普通生活拥有持久的魅力，不管是布列松拍摄的苏联，弗兰克拍摄的美国，我们都能在其中看到我们熟悉的事物、情感，那些父亲母亲孩子，猫猫狗狗，人类共享的悲伤和快乐。&lt;/p&gt;
-
-&lt;p&gt;六、摄影师和被拍摄者的关系&lt;/p&gt;
-
-&lt;p&gt;街拍不可避免地会涉及被拍摄者，我非常喜欢大卫对被拍摄者的态度。他告诉我们，从摄影项目之初，就要选择自己真心热爱的主题，而不是浮光掠影的捕捉，这既是为了能深入主题，也是对拍摄者的尊重。他说：“你不可能在后街转悠一圈，抓拍几张门廊里的无家可归者，就在城市贫困问题上指导江山。那是剥削利用，不是进行研究。”&lt;/p&gt;
-
-&lt;p&gt;大卫在一次访谈中提到一张照片，拍的是1967年苏格兰某汽车俱乐部的舞会，照片中，一位退休男人在玩一只气球。&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;这张照片告诉了我摄影的本质问题：你在拍摄另一个人的图像。我一直注意不去打扰被拍摄者。当我拍照时，我不会拍那些以任何方式轻视别人的照片。我试着把人抽象成符号，在这张照片里，一个老年人享受着衰老后的快乐——但我也记得他们是具体的人。在这张照片发表后的很多年之后，我收到了一封来自这个男人妻子的信，告知我他去世了。但她也告诉我，他们在全世界看到过无数次这张照片，每次，它都给他们带来了快乐。她问我是否可以给她一张打印版。知道我照片里的人非常享受被拍摄对我来说是一种安慰，虽然我从不试着去了解他们是谁。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;八、大卫·赫恩的摄影人生&lt;/p&gt;
-
-&lt;p&gt;2017年，BBC拍了部大卫·赫恩的纪录片。八十三岁的赫恩老爷爷现在住在英国威尔士瓦伊河沿岸的丁登镇，片中，他无论去哪，都依然背着个小相机。&lt;/p&gt;
-
-&lt;p&gt;纪录片中，他不无无奈地说：“以我现在的年龄，我需要做的是找到可以容易继续拍照的事物。乡村生活的美丽在于，首先，你可以参与；其次，当一个人变老了，就很难拿着照相机到处走，在乡村，我还能从一头走到另一头。”&lt;/p&gt;
-
-&lt;p&gt;我看到老爷爷拍了张照片就放下相机，拿起了小饼干，可可爱爱！&lt;/p&gt;
-
-&lt;p&gt;最后的彩蛋：老爷爷年轻时这么帅！&lt;/p&gt;
-
-&lt;p&gt;参考资料：&lt;/p&gt;
-
-&lt;p&gt;1.David Hurn: A life in Pictures, BBC, 2017.&lt;/p&gt;
-
-&lt;p&gt;2.The Picture that Changed My Life: Interview with David Hurn, Lensculture.&lt;/p&gt;</description>
+&lt;p&gt;文 / Jarry 编辑 / Weixi&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>服装、个人表达以及社会潮流</title>
-      <link>https://jarrywangcn.github.io/post/japanese_ivy/</link>
+      <link>http://example.org/posts/japanese_ivy/</link>
       <pubDate>Tue, 27 Aug 2019 11:32:10 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/japanese_ivy/</guid>
+      <guid>http://example.org/posts/japanese_ivy/</guid>
       <description>&lt;p&gt;前半部分是每个章节个人认为有趣部分的简单概括，作者行文的思路是，按照时间叙事，把致力于服装业的人和当时日本乃至世界（主要是美国）的社会背景结合起来。后半部分是个人感想。&lt;/p&gt;
-
-&lt;p&gt;有图版见豆瓣 &lt;a href=&#34;https://book.douban.com/review/12078051/&#34;&gt;https://book.douban.com/review/12078051/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;One: A Nation without Style&lt;/p&gt;
-
-&lt;p&gt;Kensuke Ishizu 石津谦介（已破产）出生于明治时代的最后一年—1911年，是一位纸张批发商的二儿子。日本明治维新的西化运动使日本人开始接受西式服装。由于害怕左翼思潮，政府在1930s停止推动自由化。二战期间，Ishizu开始在中国天津的亲戚开的百货公司做营销工作，当时天津作为通商口岸，有很多欧洲人，Ishizu更加融入了西式生活。二战结束后，Ishizu回到日本，创办了Van Jacket。当时，日本男性是不能对时装感兴趣的。Ishizu的一大问题是解决关键问题。日本第一期男性服装杂志是《妇人画报》的增刊，《Otoko no Fukushoku》。在初创时期，Ishizu给杂志写了很多稿子，多到他需要起不同的笔名来增加文章的权威性。第五期后，改名为《Men&amp;rsquo;s Club》。1959年，Van开始发行“Ivy Model&amp;rsquo;系列，美国常春藤大学学生的穿衣风格。&lt;/p&gt;
-
-&lt;p&gt;Two: The Ivy Cult&lt;/p&gt;
-
-&lt;p&gt;1950s，日本学生的服装非常单调（包括大学生），只有黑色羊毛的Gakuran。当时的社会环境是，学生只能穿校服，工作才能穿西装，要穿到大学毕业，面试都要穿校服。除此之外的服装都被视为不遵守规则的delinquents（罪犯）。包括被Van的Ivy风格吸引的年轻人，而在美国，Ivy风格是保守精英的代表。当时日本没有厂商可以生产Ivy风格的衣服，一部分是因为不明白具体工艺，一部分是没有实物，信息往往来自于美国时装杂志，比如说GQ刊登的关于Brooks Brothers的文章。为了宣传和普及他们臆想出的Ivy风格，Van的雇员（兼职Men&amp;rsquo;s Club的作者）写了很多Ivy风格的dos and don&amp;rsquo;ts，还发明了街拍，拍下银座出没看着像是类似风格的行人，刊登在杂志上。“Ivy Leagues on the Streets”。&lt;/p&gt;
-
-&lt;p&gt;1960s随着战后第一波婴儿潮进入大学和经济的复苏，Van取得了巨大的成功。Ivy穿着的年轻人出没在银座引起了社会的不安，甚至警察出动进行了一次清扫活动。&lt;/p&gt;
-
-&lt;p&gt;Three: take Ivy to people&lt;/p&gt;
-
-&lt;p&gt;由于成功设计了1964年东京奥运会开幕式日本队的服装（白色衬衫白色裤子红色西装外套）和在银座举行了一次成功的演讲，劝说年轻人不要在银座瞎逛，Ishizu改善了Ivy风格在主流社会眼中的形象。在日本放开民间出国游后，Van组织了一个团队去美国拍摄真正的常春藤风格，去了之后发现大多是学生都穿得非常随便，极少符合他们的臆想。但仍旧经过遴选，出版了电影和摄影集《take ivy》，多年后，此书成为常春藤风格男装圣经。&lt;/p&gt;
-
-&lt;p&gt;另外，同期Van引进了帆布鞋，取得了巨大的成功。&lt;/p&gt;
-
-&lt;p&gt;Four: The Jeans Revolution&lt;/p&gt;
-
-&lt;p&gt;本章讲述了牛仔裤如何在日本开始流行，以及日本人偏好柔软的、有使用痕迹的牛仔裤&amp;hellip; 一开始商品来源是从美国进口二手牛仔裤。日本本地的厂商生产出新的牛仔裤卖不出去，只能买好多台洗衣机在厂里拼命洗拼命洗&amp;hellip; 最大的一家是Big John。社会运动是是马克思主义学生运动和长发嬉皮士。&lt;/p&gt;
-
-&lt;p&gt;Five: Cataloging America&lt;/p&gt;
-
-&lt;p&gt;由于马克思主义学生运动和越战，1968年的NHK调查，只有31%的日本人选择“我喜欢美国”，相比于1964的49%大幅跌落。&lt;/p&gt;
-
-&lt;p&gt;Whole Earth Catalog 是1970s美国激进分子Stewart Brand主编的指导自己来（do it yourself)指南。人要使用工具，学习技能，自己的事情自己做（？）。这股运动推动了户外运动在日本的发展，日本人开始滑雪，野营，变逐渐发展出了重工系服装（？？？？真是意想不到的操作呢&amp;hellip;）以及Popeye为代表的city boy风格，因为东京空地少，popeye主推了滑板作为流行城市男孩喜欢的运动。&lt;/p&gt;
-
-&lt;p&gt;Popeye还首创了在杂志页面铺满商品图片，每个标注好品牌和价格、商店名称和经销商价格，混合了杂志编辑和广告。&lt;/p&gt;
-
-&lt;p&gt;Six: Damn Yankees&lt;/p&gt;
-
-&lt;p&gt;我对原宿和里原宿风格完全不感冒&amp;hellip; 简单来说是受摇滚乐影响，黑帮和飞车党当时流行的是regent头，souvenir jacket（美军撤军，飞行员让裁缝在飞行夹克上刺日本风格的鸟啊龙啊。），皮夹克。除了银座（ginza）、涩谷、原宿、表参道（omotesando）和竹下通（takeshita）也开了很多服装店，时尚街头&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;Seven: Nouveau Riche&lt;/p&gt;
-
-&lt;p&gt;1976年，Beams设立了，出来一批美国品牌自选店(authentic foreign goods)。1976-1979，日美汇率从300:1涨到200:1，1977年，政府放开外汇管制，允许旅行者携带3000美元现金出境。日本中年阿姨去法国和意大利买了超多奢侈品。&lt;/p&gt;
-
-&lt;p&gt;Ivy以Preppy（学院风）风格复新了，van破产，日本年轻人直接购买Brooks Brothers等美国品牌。&lt;/p&gt;
-
-&lt;p&gt;1980s，日本设计师川久保玲(Rei Kawakubo)和山本耀司(Yohji Ymamoto)在巴黎成名，将日本时尚带到了全球舞台，之后还有三宅一生(Issey Miyake)和高田贤三（Kenzo Takada)，日本时装界迎来了带有日本气息的欧洲前卫风格。&lt;/p&gt;
-
-&lt;p&gt;当时比较有影响力的杂志还有hot dog press。&lt;/p&gt;
-
-&lt;p&gt;beams plus 2019-2020 autumn/winter - all you need is ivy
-Eight: From Harajuku to Everywhere&lt;/p&gt;
-
-&lt;p&gt;在摇滚、朋克、新浪潮(new wave)后，hip-hop和DJ成了新的音乐流行趋势。藤原浩(Hiroshi Fujiwara)和長尾智明(Tomoaki Nagao)是当时日本嘻哈界的领军人物。前者创办了A bathing Ape，这应该就是国内所说的街头潮牌（？）。川久保玲类似的设计师服装可以用高价来维持威望，但里原宿风格的基本产品（卫衣、T恤）相对来说不能那么高价，但又需要维持品牌形象，藤原浩他们的解决方案是“make less”。这激起了消费者的狂热，限量版使得年轻人购买衣物为了收集他们而不是简单的穿他们。作者认为，这样的策略影响了美国的很多服装公司的宣传策略，比如说限量版（nike的AJ），比如说联名款。A bathing ape在国际上取得了很大的成功，在美国、亚洲纷纷开店。（但最终被I.T.收购。）长尾智明参与设计优衣库U.T.和adidas originals。另一个牌子UNDERWEAR的高桥盾（Jun Takahashi）设计了nike的时尚运动产品线Gyakusou。（我竟然还知道这个产品线？？）&lt;/p&gt;
-
-&lt;p&gt;Nine: Vintage and Replica&lt;/p&gt;
-
-&lt;p&gt;开始是发现最新的Levis 501没以前的501好穿（这也能发现？），从牛仔裤开始，最后掀起的古着潮流。不停从美国的偏远地区的商店购入大量存货运回日本（Vintage silk road）。研究出不同时期Levis 501的标签，发展出了很多古着黑话。美国人都要问日本人怎么穿牛仔裤。（终于知道小时候听来的牛仔裤不能洗是怎么形成的谣言了&amp;hellip;）&lt;/p&gt;
-
-&lt;p&gt;1966年的一条mint版本的Levis可以卖到20万日元，高昂的价格使得日本人开始生产复刻版&amp;hellip; 但也有人认为太没有原创精神了。YAMANE设计了Evisu.（标记也是levis的变形），特征是海鸥标记和后代很花的刺绣。（终于知道初中时朋友穿的牛仔裤是什么牌子了&amp;hellip;）&lt;/p&gt;
-
-&lt;p&gt;另外也有人不喜欢大家追逐名牌，而背离了牛仔裤耐用好穿的本质，创建了毫无修饰的Kapital和Tuki.&lt;/p&gt;
-
-&lt;p&gt;“ Harada is tired of all the “storytelling” in men’s apparel: “I hate when there is too much emphasis on the ‘story’ in clothing. People should wake up and want to put on my pants because they feel great.”&lt;/p&gt;
-
-&lt;p&gt;Ten: Exporting Ametora&lt;/p&gt;
-
-&lt;p&gt;优衣库的创始者Tadashi Yanai的父亲是Van的特许经营者，Van倒闭给了他不少启示。1985年，他在广岛开了一家买基础款的大型自选商店Unique Clothing Warehouse，缩写就是Uniqlo。&lt;/p&gt;
-
-&lt;p&gt;还讲了当今欧美时尚如果想设计ivy和trad(traditional)风格的衣服，会参考学习日本资料。作者认为Thom Browne就是例子之一。&lt;/p&gt;
-
-&lt;p&gt;书中有两则好笑的小事。当van公司的人去美国拍电影，问耶鲁学生“你穿短裤是因为它们很流行吗？”答“我从来没想过这个，只是我洗完后它们缩水了。”&lt;/p&gt;
-
-&lt;p&gt;当一位沉迷于重工系产品的日本人去阿拉斯加旅行“我从头到脚穿着美国遗产品牌，1955年的李维斯，二战时期的风格，你能找到的最稀有的紅翼鞋。但没有一个人在乎。”&lt;/p&gt;
-
-&lt;p&gt;这不是说西方人都不太会穿，但日本人是格外在乎穿吧，还有极度的恋物癖。Popeye的作者在后来甚至说后悔给供稿“Popeye扳动了日本物质主义泡沫的扳机。”&lt;/p&gt;
-
-&lt;p&gt;我理解那么年轻人通过服装作为自我表达的方式，个人观察，目前已经和难有整个社会影响的服装潮流了，大家都能在各自细分的风格中遨游。护肤品和化妆品取代了服装成为社交话题。&lt;/p&gt;
-
-&lt;p&gt;在东南亚背包旅行时遇到很多欧美背包客，大家就T恤衬衫牛仔裤卡其裤，自由自在，也没谁看不起谁。下水男的就穿条短裤女的就比基尼甚至裸泳，对身体放松的态度我还挺羡慕的。&lt;/p&gt;
-
-&lt;p&gt;不过我想，不管是音乐风格、服饰风格、数码装备、茶叶咖啡，每个时代每个人都能找到最适合自己的的恋物癖。。六十年代，就有专栏作家批评，年轻人买东西不是为了新的体验，买CD机为了听爵士乐，买西装为了追女孩，买登山包为了徒步。他们只是迷恋物品本身。&lt;/p&gt;
-
-&lt;p&gt;我对物质的祛魅是看到那么多用徕卡的人拍出的照片非常丑&amp;hellip; 相对于花钱买相机，把更多的预算给旅行，去更多的地方，花费更多的时间拍照。 Buy experience, not things.&lt;/p&gt;
-
-&lt;p&gt;在某些方面挺欣赏日本人，日料、日系服装、日本设计（审美上的民艺运动）都是近代才发展出来的产物，他们吸收欧美元素，通过整合加入日本元素，形成了具有全球影响力的日本风格。&lt;/p&gt;
-
-&lt;p&gt;记得曾经看到过，有人问村上春树，为什么他的小说中有这么多的西方品牌。村上说“因为在我看来可口可乐就是可口可乐，而不是某种碳酸饮料。”（绝对不是原话）。&lt;/p&gt;
-
-&lt;p&gt;Comme des Garçons Homme的设计师Junya Watanabe说“西方服饰是我们的日常服装，我不认为这有什么不同，不管你是日本人还是美国人还是欧洲人。”&lt;/p&gt;
-
-&lt;p&gt;用平和的态度接受外来文化，汲取养分，勇敢挪用。&lt;/p&gt;
-
-&lt;p&gt;作为一个不怎么穿着打扮的人，读这本书的快乐在于经常会有种“哦哦哦哦”的感觉。&lt;/p&gt;
-
-&lt;p&gt;疯投圈最新一期《新消费品牌崛起大时代》里把消费品分为三类。&lt;/p&gt;
-
-&lt;p&gt;第一类是靠领先的产品，比如说苹果、戴森。&lt;/p&gt;
-
-&lt;p&gt;第二类是靠性价比，比如说小米、优衣库。&lt;/p&gt;
-
-&lt;p&gt;第三类是靠用户体验和品牌形象，比如说星巴克、耐克。&lt;/p&gt;
-
-&lt;p&gt;第一类和第三类的差别是如果苹果有年的产品不好，销售量就会很差。星巴克或者耐克出难喝的饮料或者不受欢迎的鞋，企业还是会生存下去。&lt;/p&gt;
-
-&lt;p&gt;我敬佩有创造力的设计师，它们设计出新的好的产品，理应获得高溢价。T恤一开始大家以为只能当内衣穿，不能穿在外面。一开始人们对紧身瑜伽服感到羞耻，Lululemon做到了让大家在瑜伽教室外穿瑜伽服。&lt;/p&gt;
-
-&lt;p&gt;其他公司再把产品普及推广给大众。所以我个人是最喜欢第二类品牌的，适当的价格，优质的产品，咖啡工具界的Hario，服装界的优衣库。没有帆布鞋、没有卡其裤、没有T恤，我会在穿什么上烦恼很多。&lt;/p&gt;
-
-&lt;p&gt;相关阅读：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;石津謙介，用Ivy Style（常春藤學院風）帶起日本流行的服裝之父&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;p&gt;有图版见豆瓣 &lt;a href=&#34;https://book.douban.com/review/12078051/&#34;&gt;https://book.douban.com/review/12078051/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My days in the sun</title>
-      <link>https://jarrywangcn.github.io/post/my_days_in_the_sun/</link>
+      <link>http://example.org/posts/my_days_in_the_sun/</link>
       <pubDate>Fri, 09 Aug 2019 11:18:09 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/my_days_in_the_sun/</guid>
-      <description>&lt;p&gt;📷 &lt;a href=&#34;https://www.douban.com/note/729595622/&#34;&gt;https://www.douban.com/note/729595622/&lt;/a&gt;&lt;/p&gt;
-</description>
+      <guid>http://example.org/posts/my_days_in_the_sun/</guid>
+      <description>📷 https://www.douban.com/note/729595622/</description>
     </item>
     
     <item>
       <title>Step 72 破壞的力量</title>
-      <link>https://jarrywangcn.github.io/post/the_power_of_destroy/</link>
+      <link>http://example.org/posts/the_power_of_destroy/</link>
       <pubDate>Wed, 22 May 2019 08:39:07 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/the_power_of_destroy/</guid>
-      <description>&lt;p&gt;小時候學畢加索，最常說到的是“我花了四年时间画得像拉斐尔一样，但用一生的时间，才能像孩子一样画画。”&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;給大家看他11歲時畫的素描，15歲時畫的素描
-&lt;img src=&#34;https://i.loli.net/2019/05/22/5ce49adbdebc394608.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Study for a Torso ，1892&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/05/22/5ce49b0b2415556615.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;First Communion，1896&lt;/p&gt;
-
-&lt;p&gt;長大後的畫&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/05/22/5ce49b5b4c75191992.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;那時還不懂什麼藝術史，可能還信了最後要回到孩子的天真&amp;hellip;
-现在的我来看，毕加索做的就是抛去先前“经典体系“的审美，做出了自己的创新，如果再早几个世纪，也有可能去搞印象派，不过是印象派也搞过了，后面还搞过七七八八的，就全解构了吧，是不是孩子的天真都无妨。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://jarrywangcn.github.io/post/step71_narrative/&#34;&gt;Step 71&lt;/a&gt;说“美是有定式的。所有去日本旅游的人拍出来的都是小清新（要么是另一种变种的清新），不需要修图软件，大脑里内藏了滤镜。 ”（自己引用自己）
-早上看到Timothy发的 &lt;a href=&#34;https://www.zhihu.com/pin/1114408774538158080&#34;&gt;东京日常&lt;/a&gt; 脑子里就是&amp;rdquo;哈！&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/05/22/5ce4a71bd9c5194833.jpg&#34; alt=&#34;东京日常&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/05/22/5ce4a5f910ef480372.jpg&#34; alt=&#34;东京日常&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/05/22/5ce4a607ce08596252.jpg&#34; alt=&#34;东京日常&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;作为接受过摄影学院教育的Timothy不可能不知道如何拍出传统意义的好照片。時代的弔詭之處是無法避免地有做同樣事情的人，比如我知道彭可是朋友说我有个和你同样放飞自我”的学妹“&amp;hellip; 所以我已经解构了快两年什么也没解构出来&amp;hellip;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;无法创新和突破的原因之一是无法接受“粗糙”的审美。
-浪漫化是“改变”现实表现真实的能力，解决如何浪漫化就是在形成风格&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;為了危機感，整理下目前關注的國內新晋攝影師。（刘涛、张克纯此类已经立住山头的暂且不表）&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://erisyo.com/&#34;&gt;游莉&lt;/a&gt; 網站上16年後就沒有事項更新了，最近的項目是All that is.（看微博偶尔发很早以前的喀什系列就是在打游戏&amp;hellip;）&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.zhangjungang.com&#34;&gt;张君钢&lt;/a&gt; 公众号：荒野会 还不是很了解 喜欢《大桥及附近的风景》&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://chengxinhao.me&#34;&gt;程新皓&lt;/a&gt; 《来源不同的时间》 是国内至今看过的最有逻辑反思性的作品，似乎不仅做图片，还做影像创作了，6月到8月在深圳有个展&amp;hellip; 感觉可以为此跑一趟&amp;hellip;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.kepeng.org&#34;&gt;彭可&lt;/a&gt;  92年（危机意识） 《盐水池塘》关注的主题和我关注的重合度很高，也是四人中受西方学院派审美最终的&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.timothywangart.com/&#34;&gt;Timothy Wang&lt;/a&gt; 算我艺术摄影的启蒙者&amp;hellip; landscape photography 方向是帮我开天眼的&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <guid>http://example.org/posts/the_power_of_destroy/</guid>
+      <description>&lt;p&gt;小時候學畢加索，最常說到的是“我花了四年时间画得像拉斐尔一样，但用一生的时间，才能像孩子一样画画。”&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>二零一八阅读总结（三）</title>
-      <link>https://jarrywangcn.github.io/post/2018-summary/</link>
+      <link>http://example.org/posts/2018-summary/</link>
       <pubDate>Mon, 01 Apr 2019 09:13:20 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/2018-summary/</guid>
-      <description>&lt;p&gt;以前挺少读英文原著的，去年开始读，导火线是年初读《海风中失落的血色馈赠》，在微博关注了译者陈以侃，推荐了不少小说，没有译本。再往深说一点是，前一两年和朋友就开始聊到中文世界里没有写现代都市生活境遇的作品，就去英文世界看看。比如看Ali Smith的《Autumn》是因为时间是脱欧后的英国诶。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;翻译的确会丢失文本的气质和语感。今天在书店里也聊到，台湾中文的弹性比大陆好很多，去年写了篇相关的书评&lt;a href=&#34;https://book.douban.com/review/9408954/&#34;&gt;《方言小说与现代中文》&lt;/a&gt;。我平时SNS讲话，“好棒啊！真的&amp;hellip;.！太&amp;hellip;&amp;hellip;了！” 很垃圾的中文，好的语言，会让人发呆吧。&lt;/p&gt;
-
-&lt;p&gt;去年先读了略萨的《酒吧长谈》，然后读了两本福克纳。福克纳真的太牛逼了&amp;hellip; 牛逼在结构的控制力吧。曾经有个朋友聊天中谈及童年和少年往事，回来后笔记写了三千字，不是我记性好，是好的叙述者讲故事的能力，对读者获知信息整体的控制力。&lt;/p&gt;
-
-&lt;p&gt;经济和金融去年主要是两块，一块是货币，主要是货币政策和货币创造和派生，对央行、银行在经济运行中起到的作用有了比较粗略的了解。一块是经济危机，亚洲金融危机、英镑危机、08金融危机相关的金融史。去年似乎对经济极其悲观，觉得经济形势很差，结果大规模的系统性危机一直没有发生诶，未来总是难以预测。BIS的论文蛮好的。&lt;/p&gt;
-
-&lt;p&gt;年前开始读了不少文化史和微观史，很难进入宏大叙事的语境，细节组成的历史的厚重感。大学后几年读文学作品读的很少，当时觉得有些过于煽情了（偏见吧），迷历史学、社会学、人类学，读多了又感觉非虚构作品看到的只是一种剖面，文学里许多细微之处也会让人发呆。只有一个剖面就只能得到一个剖面的触感。希望观看事物的视角是多样且复杂的，人类学社会学偏于逻辑和结构，文学更偏于个人史，个人和社会的互动性。
-对我而言，最大的问题还是如何理解这个世界吧。&lt;/p&gt;
-
-&lt;p&gt;推荐书目：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Autumn / Ali Smith / 2017 / Pantheon&lt;/li&gt;
-&lt;li&gt;我弥留之际 / 福克纳 / 2004 / 上海译文出版社&lt;/li&gt;
-&lt;li&gt;押沙龙，押沙龙！ / [美] 威廉·福克纳 / 2010 / 上海译文出版社&lt;/li&gt;
-&lt;li&gt;十年轮回 / 沈联涛 / 2009 / 上海远东&lt;/li&gt;
-&lt;li&gt;信用创造、货币供求与经济结构 / 李斌 伍戈 / 2014 / 中国金融出版社&lt;/li&gt;
-&lt;li&gt;音乐神童加工厂 / 伊莎贝拉•瓦格纳 / 2016 / 华东师范大学出版社&lt;/li&gt;
-&lt;li&gt;跨越边界的社区（修订版） / 项飙 / 2018 / 生活•读书•新知三联书店 生活书店出版有限公司&lt;/li&gt;
-&lt;li&gt;扫地出门 / [美]马修·德斯蒙德 / 2018 / 理想国 | 广西师范大学出版社&lt;/li&gt;
-&lt;li&gt;城中城 / 素德·文卡特斯 (Sudhir Venkatesh) / 2016 / 上海人民出版社&lt;/li&gt;
-&lt;li&gt;夜航西飞 / [英] 柏瑞尔·马卡姆 / 2010 / 人民文学出版社[英] 柏瑞尔·马卡姆 / 2010 / 人民文学出版社&lt;/li&gt;
-&lt;li&gt;A Life Beyond Boundaries / Benedict Anderson / 2016 / Verso&lt;/li&gt;
-&lt;/ol&gt;</description>
+      <guid>http://example.org/posts/2018-summary/</guid>
+      <description>&lt;p&gt;以前挺少读英文原著的，去年开始读，导火线是年初读《海风中失落的血色馈赠》，在微博关注了译者陈以侃，推荐了不少小说，没有译本。再往深说一点是，前一两年和朋友就开始聊到中文世界里没有写现代都市生活境遇的作品，就去英文世界看看。比如看Ali Smith的《Autumn》是因为时间是脱欧后的英国诶。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Step 71</title>
-      <link>https://jarrywangcn.github.io/post/step71_narrative/</link>
+      <link>http://example.org/posts/step71_narrative/</link>
       <pubDate>Thu, 31 Jan 2019 00:51:53 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/step71_narrative/</guid>
+      <guid>http://example.org/posts/step71_narrative/</guid>
       <description>&lt;p&gt;见过几次张君钢的作品，前几天samepaper发了组伊朗游记，顺手查了他的访谈。看到一篇10年的&lt;a href=&#34;http://www.simple-style.com/interviews/chinese-photographer/k1973.html&#34;&gt;访谈&lt;/a&gt;，11年的&lt;a href=&#34;http://www.co-mag.net/cn/2011/chinese-li-jie-zhang-jungang/&#34;&gt;访谈&lt;/a&gt;。
-感想是：你以为你拍摄的是时代，到最后你不过是时代的切片，就你能拍出的东西，往往受限于时代的审美。（btw，我还是挺欣赏张君钢，&lt;a href=&#34;http://www.zhangjungang.com/84/84-10.html&#34;&gt;大桥及附近的风景&lt;/a&gt;）&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;最近观察到的艺术摄影的趋势是诗意和碎片化。快到千人一面的地步了。&lt;/p&gt;
-
-&lt;p&gt;微博上有几句讨论：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;@芬尼根狂欢日: 毕赣这一代人，也就是我这一代人，一旦开始创作， 除了模仿各种图像以外真的很难做什么创新。不会。我们的作品难道是今天才变成各种大师的借鉴杂烩体吗?是一直以来就只会这样而已。能做到的这样的都是同龄人中的佼佼者了。因为我们就是活在图像世界里的一代人。文艺青年们看电影，就好像在图像世界里泛舟，看完了记住的除了影像还是影像，除了感觉还是感觉。哲学教育都是零，深度思考全不会。偶尔有些爱读书的，都擅长抽象思考，一旦落实于小说和戏剧，只会进行抽象表达，不会其他，所以我们拍的东西，都是抽象的人，没有具体的人。我们这一代人，就算是县城的孩子，又有多少县城经验?就算大城市的孩子，又有多少城市经验?我们本就是经验上乏善可陈的一代人。我们长到三十岁，真的懂中国吗?不懂的。我们是活在大学城里的一代人。除了食堂、宿舍、咖啡厅、图书馆、城乡结合部的小旅馆、地铁和商场以外，我们知道什么?我们对空间能有什么想象?没有的。真悲哀，我们这一代人。
-@黄小邪在纽约:这非中国年轻人独有问题，是世界各国创作者面临的困境：经验的匮乏、感知思想的贫困。全球化资本主义消费方式令大家经验趋同。我一直在想对抗的方式，其一是旅行，可远可近，保持充足好奇心，观察和倾听不同的人与文化。前辈有徒步走村串户的经历。不沉迷手机、游戏、自拍这些不创造第一首手新经验的东西。希望大家不要误解，观察、体验并不一定要高消费跨国旅行，整个世界只有自我的人去了外星球也一样视而不见，真正的创作者则能够敏感地注意到窗外的鸟、地铁上的陌生人、小区楼下的树叶、公园的狗、广场晨练的老人、背书包上学的孩子、远近的市声……每天，四季，都有新鲜的经验，特别地领会，灵动到创作中。
-@小郑爱吃枣：创作者阶级趋同也是问题&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我喜欢的东西是有历史性和社会性的，比较关注的摄影师是李亚楠，在当下中国，想要表现历史性避不开政治性，但政治性语言和符号过于粗糙。&lt;/p&gt;
-
-&lt;p&gt;过度诗意化、碎片化的风格在我看来如同生活在玻璃暖房，是不是有人的生活就是如此，还是自我编织了玻璃暖房的谎言？
-我没法去拍棚户区的东西，也没法去拍过于边缘的边缘群体的东西。除了极度的符号化，细节也编织真实，但如今大多数人的现代生活已经没有具体的生活经验了，总有一段挂在虚拟世界里。&lt;/p&gt;
-
-&lt;p&gt;去一个城市拍下典型的风景名胜，是自我羞辱。&lt;/p&gt;
-
-&lt;p&gt;美是有定式的。所有去日本旅游的人拍出来的都是小清新（要么是另一种变种的清新），不需要修图软件，大脑里内藏了滤镜。
-审美的定式，思维的定式，如果社会身份对你而言是重要的，逐渐地，你穿什么衣服、住怎样的房子、吃怎样的东西、交怎样的朋友都会被无形的东西限制住。如果你做了不符合社会身份的事，你就会感到逾矩了。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;无法创新和突破的原因之一是无法接受“粗糙”的审美。&lt;/li&gt;
-&lt;li&gt;浪漫化是“改变”现实表现真实的能力，解决如何浪漫化就是在形成风格&lt;/li&gt;
-&lt;/ul&gt;</description>
+感想是：你以为你拍摄的是时代，到最后你不过是时代的切片，就你能拍出的东西，往往受限于时代的审美。（btw，我还是挺欣赏张君钢，&lt;a href=&#34;http://www.zhangjungang.com/84/84-10.html&#34;&gt;大桥及附近的风景&lt;/a&gt;）&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Step 70</title>
-      <link>https://jarrywangcn.github.io/post/step70/</link>
+      <link>http://example.org/posts/step70/</link>
       <pubDate>Wed, 16 Jan 2019 19:23:54 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/step70/</guid>
-      <description>&lt;p&gt;之前说过&amp;rdquo;观察摄影史，经典照片/作品的趋势是：1. 单张的复杂程度逐渐变高（布列松-&amp;gt;Alex Webb），从单张作品到作品集。如何处理这些关系，既是技巧的，也是美学的。 2. 越来越从故事般的“叙事“变为诗歌般的“意象”&lt;/p&gt;
-
-&lt;p&gt;同样是决定性瞬间，从布列松到alex webb，很明显可以看出单一元素到复杂元素，一二层到多层，单层元素的互动到多层元素的互动，逐渐流行的类似风格也佐证了答案是正确的。&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;当时想的单张照片的复杂多层复杂元素的代表是Alex Webb。就很长一段时间，这是我对单张照片复杂度认知想象的极限。Gregory Crewdson那卦靠大尺度堆积细节不算。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f141ce410b.jpg&#34; alt=&#34;img&#34; /&gt;
-&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f1b0f47c78.jpg&#34; alt=&#34;img&#34; /&gt;
-&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f1beb1b4b7.jpeg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;看到知乎”摄影中照片的结构是什么？“问题下的答案，我才意识到照片还有立体维度。或者可能是我潜意识知道了，理性上不知道。这张16年偶然拍的照片，我一直很喜欢（拍过那么多张照片记住其中一张也挺不容易的） 昨天终于get the point了！某些信息会储存在大脑里 和未来某刻的信息发生连接&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f19a9d899b.jpg&#34; alt=&#34;2016-hongkong&#34; /&gt;
-&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f1997a5cd5.jpg&#34; alt=&#34;stephenshore&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;马骥的答案里提到了Stephen Shore的“结构”和西方绘画传统中透视的关系
-&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f19baa79e4.jpg&#34; alt=&#34;claude&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Claude Lorrain, Seaport with the Embarkation of the Queen of Sheba, 1648&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f191de025c.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f20e3d9285.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f23c8c4bab.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f23d8296b7.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;这使我想问“当代中国摄影是否受国画审美影响？”，答案是。国画看的太少，很难找到典型相似的。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f17e2c7953.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f2747169d2.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f180096d8a.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f26fa14143.jpeg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f18df9bb07.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f253d95385.jpeg&#34; alt=&#34;wangximeng&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;同样是新地形摄影，同样是电线杆，张克纯也是很平面的&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f1791a71a2.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;一个玩的是透视，一个玩的是平面。&lt;/p&gt;
-
-&lt;p&gt;之前提到18年关注到的项目是：冯立的白夜（四星）、彭可的盐水池塘（三点五星），再补上雷宝珠（两点五星）和程新皓的来源不同的时间（time from different sources）（四点五星）。&lt;/p&gt;
-
-&lt;p&gt;冯立是五到十年前，雷宝珠是五到二十年前，彭可是当下，程新皓是永恒。&lt;/p&gt;
-
-&lt;p&gt;彭可
-&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f2bcd452bc.jpg&#34; alt=&#34;peng&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f2bdc10098.jpg&#34; alt=&#34;peng&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f2be841aa0.jpg&#34; alt=&#34;peng&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f2c013a132.jpg&#34; alt=&#34;peng&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;程新皓&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f2a2607d68.png&#34; alt=&#34;cheng&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f2a4cd0e30.png&#34; alt=&#34;cheng&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f2ab855124.png&#34; alt=&#34;cheng&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2019/01/16/5c3f2c3a045eb.png&#34; alt=&#34;cheng&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;我想拍的：当下的，和人发生联结的，温柔但有力量的，存在刺你一下的东西。&lt;/p&gt;
-
-&lt;p&gt;参考资料：
-1. &lt;a href=&#34;https://www.zhihu.com/question/308529564/answer/573043794&#34;&gt;知乎马骥《摄影中照片的结构是什么？》的回答&lt;/a&gt;
-2. 文中多张照片来自知乎，见水印。&lt;/p&gt;</description>
+      <guid>http://example.org/posts/step70/</guid>
+      <description>&lt;p&gt;之前说过&amp;quot;观察摄影史，经典照片/作品的趋势是：1. 单张的复杂程度逐渐变高（布列松-&amp;gt;Alex Webb），从单张作品到作品集。如何处理这些关系，既是技巧的，也是美学的。 2. 越来越从故事般的“叙事“变为诗歌般的“意象”&lt;/p&gt;
+&lt;p&gt;同样是决定性瞬间，从布列松到alex webb，很明显可以看出单一元素到复杂元素，一二层到多层，单层元素的互动到多层元素的互动，逐渐流行的类似风格也佐证了答案是正确的。&amp;rdquo;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>读完了也没法早起</title>
-      <link>https://jarrywangcn.github.io/post/my-morning-routine/</link>
+      <link>http://example.org/posts/my-morning-routine/</link>
       <pubDate>Tue, 01 Jan 2019 10:54:50 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/my-morning-routine/</guid>
+      <guid>http://example.org/posts/my-morning-routine/</guid>
       <description>&lt;p&gt;在每天的起床、洗漱、迈出家门，走进街区，地铁站或停车场，吞咽食物中是否蕴含意义？&lt;/p&gt;
-
-&lt;p&gt;无数电影小说发生着如此的叙事“我日复一日地过着同样的生活，直到厌倦。”&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;比起旅行时的惊鸿一瞥，我更沉溺于日常生活的细节，失语于无数次黄昏时的一朵云。日常生活是身体性的。在广东时，饭后去小区里的湖边散步看日落，晚上在没有路灯的上上下下的林荫道上慢跑，夏季浓重的草木气味。在成都，下楼走五分钟去面包店买吐司作明日的早餐，清晨和老爷爷老奶奶一起逛菜市。&lt;/p&gt;
-
-&lt;p&gt;书的副标题还挺成功学的“How successful people start everyday inspired”  此书和另一本小书《Daily Rituals》还略有渊源，My Morning Routine网站上还收录了对作者Mason Curry的访谈。&lt;/p&gt;
-
-&lt;p&gt;在Daily Rituals有不少的创作者推崇“日常工作比灵感更重要”。&lt;/p&gt;
-
-&lt;p&gt;William Faulkner说“I write when the spirit moves me, and the spirit moves me every day.”此理念的代表是村上春树，他每天早上四点起床，工作五到六个小时，九点睡觉。村上春树认为写作（特别是写长篇小说）是体力劳动。&lt;/p&gt;
-
-&lt;p&gt;村上还自嘲“而这种思维方式和生活方式，说不定与大众想象的小说家形象大相径庭。……住在安稳的郊外住宅区里、过着早睡早起的健康生活、日复一日地坚持慢跑、喜欢自己做蔬菜沙拉、钻进书房每天按部就班完成固定工作量的作家，只怕谁都不会渴望吧？”&lt;/p&gt;
-
-&lt;p&gt;十九二十世纪的创作者，过着奇奇怪怪的生活，各种各样的副业。村上说人们印象中的作家“过着自甘堕落的生活，顾家庭于不顾，把夫人的衣物送进典当铺里还钱（马克思），有时沉湎于美酒（不止一个），有时沉湎于女人（不止一个），总之是随心所欲无所不为，从这样的颓废与混沌中催生出文学来的反社会文人——这样一种古典的小说家形象说不定才符合世间大众的期待。要不然就是那种向往参加西班牙内战、在炮火纷飞中劈劈啪啪敲击打自己的‘行动派作家’。（海明威）”（此段引用中的括号是我加的…）&lt;/p&gt;
-
-&lt;p&gt;《苏菲的选择》的作者William Styron睡到中午，赖床读一小时书，知道下午四点才开始连续工作四小时（但只能写两百到三百字），吃完饭后会喝酒，抽烟，读书，听音乐到凌晨两三点。&lt;/p&gt;
-
-&lt;p&gt;副业开印刷厂、铸字厂，一天不知道喝多少咖啡的巴尔扎克，晚上六点吃饭，之后就去睡觉，一点爬起来写七个小时。早上八点小睡九十分钟，然后持续工作到四点（难怪他只活了51岁）。&lt;/p&gt;
-
-&lt;p&gt;卡夫卡每天只在晚上十一点才才开始工作，凌晨两三点睡觉，八点起床去上班——他先是在保险公司上班（中层职位），1908年跳槽去了布拉格工人意外事故保险机构（the Worker’s Accient Insurance Institute）。&lt;/p&gt;
-
-&lt;p&gt;但如今，愈来愈多的人希望成为自律的创作者。相对于前两个世纪的创作者，现在的“成功人士”（包括自由职业者）比起hippie更像是stoic，早起（平均起床时间为6.26am，这个数据真是令我难以置信），早睡（平均睡觉时间是10:58pm）。早上喝的第一杯水无非是水、咖啡和茶。78%的人会锻炼，63%的人会冥想或做瑜伽。50%的人早餐会吃水果，其次是鸡蛋，燕麦。&lt;/p&gt;
-
-&lt;p&gt;先说说早起，在Daily Rituals中，大约三分之一左右是在七点前起床的，而在My Morning Routine中，七点前，80%以上的人已经起床了。这与当今睡眠状况调查的结果背道而驰。（中国90后年轻人，还有17.5%是早睡早起，30.9%晚睡早起，31.1%晚睡晚起。）&lt;/p&gt;
-
-&lt;p&gt;二十世纪前的人们早起多是因为无从选择。美国作家Frances Trollope 53岁开始写作，她养育着六个孩子，只能四点写作到早餐时间。还有一堆作家全是四五点爬起来，就坐在书桌前写写写。Is waking up early the secret to a successful writer?&lt;/p&gt;
-
-&lt;p&gt;二十一世纪早起为了躲避干扰。在风险投资行业工作的M. G. SIEGLER喜欢在人们不能立刻回复的时间发送邮件。在别人还没有起床时保持清醒，时间都是自己的。&lt;/p&gt;
-
-&lt;p&gt;现代资本主义社会，时间就是金钱。从人们对专业人士工作十多小时后还去健身房的刻板形象中，或许能得出，比起凯鲁亚克和嬉皮士，我们更喜欢，或者更愿意喜欢努力工作，自律，能控制欲望的人。（这和当代精英形象的变化相同，西莫斯·可汗在一本关于美国精英的研究中得出，精英从把自己作为一个凝聚的群体、一个有特别历史和品味的阶级，到把自己看作是美国最有天分和最努力的一群人。）我们把创作者从”天才”变成了”工匠”。&lt;/p&gt;
-
-&lt;p&gt;另一个原因是全球化（尤其是信息全球化），当代社会，充斥着各种关于“我是不是不够有生产力”，“如何提到效率”，再然后出了一堆时间管理、任务管理、精力管理的方法论书籍和app。任何一个有心去提高效率的人，都能得到相似的建议：要固定作息，坚持锻炼，合理饮食，珍惜与家人相处的时间。同质化是无可避免的问题。&lt;/p&gt;
-
-&lt;p&gt;反正读完了也依然无法早起，不过养成了新习惯，早饭时不看书不玩手机，和家人一起认认真真吃早饭。&lt;/p&gt;
-
-&lt;p&gt;参考书目：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Benjamin Spall, Michael Xander, My Morning Routine, Porfolio, 2018&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Mason Currey, Daily Rituals, Knopf, 2013&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;中国医师协会, 全球睡眠状况及睡眠认知最新调查数据和睡眠医学最新成果, &lt;a href=&#34;http://www.cmda.net/rdxw2/11647.jhtml&#34;&gt;http://www.cmda.net/rdxw2/11647.jhtml&lt;/a&gt;, 2018.8.5&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;p&gt;无数电影小说发生着如此的叙事“我日复一日地过着同样的生活，直到厌倦。”&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>二零一八阅读总结（二）：中短篇小说集和摄影</title>
-      <link>https://jarrywangcn.github.io/post/2018-reading-novel/</link>
+      <link>http://example.org/posts/2018-reading-novel/</link>
       <pubDate>Tue, 01 Jan 2019 10:51:37 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/2018-reading-novel/</guid>
-      <description>&lt;p&gt;“摄影它作为艺术媒介之一怎么做都好，关键是你提出了什么问题，你要做什么，这是最重要的。你用什么做真的不重要。因为现在当代艺术发展到今天已经很多元化了。对我而言，我更喜欢用我稍微擅长的方式表达，摄影它也是我说话的方式，我觉得说清楚了，就没必要让它更复杂，好比我已经说过一遍话了，就不想再赘述一遍。——张克纯”&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;不论何种艺术，似乎都有对外（客观世界）和对内（私人情绪）的不同去向，日本摄影既有深厚的纪实传统，也有“私写真”（中国摄影目前没看到任何对内拍的好的（任航可能是，但我不喜欢他😂））&lt;/p&gt;
-
-&lt;p&gt;我是客观世界那一路的( ̀⌄ ́)&lt;/p&gt;
-
-&lt;p&gt;去年和朋友谈话说“好的摄影项目是短篇小说集” 后来又看一句话“每个记者都会喜欢乔伊斯的《都柏林人》” 还有一句话是“my little airport的歌曲是香港当代都市文学”&lt;/p&gt;
-
-&lt;p&gt;这三句话说的是“体裁只是语言的一种” 图像、音乐、文字用不同的“语言”表达相似的东西。&lt;/p&gt;
-
-&lt;p&gt;前几年基本不读文学小说了（还读类型小说），一直也不怎么看电影&amp;hellip; 今年带着这样的想法，读了几部短篇小说集，包括买麦克劳德的《海风中失落的血色馈赠》（加拿大新斯科舍省）、奈保尔的《米格尔街》（英国）、门罗的《逃离》（加拿大）、舍伍德·安德森的《俄亥俄，温斯堡》（又名《小镇畸人〉）、吴明益的《天桥上的魔术师》不是今年读的同款还有乔伊斯的 《都柏林人》、白先勇的《纽约客》&lt;/p&gt;
-
-&lt;p&gt;短片小说集和摄影项目最重要的相似点是：印象胜于逻辑。&lt;/p&gt;
-
-&lt;p&gt;中国典型的现状：&lt;/p&gt;
-
-&lt;p&gt;国内新晋摄影师，受Alec Soth和西方学院派影响太大了，很多摄影项目痕迹都很重。&lt;/p&gt;
-
-&lt;p&gt;“痕迹重”是个很有意思的感受。审美是多层次的，最前的一层是先验，越往后，后验的程度越深。先验是更身体偏情感的，后验是更逻辑偏理性的。他们的后验很完整，先验看不到，或者几乎没有，或者同质化严重（那种“轻盈、浪漫、缄默、破碎”）。同样类似的题材，豆瓣上的雷宝珠表达出的共情远甚于一般。&lt;/p&gt;
-
-&lt;p&gt;引用友邻KREJERK说的话&amp;rdquo;叙事手法和那些个trick并不会让一部电影变成经典，现在你再提搏击俱乐部和低俗小说会聊它们的结构么？这些东西是最容易被学习被超越也最容易过时的东西，它不是一部电影变成经典的原因，气味才是 你现在再看爱情是狗娘肯定不会觉得这种剧本结构有啥可稀奇的，最好的还是穿着拖鞋走过墨西哥城肮脏小巷和地下狗场那股血淋淋汗津津的味道，这才是这部电影完全没办法模仿到的东西&amp;rdquo; 先验比后验更重要。&lt;/p&gt;
-
-&lt;p&gt;观察中国摄影已经成名的摄影师（吕楠）素材多是乡土、偏远地区、少数群体，目前正在进行的是县城和西部地区（川渝），现代都市生活、消费文化仍是空白。&lt;/p&gt;
-
-&lt;p&gt;今年关注到的项目是：冯立的白夜（四星）、彭可的盐水池塘（三点五星）&lt;/p&gt;
-
-&lt;p&gt;观察摄影史，经典照片/作品的趋势是：1. 单张的复杂程度逐渐变高（布列松-&amp;gt;Alex Webb），从单张作品到作品集。如何处理这些关系，既是技巧的，也是美学的。 2. 越来越从故事般的“叙事“变为诗歌般的“意象”。&lt;/p&gt;
-
-&lt;p&gt;今年没拍什么照片，也没有摄影计划，重新整理个站，关注的问题是：一个项目中不同照片间的关系，空间关系（前后、上下排列）对叙事的影响，组图中单张照片和整体主题的关系，图像如诗歌的韵律。&lt;/p&gt;
-
-&lt;p&gt;我个人认为摄影是你要去表达一个东西（想法）， 单张照片已经没法做到完整地表达 也不够complicated。&lt;/p&gt;
-
-&lt;p&gt;“对它是什么有基本概念” 为什么要强调“基本概念” 只要知道历史上别人已经做了什么工作 还有什么工作需要去做 同时代的人在做什么 你才知道自己要解决的新问题是什么 只有解决新问题 创造新观念 才能推动共同体的发展&lt;/p&gt;
-
-&lt;p&gt;今年最爱Stephen Shore.&lt;/p&gt;
-
-&lt;!--more--&gt;</description>
+      <guid>http://example.org/posts/2018-reading-novel/</guid>
+      <description>&lt;p&gt;“摄影它作为艺术媒介之一怎么做都好，关键是你提出了什么问题，你要做什么，这是最重要的。你用什么做真的不重要。因为现在当代艺术发展到今天已经很多元化了。对我而言，我更喜欢用我稍微擅长的方式表达，摄影它也是我说话的方式，我觉得说清楚了，就没必要让它更复杂，好比我已经说过一遍话了，就不想再赘述一遍。——张克纯”&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>二零一八阅读总结（一）：茶叶</title>
-      <link>https://jarrywangcn.github.io/post/2018-reading-tea/</link>
+      <link>http://example.org/posts/2018-reading-tea/</link>
       <pubDate>Tue, 01 Jan 2019 10:46:36 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/2018-reading-tea/</guid>
+      <guid>http://example.org/posts/2018-reading-tea/</guid>
       <description>&lt;p&gt;近两年（集中在近一年）茶叶相关的书读的较多，可分为三类：&lt;/p&gt;
-
 &lt;p&gt;第一是茶叶作为植物和茶叶技术作为工艺的物质层面：如种植环境、茶树栽培、茶叶品种、制作工艺、茶具、泡茶手法等等。&lt;/p&gt;
-
 &lt;p&gt;第二是与茶相关的社会文化：如日本的茶道、英国的下午茶、国内天南地北的茶馆、台湾的茶艺师以及此中衍生出的社交规范、审美偏好、公共空间。&lt;/p&gt;
-
-&lt;p&gt;第三是茶叶作为一种经济作物——交易的商品在世界范围内的传播和深入其中扮演重要角色的经济和政治文化事件。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;这是个人理解的框架，如果以后对咖啡或者其他相似食物感兴趣估计也是这样。&lt;/p&gt;
-
-&lt;p&gt;第一类我读的少，也没遇到特别好的，书店里“生活方式”书架上茶相关的书十本九本装逼的。更多是在生活中多尝试不同工艺、不同品种、不同地区的茶叶。国内的红茶、绿茶、乌龙茶、黑茶。安徽福建云南四川。印度大吉岭，斯里兰卡锡兰，南非博士茶，香港鸳鸯奶茶。&lt;/p&gt;
-
-&lt;p&gt;第二类唯一感兴趣的是公共空间，探访了成都和重庆的几个老式茶馆，但没遇到有融入当代生活的案例。另一种饮品咖啡倒已经发展出相当规模的社群文化，我最喜欢的当然是社区店啦 &amp;gt; &amp;lt;&lt;/p&gt;
-
-&lt;p&gt;讨论这类公共空间的学术书只找到Ray Oldenburg的《The great good place》，里面讨论了法国的咖啡店，书店，酒吧，理发店作为区别于第一空间（家庭）、第二空间（工作地点）的第三空间在社区关系的构建中发挥的作用。（想起来mark这本书是17年去越南玩看到他们那边社区咖啡馆挺有意思，在国内受朋友影响窜了些馆子……结果后来都在喝茶😂）&lt;/p&gt;
-
-&lt;p&gt;第三类零零散散的，自己的阅读路径出于偶然，主要由英国植物学家Robert Fortune串起。一七年年中开始读Sarah Rose的《From all the tea in China》（中译名《茶叶大盗》）讲述Fortune多次来华移植茶树到印度地区。&lt;/p&gt;
-
-&lt;p&gt;跟着Fortune又读了他在安徽和武夷地区的游记《两访中国茶乡》，该书开篇是坐船到香港，里面提到的香港植物园，让我第一次意识到即使看似非常自然的植物传播，背后是国家力量。然后去读了《清代英国在华的博物学家》，当时在广东参观了佛山清晖园。&lt;/p&gt;
-
-&lt;p&gt;更一条线是出于对成都和城市研究的兴趣读了王笛的《茶馆：成都的公共生活和微观世界，1900-1950》，也是这本书使我在选择宜居重庆或成都的摇摆中选择了后者。这本加上王笛的《跨出封闭的世界》、《街头文化》还有早几年读的王明珂的写川西北羌藏地区的《羌在汉藏之间》形成了我对长江上游地区的基本理解。&lt;/p&gt;
-
-&lt;p&gt;依旧是长江中上游地区，读了王笛老师罗威廉的两本《汉口》，《汉口》中很大篇幅写汉口作为长江中上游的转口贸易城市，茶叶在其中的地位。（现在四川和湖南茶叶在全国没什么名声&amp;hellip;）。顺便读了曾小萍所著写四川自贡地区近代制盐业发展的《自贡商人》。&lt;/p&gt;
-
-&lt;p&gt;反正是出于兴趣的瞎读，目前最喜欢喝武夷岩茶、凤凰单丛、云南红茶，明年希望能遇到写西部、西北茶叶贸易，再抽空去下武夷山、凤凰山！&lt;/p&gt;
-
-&lt;p&gt;读过的几本通史都一般。&lt;/p&gt;</description>
+&lt;p&gt;第三是茶叶作为一种经济作物——交易的商品在世界范围内的传播和深入其中扮演重要角色的经济和政治文化事件。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>刺桐城</title>
-      <link>https://jarrywangcn.github.io/post/zayton/</link>
+      <link>http://example.org/posts/zayton/</link>
       <pubDate>Sun, 10 Jun 2018 00:33:22 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/zayton/</guid>
+      <guid>http://example.org/posts/zayton/</guid>
       <description>&lt;p&gt;我似遠方而來走向你&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/IMG_4221.JPG&#34; alt=&#34;zayton&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;漫步太平洋西岸的海港&lt;/p&gt;
-
-&lt;p&gt;想象中的街道 穿梭著波斯人、雅利安人、歐羅巴人和華夏人的臉龐&lt;/p&gt;
-
-&lt;p&gt;揚帆的海風和緬桂的蜜香後是婆娑的菩提葉和燃燒的鳳凰花&lt;/p&gt;
-
-&lt;p&gt;五月城牆下未開的五代的刺桐樹&lt;/p&gt;
-
-&lt;p&gt;走過千年前信徒走過的神殿&lt;/p&gt;
-
-&lt;p&gt;佛垂目靜坐 翼飛天演奏著喜樂&lt;/p&gt;
-
-&lt;p&gt;他們知道 心沒有去處時 多了一點傷心&lt;/p&gt;
-
-&lt;p&gt;墓碑石上書「此處埋葬著安德烈·佩魯賈，聖方濟各會士」&lt;/p&gt;
-
-&lt;p&gt;我似遠方而來走向你&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/IMG_4214%202.JPG&#34; alt=&#34;zayton&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/IMG_4221.JPG&#34; alt=&#34;zayton&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>方言小說與現代中文</title>
-      <link>https://jarrywangcn.github.io/post/modern_chinese_1/</link>
+      <link>http://example.org/posts/modern_chinese_1/</link>
       <pubDate>Sat, 02 Jun 2018 17:19:48 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/modern_chinese_1/</guid>
+      <guid>http://example.org/posts/modern_chinese_1/</guid>
       <description>&lt;p&gt;我是何時發現自己中文變差了？&lt;/p&gt;
-
-&lt;p&gt;從在網上隨意發言的用語越來越冗長和軟弱；從可以用口語把觀點表達清楚，卻總是逃避寫，從要克制才能不頻繁地使用“感覺、其實、非常、真的、都、太、現在、已經”。（評論：“太對了，感覺這種詞其實真的不好，現在都已經非常介意自己說這些了。”）&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;有意識地觀察每天看到的中文後，我發現，普遍而言，大家的中文都變差了（微信公眾號體，互聯網上的評論發言）。長居海外的華人，看到的爛中文少一些，或許是幸運。&lt;/p&gt;
-
-&lt;p&gt;二十世紀上半葉， 中國知識界曾展開關於中文的大討論，包括是否廢除漢字（即中文的拉丁化），白話文運動，普通話和方言的關係等等等等⋯⋯一個無法忽視的背景，當時也是中國近代國家觀念形成的時期。“語言各含國性以成名”（黃錦樹，p28）此中涉及的，中國是多民族國家，漢語和少數民族語言的關係，漢語等同“國語”、“中文”的影響在本文中暫且不表。&lt;/p&gt;
-
-&lt;p&gt;如今仍有討論意義的問題：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;普通話與方言的關係&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;書面語與口語的關係&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;大陸中文和境外中文的關係&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;中文與外文的關係&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;現代中文的面貌&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;中國古代，書面語和口頭語是區隔的，白話文運動推動了口語“文”化。漢語語言學家一般把漢語分為官話、吳語、湘語、贛語、客家話、閩語與粵語等七大方言，大略分為北方官話、晉語、下江官話、西南官話。其他六種方言使用人口各占2%至8%不等。（黃錦樹，p47）其他方言由於長期的政治邊緣化，地理的阻隔，互相之間難以轉譯，書面話經驗欠缺難以成文。他們選擇了多數人使用的“優勢語言”（官話）作為國語，在文學上造就了一個“失語的南方”。&lt;/p&gt;
-
-&lt;p&gt;黃錦樹評價“胡適的國語計畫明顯是借用多數人使用的「優勢語言」，把中國廣大幅員裡官話系統以外分歧的方言，儘管它也是「活的語言」——時間當下生活世界的語言——存而不論。”&lt;/p&gt;
-
-&lt;p&gt;各地的近代國家將漢語、拉丁語等語言向俗語翻譯過程中，形成了新的語言。日本在明治時代以口語為基礎重新創制了新的書寫語言，實際上是由小說家（文學）來實現的。甲午戰後，大量前往日本留學的年輕中國學生學習了“文言一致”，在中國發起了同樣的事情。（柄谷行人，2005)&lt;/p&gt;
-
-&lt;p&gt;在白話文中的國語方案中，胡適雲“我們所提倡的文學革命，只是要替中國創造一種國語的文學。有個國語的文學，方才可有文學的國語。有了文學的國語，我們的國語才可算得真正國語。國語沒有文學，便沒有生命，便沒有價值，便不能成立，便不能發達。”&lt;/p&gt;
-
-&lt;p&gt;方言小說回應的是把口語“文”化的問題，是對“失語的南方”的抵抗。前幾年非常火的《繁花》，敘事時間為二十世紀的六十年代至九十年代。這好比武俠小說所設定的時間截至到民國初年，兩者都構建了一個未被（相對）現代化變遷所改變的世界，“銘刻了一代世俗大眾的懷舊”。&lt;/p&gt;
-
-&lt;p&gt;很多人開始關注方言保護，為方言丟失感到悲觀，側面表說明當下面對的新情境是口語的瀕危。以前只是在書面語上失語，如今在口語上也要成為化石了。&lt;/p&gt;
-
-&lt;p&gt;李如一對於方言的丟失的判斷標準是：一個表現是不知道如何用方言表達新事物”。在這一標準下，他認為香港人的粵語是母語，大陸方言者的方言不是母語，“香港人可以用粵語表達各種現代、以及同時代（contemporary）概念和思想，大陸方言使用者——包括廣東地區的粵語使用者——不行。&lt;/p&gt;
-
-&lt;p&gt;他的解決方案是“擁抱帶方言口音的英文。堅持用自然地將英文融入上海話，堅持用滬語口音說英文，例如「一道去Starbucks吃咖啡」裏的Starbucks用徹底的上海口音讀，以奇為潮，以怪為美，讓英文詞彙成為上海方言的一部分，就不存在方言丟失的問題了。日語利用片假名和日語發音規則轉化大量外來語，是同樣的路徑。&lt;/p&gt;
-
-&lt;p&gt;年初那會，我特別想看描寫當代都市生活，能夠處理時代病症，準確把握時代精神的文學作品，腦子裡想的是白先勇的《台北人》、喬伊斯的《都柏林人》。和朋友討論了一圈，沒有。老一輩的作家都是寫農村生活，或者城市的古早記憶，年輕的作家要麼不太是純文學，或者是實力未到，寫得多是小鎮生活或者都市青春文學。
-劉濤對合肥街道的攝影啟發了我，即使不是北上廣深，只是三四五六七八線城市，也有現代化生活，也有新的可以處理的素材。《空響炮》中的世界，是小城市平民階層的熟人社會。但《美芬的故事》中的美芬，要面臨年老後的獨居，女兒移居香港，結婚不辦婚禮，堅持丁克；《空響炮》裡的喜舖批發街，因為禁炮令，炮仗店生意到頭。中國並沒有從小在現代都市長大的人，所有人都或多或少被襲捲進城市化和全球化的浪潮。他們是“過去”的故事，也是這個時代的故事。&lt;/p&gt;
-
-&lt;p&gt;中國古代社會有一種神奇的救濟機構：惜字局。收集寫過的紙張，放進惜字爐，鄭重其事地燒掉，表達對文字的尊敬。而今對文字有敬畏的人，看著爐子裡的蠶紙，一閃一滅逐漸消失。&lt;/p&gt;
-
-&lt;p&gt;還是有點想看人寫《一道去Starbucks吃咖啡》。&lt;/p&gt;
-
-&lt;p&gt;參考文獻：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;黃錦樹，文與魂與體，麥田出版社，2006&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;王柯，消失的國民，香港中文大學出版社，2016&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;新生代上海人不会说本地语言，家乡方言丢失，作为上海人我觉得很悲观，这正常吗？ &lt;a href=&#34;https://www.zhihu.com/question/275626181/answer/382336651&#34;&gt;https://www.zhihu.com/question/275626181/answer/382336651&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;柄谷行人，近代文学的终结，インスクリプト，2005，轉引自公眾號《Isonomia》&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;</description>
+&lt;p&gt;從在網上隨意發言的用語越來越冗長和軟弱；從可以用口語把觀點表達清楚，卻總是逃避寫，從要克制才能不頻繁地使用“感覺、其實、非常、真的、都、太、現在、已經”。（評論：“太對了，感覺這種詞其實真的不好，現在都已經非常介意自己說這些了。”）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>每當變幻時</title>
+      <link>http://example.org/posts/when_we_change/</link>
+      <pubDate>Sun, 04 Mar 2018 01:19:04 +0800</pubDate>
+      
+      <guid>http://example.org/posts/when_we_change/</guid>
+      <description>&lt;p&gt;吃完晚饭后出门，缘由是听《味之道》里的主播，成都人席妙雅说，成都的酒吧有个神奇的地方是，你可以在酒吧里点任何你想吃的东西吃，而成都最老的酒吧街——九眼桥，附近的卤菜都被一家“胖妈卤菜”垄断了，席妙雅曾经和朋友为了这家的卤菜进一间酒吧，点完酒后没有铺垫直接说“老板我饿了想吃点夜宵”，然后点了那家的兔腰子和兔肚，吃得大满足。&lt;/p&gt;
+&lt;p&gt;先用apple地图查，找不到，大众点评上倒是有，地址是“九眼桥丝管街1812bar门口”，豆瓣小组有个07年的帖子说“九眼桥河边，每到晚上八点，有个小摊摊就摆出来了”，今天去的时候是后面紧靠着酒吧，露天有个店面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/FullSizeRender%204.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Life is a miracle</title>
+      <link>http://example.org/posts/life_is_a_miracle/</link>
+      <pubDate>Thu, 25 Jan 2018 16:03:30 +0800</pubDate>
+      
+      <guid>http://example.org/posts/life_is_a_miracle/</guid>
+      <description>&lt;p&gt;看了十三邀采访李诞那期，一些想法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一七年小记</title>
+      <link>http://example.org/posts/notes_of_2017/</link>
+      <pubDate>Wed, 17 Jan 2018 15:12:21 +0800</pubDate>
+      
+      <guid>http://example.org/posts/notes_of_2017/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/2913d48ea31d602.jpg&#34; alt=&#34;TITLE&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>谈谈“任务管理和时间管理”</title>
+      <link>http://example.org/posts/time_management/</link>
+      <pubDate>Tue, 21 Nov 2017 08:33:03 +0800</pubDate>
+      
+      <guid>http://example.org/posts/time_management/</guid>
+      <description>&lt;p&gt;单纯的”任务管理和时间管理“十有八九是失败的，还得有配套的身体管理和精力管理，以及减少外界和他人的干扰&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>生长于野 而安于室</title>
+      <link>http://example.org/posts/2017_sep/</link>
+      <pubDate>Mon, 09 Oct 2017 01:10:51 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2017_sep/</guid>
+      <description>&lt;h2 id=&#34;一棵&#34;&gt;一棵🌲&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/IMG_7678.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>村上春树写不写日记？</title>
+      <link>http://example.org/posts/harukimurakami/</link>
+      <pubDate>Wed, 09 Aug 2017 15:30:50 +0800</pubDate>
+      
+      <guid>http://example.org/posts/harukimurakami/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/p444862912.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>顺化的坟墓</title>
+      <link>http://example.org/posts/hue_tomb/</link>
+      <pubDate>Wed, 09 Aug 2017 15:19:52 +0800</pubDate>
+      
+      <guid>http://example.org/posts/hue_tomb/</guid>
+      <description>&lt;p&gt;读福琼《两访中国茶乡》，描述他十九世纪中叶在舟山岛上看到几座坟墓”在埋葬死者的坟堆前面，铺了一条很美的路，还有精美的石雕，与南方圆形坟墓不同，这几个坟墓都是用砖石砌成方形。墓地四周通常都像英国一样——我想全世界大概都是如此，种上一些苍松翠柏之类的。乔瑟林爵士在他的《中国行军记》一书中，对此作了如下一番生动、恰当的描写：‘山坡上就像随意栽种的一样，到处都是一丛丛的松鼠，透过密密的松叶，可以看到民房和寺庙的屋顶，林间景象也随之变得丰富起来。在这些众多的小树林中，不仅是行人为其优美的景致吸引而停下脚步，死者也挑中这儿作为他们的长眠之地，坟墓上长着一些甜甜的铁线莲和芬芳的花朵，看着眼前这静谧的景象，面对如此美丽的坟墓，哪怕是最粗心的人恐怕也不能无动于衷吧。’“&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>做家务</title>
+      <link>http://example.org/posts/chore/</link>
+      <pubDate>Thu, 27 Jul 2017 20:36:55 +0800</pubDate>
+      
+      <guid>http://example.org/posts/chore/</guid>
+      <description>&lt;p&gt;读杜森的(&lt;a href=&#34;&#34;&gt;老妈子配厨子&lt;/a&gt;(&lt;a href=&#34;https://www.douban.com/note/630635511/&#34;&gt;https://www.douban.com/note/630635511/&lt;/a&gt;)，想起一些事。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>碎片</title>
+      <link>http://example.org/posts/interface/</link>
+      <pubDate>Fri, 16 Jun 2017 07:47:21 +0800</pubDate>
+      
+      <guid>http://example.org/posts/interface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>二十億光年的孤獨</title>
+      <link>http://example.org/posts/twenty_billion_light_years_of_loneliness/</link>
+      <pubDate>Thu, 25 May 2017 16:22:45 +0700</pubDate>
+      
+      <guid>http://example.org/posts/twenty_billion_light_years_of_loneliness/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;二十億光年的孤獨&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;谷川俊太郎&lt;/p&gt;
+&lt;p&gt;地球人在小小的地球上&lt;/p&gt;
+&lt;p&gt;睡覺 蘇醒 和 工作&lt;/p&gt;
+&lt;p&gt;有時想和火星人做朋友&lt;/p&gt;
+&lt;p&gt;火星人在小小的火星上&lt;/p&gt;
+&lt;p&gt;做著什麼 我不清楚&lt;/p&gt;
+&lt;p&gt;或許在睡覺 打扮 和 苦惱&lt;/p&gt;
+&lt;p&gt;但我確信他們&lt;/p&gt;
+&lt;p&gt;有時想和地球人做朋友&lt;/p&gt;
+&lt;p&gt;萬有引力&lt;/p&gt;
+&lt;p&gt;是互相吸引的孤獨&lt;/p&gt;
+&lt;p&gt;宇宙正在拉扯&lt;/p&gt;
+&lt;p&gt;大家於是渴望相識&lt;/p&gt;
+&lt;p&gt;宇宙飛快膨脹&lt;/p&gt;
+&lt;p&gt;大家為此感到憂愁&lt;/p&gt;
+&lt;p&gt;對著二十億光年的孤獨&lt;/p&gt;
+&lt;p&gt;我忍不住打了個噴嚏&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>当我们讨论意义时</title>
+      <link>http://example.org/posts/whatsaboutmeaning/</link>
+      <pubDate>Tue, 21 Mar 2017 00:47:07 +0800</pubDate>
+      
+      <guid>http://example.org/posts/whatsaboutmeaning/</guid>
+      <description>&lt;p&gt;今天和朋友A和B在广州玩，先去了方所，我翻了几本摄影集，A买了一本弗朗索瓦·莫里亚克的《爱的荒漠》和弗里德·里奇的《摄影之后》。A和B都不拍照，A买书的想法可能是好奇吧，于是他们展开了一段“现在大多数拍照的人基本功都很不扎实，感光度、快门速度、焦距都搞不清楚”的谈话。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用python下载instagram图片（中国大陆）</title>
+      <link>http://example.org/posts/download_from_instagram/</link>
+      <pubDate>Sat, 21 Jan 2017 20:47:56 +0800</pubDate>
+      
+      <guid>http://example.org/posts/download_from_instagram/</guid>
+      <description>&lt;h1 id=&#34;0&#34;&gt;0.&lt;/h1&gt;
+&lt;p&gt;本科毕业论文做的是默克尔和奥巴马instagram形象对比分析，当年半点程序背景都没有（拿chrome查看源代码找图片链接到是会的）但instagram似乎挺不支持这个行为，源代码里都找不到图片地址。所以，当初我手动截图（加排序）了两个人官方账号里的所有图片。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2016 Reading and Photography Report</title>
+      <link>http://example.org/posts/2016/</link>
+      <pubDate>Fri, 30 Dec 2016 20:52:37 +0800</pubDate>
+      
+      <guid>http://example.org/posts/2016/</guid>
+      <description>&lt;h2 id=&#34;1-友人&#34;&gt;1. 友人&lt;/h2&gt;
+&lt;p&gt;去年总结时发现一整年没认识一个人 全是老朋友 于是定了个小目标 “年轻人要开放点” 一年过去了 参加了128次社交活动 见了88个人（比去年多了43个） 有41个是第一次见面的 其中有21个值得一见 还有9个人想有机会加深下友谊 #再也不说自己是社恐了# #图是python画的#&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Thu, 08 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>About me My name is Jarry Wang.
+I&amp;rsquo;m from China, born in 1994. I lived in Shanghai during my childhood, and studied German and finance in Zhejiang University.
+I&amp;rsquo;m currently living and working in Chengdu, CN.
+Photography Amateur Maybe I&amp;rsquo;m not a qualified photographer, but I&amp;rsquo;m keen on taking photos. Although I usually take street snapshots, I&amp;rsquo;m also interested in Portrait, Food and Architecture.
+My favorite photographers are Martin Parr, Vivian Maier, Jeff Wall, Marc Riboud, Ueda Shoji, Lv Nan, and Bernard Faucon.</description>
     </item>
     
   </channel>

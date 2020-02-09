@@ -1,141 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>99 problems</title>
-    <link>https://jarrywangcn.github.io/tags/programing/index.xml</link>
-    <description>Recent content on 99 problems</description>
+    <title>programing on 99 problems</title>
+    <link>http://example.org/tags/programing/</link>
+    <description>Recent content in programing on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <atom:link href="https://jarrywangcn.github.io/tags/programing/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Fri, 27 Dec 2019 09:41:55 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/programing/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Advent of Code 2018&amp;2019 上星之旅</title>
-      <link>https://jarrywangcn.github.io/post/aoc_1819/</link>
+      <link>http://example.org/posts/aoc_1819/</link>
       <pubDate>Fri, 27 Dec 2019 09:41:55 +0800</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/aoc_1819/</guid>
+      <guid>http://example.org/posts/aoc_1819/</guid>
       <description>&lt;p&gt;aoc全称&lt;a href=&#34;https://adventofcode.com/2019&#34;&gt;&lt;strong&gt;advent of code&lt;/strong&gt;&lt;/a&gt;，是每年12月1日开始圣诞节结束的趣味编程比赛，每天两道题，第一道做出来才有机会做第二道，但前面日期的题没做出来也可以做后面日期的题。以数据结构和算法为主，11月cpy推荐我玩（被虐）一下，2018年做到d9，上了16颗星，2019年做到d16，也上了16颗星，d18涉及的吃豆人类似的路径查找实在不会做，就止步了。希望明年可以上更多的星。&lt;/p&gt;
-
-&lt;p&gt;aoc是最近刷题中趣味性最强，最好玩的题目，所以想整理一下上星心得。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;aoc-2018&#34;&gt;aoc 2018&lt;/h2&gt;
-
-&lt;h3 id=&#34;day1-day2&#34;&gt;day1-day2&lt;/h3&gt;
-
-&lt;p&gt;简单到不用说&lt;/p&gt;
-
-&lt;h3 id=&#34;day3&#34;&gt;day3&lt;/h3&gt;
-
-&lt;p&gt;考二维数组的计算，我用了np.array&lt;/p&gt;
-
-&lt;h3 id=&#34;day4&#34;&gt;day4&lt;/h3&gt;
-
-&lt;p&gt;这道题对当时的我还蛮难的，是给一串string数据，告诉你guard在哪个时刻睡觉，哪个时刻醒，要你根据数据判断哪个guard睡的最多，并且在哪个分钟睡的最多。
-part2是先判断哪个分钟睡的最多，用的都是dateframe groupby后的sort_values&lt;/p&gt;
-
-&lt;p&gt;写出了个bug是有行代码是验证切割分钟时间的左边界和右边界是否存在 结果边界=0，就是时间是0:00的时候&amp;hellip; 它当做不存在。。。&lt;/p&gt;
-
-&lt;p&gt;这个题目我用了很朴素的做法，cpy科普了离散化处理，但我太懒重新搞一遍，就过了&amp;hellip;&lt;/p&gt;
-
-&lt;h3 id=&#34;day5&#34;&gt;day5&lt;/h3&gt;
-
-&lt;p&gt;这道题叫消消乐&amp;hellip;第一个递归，bug遇到的是递归的return的结果是什么&amp;hellip;&lt;/p&gt;
-
-&lt;h3 id=&#34;day6&#34;&gt;day6&lt;/h3&gt;
-
-&lt;p&gt;还是二维数组，但还设计曼哈顿距离，这道题是判断边界的延伸（说起来比较抽象了）&lt;/p&gt;
-
-&lt;p&gt;判断是否延伸我先用了再生成几行Z，看两者的数据有没有差异，有差异的就是infinite，但这样不能解决左上的，一开始没想出来，后来是找出z里最左边和最上边行列unique的值，把这些值的都去掉。&lt;/p&gt;
-
-&lt;p&gt;一开始还想算出可以最小生成的矩阵，减少运算，但这样坐标要做相对处理&amp;hellip; 非常复杂，搞不出来，最后用了绝对的，但计算width和height还是有用&lt;/p&gt;
-
-&lt;h3 id=&#34;day7&#34;&gt;day7&lt;/h3&gt;
-
-&lt;p&gt;新的数据类型，图。之前没学过图&amp;hellip; 看了一天的资料才知道怎么下手。&lt;/p&gt;
-
-&lt;p&gt;两个bug：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;给的测试数据，一开始入度为0的只有一个，给的数据有4个，除了选择start还要在queue中添加剩余的&lt;/li&gt;
-&lt;li&gt;第一遍做出来答案已经是对的了，但忘了英语有26个字母，给的数据，邻接表左边有25个字母，右边有26个，最后的情况是 graph已经被消除等于零了，queue中还有最后一个值是“X”，按我的做法没有添加进去，结束条件是len(graph) == 0&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;day8&#34;&gt;day8&lt;/h3&gt;
-
-&lt;p&gt;这道题不是自己做出来的&amp;hellip; 知道要用递归，但就是写不出正确的。
-最后看了别人动态规划的思路&amp;hellip;&lt;/p&gt;
-
-&lt;h3 id=&#34;day9&#34;&gt;day9&lt;/h3&gt;
-
-&lt;p&gt;这道题还是挺朴素的模拟，第二题应该和算法复杂度有关，但我不会做，愣跑了三个半小时跑出了答案。&lt;/p&gt;
-
-&lt;h2 id=&#34;aoc-2019&#34;&gt;aoc 2019&lt;/h2&gt;
-
-&lt;h3 id=&#34;day1&#34;&gt;day1&lt;/h3&gt;
-
-&lt;p&gt;简单&lt;/p&gt;
-
-&lt;h3 id=&#34;day2&#34;&gt;day2&lt;/h3&gt;
-
-&lt;p&gt;part2题目差点看不懂。。。cpy说是图灵机，涉及如何避免可变对象的变化（list传递还要保持原先的list），最后用了暴力string生成新的list&amp;hellip; 来reset
-今年的aoc每隔两天都是An Intcode program的题目，又麻烦又只是模拟，只是更复杂的模拟，太不喜欢做了，把所有相关的题目都跳过了。。。&lt;/p&gt;
-
-&lt;h3 id=&#34;day3-1&#34;&gt;day3&lt;/h3&gt;
-
-&lt;p&gt;这道题考两个线段的相交点，用了离散化的处理做出来了呢。。。结果part2的题目，如果part1不是用离散化的处理会更好做，所有part2就没做。。。&lt;/p&gt;
-
-&lt;h3 id=&#34;day4-1&#34;&gt;day4&lt;/h3&gt;
-
-&lt;p&gt;不管它想考我什么，反正我用了正则表达式&lt;/p&gt;
-
-&lt;h3 id=&#34;day6-1&#34;&gt;day6&lt;/h3&gt;
-
-&lt;p&gt;图算法，用了递归，还涉及了全局函数要写句global&amp;hellip;
-part2还有最小公共祖先。&lt;/p&gt;
-
-&lt;h3 id=&#34;day8-1&#34;&gt;day8&lt;/h3&gt;
-
-&lt;p&gt;这道题挺简单的，但最后有个根据1/0的值生成出像素，看出密码。我是手动用excel画出来的。。。&lt;/p&gt;
-
-&lt;h3 id=&#34;day10&#34;&gt;day10&lt;/h3&gt;
-
-&lt;p&gt;题目是要算一个直线的斜率，用二元一次函数直接除出斜率会导致浮点数误差。搞得我去研究了下Decimal，结果最后是用了反三角函数atan才做对。&lt;/p&gt;
-
-&lt;h3 id=&#34;day12&#34;&gt;day12&lt;/h3&gt;
-
-&lt;p&gt;part2和去年的day9的part2很像，但如果朴素，计算次数是10^10次方&amp;hellip;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;一定要用O(1)的hashmap查找&lt;/li&gt;
-&lt;li&gt;优化思路不是数据结构类型的，而是算法类型的，这道题的x,y,z三个坐标是独立的，分别算循环周期，然后算三个周期的最小公倍数。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;day14&#34;&gt;day14&lt;/h3&gt;
-
-&lt;p&gt;图，考入度为0且有偏度的图遍历。
-part2又考算法，又考时间复杂度，没做出来。&lt;/p&gt;
-
-&lt;h3 id=&#34;day16&#34;&gt;day16&lt;/h3&gt;
-
-&lt;p&gt;很简单的模拟&lt;/p&gt;
-
-&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;个人认为aoc的题目比单纯刷题好，因为题目和最终答案经常绕了超过三个弯，我从一开始的看完题目就挣扎着写，到写代码前先想好几个主要步骤，每个步骤的函数输入输出分别是什么，什么格式的。aoc2018的题目基本每天我都要做个四五个小时，才能做出来，还动不动写出bug。aoc2019思路对的话，一小时多一点就能搞定了。&lt;/li&gt;
-&lt;li&gt;题目难度从一维列表，二维列表，到图，到递归，再往后不知道是什么了。一二维列表目前没问题，图和树只能做最简单的遍历或者最短路径。递归十个有九个想不清楚return回来的是什么&lt;/li&gt;
-&lt;li&gt;待深入：
-
-&lt;ol&gt;
-&lt;li&gt;做题经常不考虑复杂度分析（我连最朴素的都做不出来考虑啥复杂度分析）&lt;/li&gt;
-&lt;li&gt;树、图、动态规划、递归&amp;hellip;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;这两个月还是有进步一丢丢&amp;hellip;&lt;/p&gt;</description>
+&lt;p&gt;aoc是最近刷题中趣味性最强，最好玩的题目，所以想整理一下上星心得。&lt;/p&gt;</description>
     </item>
     
   </channel>

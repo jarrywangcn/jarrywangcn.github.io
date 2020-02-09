@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 99 problems</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on 99 problems</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Fri, 27 Dec 2019 15:48:14 +0800</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>jazz</title>
+      <link>http://example.org/tags/jazz/</link>
+      <pubDate>Fri, 27 Dec 2019 15:48:14 +0800</pubDate>
+      
+      <guid>http://example.org/tags/jazz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>music</title>
+      <link>http://example.org/tags/music/</link>
+      <pubDate>Fri, 27 Dec 2019 15:48:14 +0800</pubDate>
+      
+      <guid>http://example.org/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aoc</title>
+      <link>http://example.org/tags/aoc/</link>
+      <pubDate>Fri, 27 Dec 2019 09:41:55 +0800</pubDate>
+      
+      <guid>http://example.org/tags/aoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programing</title>
+      <link>http://example.org/tags/programing/</link>
+      <pubDate>Fri, 27 Dec 2019 09:41:55 +0800</pubDate>
+      
+      <guid>http://example.org/tags/programing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>david_hurn</title>
+      <link>http://example.org/tags/david_hurn/</link>
+      <pubDate>Mon, 09 Dec 2019 11:23:40 +0800</pubDate>
+      
+      <guid>http://example.org/tags/david_hurn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>magnum</title>
+      <link>http://example.org/tags/magnum/</link>
+      <pubDate>Mon, 09 Dec 2019 11:23:40 +0800</pubDate>
+      
+      <guid>http://example.org/tags/magnum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>photography</title>
+      <link>http://example.org/tags/photography/</link>
+      <pubDate>Mon, 09 Dec 2019 11:23:40 +0800</pubDate>
+      
+      <guid>http://example.org/tags/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bookreview</title>
+      <link>http://example.org/tags/bookreview/</link>
+      <pubDate>Tue, 27 Aug 2019 11:32:10 +0800</pubDate>
+      
+      <guid>http://example.org/tags/bookreview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloth</title>
+      <link>http://example.org/tags/cloth/</link>
+      <pubDate>Tue, 27 Aug 2019 11:32:10 +0800</pubDate>
+      
+      <guid>http://example.org/tags/cloth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>japanese</title>
+      <link>http://example.org/tags/japanese/</link>
+      <pubDate>Tue, 27 Aug 2019 11:32:10 +0800</pubDate>
+      
+      <guid>http://example.org/tags/japanese/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reading</title>
+      <link>http://example.org/tags/reading/</link>
+      <pubDate>Tue, 27 Aug 2019 11:32:10 +0800</pubDate>
+      
+      <guid>http://example.org/tags/reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>malaysia</title>
+      <link>http://example.org/tags/malaysia/</link>
+      <pubDate>Fri, 09 Aug 2019 11:18:09 +0800</pubDate>
+      
+      <guid>http://example.org/tags/malaysia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>travel</title>
+      <link>http://example.org/tags/travel/</link>
+      <pubDate>Fri, 09 Aug 2019 11:18:09 +0800</pubDate>
+      
+      <guid>http://example.org/tags/travel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ritual</title>
+      <link>http://example.org/tags/ritual/</link>
+      <pubDate>Tue, 01 Jan 2019 10:54:50 +0800</pubDate>
+      
+      <guid>http://example.org/tags/ritual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>routine</title>
+      <link>http://example.org/tags/routine/</link>
+      <pubDate>Tue, 01 Jan 2019 10:54:50 +0800</pubDate>
+      
+      <guid>http://example.org/tags/routine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>novel</title>
+      <link>http://example.org/tags/novel/</link>
+      <pubDate>Tue, 01 Jan 2019 10:51:37 +0800</pubDate>
+      
+      <guid>http://example.org/tags/novel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tea</title>
+      <link>http://example.org/tags/tea/</link>
+      <pubDate>Tue, 01 Jan 2019 10:46:36 +0800</pubDate>
+      
+      <guid>http://example.org/tags/tea/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>food</title>
+      <link>http://example.org/tags/food/</link>
+      <pubDate>Sun, 04 Mar 2018 01:19:04 +0800</pubDate>
+      
+      <guid>http://example.org/tags/food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>focus</title>
+      <link>http://example.org/tags/focus/</link>
+      <pubDate>Tue, 21 Nov 2017 08:33:03 +0800</pubDate>
+      
+      <guid>http://example.org/tags/focus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>timemanagement</title>
+      <link>http://example.org/tags/timemanagement/</link>
+      <pubDate>Tue, 21 Nov 2017 08:33:03 +0800</pubDate>
+      
+      <guid>http://example.org/tags/timemanagement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chengdu</title>
+      <link>http://example.org/tags/chengdu/</link>
+      <pubDate>Mon, 09 Oct 2017 01:10:51 +0800</pubDate>
+      
+      <guid>http://example.org/tags/chengdu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>writing</title>
+      <link>http://example.org/tags/writing/</link>
+      <pubDate>Mon, 09 Oct 2017 01:10:51 +0800</pubDate>
+      
+      <guid>http://example.org/tags/writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dairy</title>
+      <link>http://example.org/tags/dairy/</link>
+      <pubDate>Wed, 09 Aug 2017 15:30:50 +0800</pubDate>
+      
+      <guid>http://example.org/tags/dairy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>harukimurakami</title>
+      <link>http://example.org/tags/harukimurakami/</link>
+      <pubDate>Wed, 09 Aug 2017 15:30:50 +0800</pubDate>
+      
+      <guid>http://example.org/tags/harukimurakami/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hue</title>
+      <link>http://example.org/tags/hue/</link>
+      <pubDate>Wed, 09 Aug 2017 15:19:52 +0800</pubDate>
+      
+      <guid>http://example.org/tags/hue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vietnam</title>
+      <link>http://example.org/tags/vietnam/</link>
+      <pubDate>Wed, 09 Aug 2017 15:19:52 +0800</pubDate>
+      
+      <guid>http://example.org/tags/vietnam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>family</title>
+      <link>http://example.org/tags/family/</link>
+      <pubDate>Thu, 27 Jul 2017 20:36:55 +0800</pubDate>
+      
+      <guid>http://example.org/tags/family/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>poetry</title>
+      <link>http://example.org/tags/poetry/</link>
+      <pubDate>Thu, 25 May 2017 16:22:45 +0700</pubDate>
+      
+      <guid>http://example.org/tags/poetry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>art</title>
+      <link>http://example.org/tags/art/</link>
+      <pubDate>Tue, 21 Mar 2017 00:47:07 +0800</pubDate>
+      
+      <guid>http://example.org/tags/art/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>instagram</title>
+      <link>http://example.org/tags/instagram/</link>
+      <pubDate>Sat, 21 Jan 2017 20:47:56 +0800</pubDate>
+      
+      <guid>http://example.org/tags/instagram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>instaLooter</title>
+      <link>http://example.org/tags/instalooter/</link>
+      <pubDate>Sat, 21 Jan 2017 20:47:56 +0800</pubDate>
+      
+      <guid>http://example.org/tags/instalooter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>instaRaider</title>
+      <link>http://example.org/tags/instaraider/</link>
+      <pubDate>Sat, 21 Jan 2017 20:47:56 +0800</pubDate>
+      
+      <guid>http://example.org/tags/instaraider/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>http://example.org/tags/python/</link>
+      <pubDate>Sat, 21 Jan 2017 20:47:56 +0800</pubDate>
+      
+      <guid>http://example.org/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shadowsocks</title>
+      <link>http://example.org/tags/shadowsocks/</link>
+      <pubDate>Sat, 21 Jan 2017 20:47:56 +0800</pubDate>
+      
+      <guid>http://example.org/tags/shadowsocks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>friends</title>
+      <link>http://example.org/tags/friends/</link>
+      <pubDate>Fri, 30 Dec 2016 20:52:37 +0800</pubDate>
+      
+      <guid>http://example.org/tags/friends/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

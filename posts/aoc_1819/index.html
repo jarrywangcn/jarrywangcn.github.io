@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Advent of Code 2018&amp;2019 上星之旅 - 99 problems</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Advent of Code 2018&amp;2019 上星之旅" />
+<meta property="og:description" content="aoc全称advent of code，是每年12月1日开始圣诞节结束的趣味编程比赛，每天两道题，第一道做出来才有机会做第二道，但前面日期的题没做出来也可以做后面日期的题。以数据结构和算法为主，11月cpy推荐我玩（被虐）一下，2018年做到d9，上了16颗星，2019年做到d16，也上了16颗星，d18涉及的吃豆人类似的路径查找实在不会做，就止步了。希望明年可以上更多的星。
+aoc是最近刷题中趣味性最强，最好玩的题目，所以想整理一下上星心得。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/aoc_1819/" />
+<meta property="article:published_time" content="2019-12-27T09:41:55+08:00" />
+<meta property="article:modified_time" content="2019-12-27T09:41:55+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Advent of Code 2018&amp;2019 上星之旅"/>
+<meta name="twitter:description" content="aoc全称advent of code，是每年12月1日开始圣诞节结束的趣味编程比赛，每天两道题，第一道做出来才有机会做第二道，但前面日期的题没做出来也可以做后面日期的题。以数据结构和算法为主，11月cpy推荐我玩（被虐）一下，2018年做到d9，上了16颗星，2019年做到d16，也上了16颗星，d18涉及的吃豆人类似的路径查找实在不会做，就止步了。希望明年可以上更多的星。
+aoc是最近刷题中趣味性最强，最好玩的题目，所以想整理一下上星心得。"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://example.org/css/main.css" />
+
+	<script src="http://example.org/js/feather.min.js"></script>
+	
+	<script src="http://example.org/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="http://example.org/">99 problems</a></h1>
+	<div class="site-description"><h2>Zoo is sad.</h2><nav class="nav social">
+			<ul class="flat"><a href="https://instagram.com/jarrywan9" title="Instagram"><i data-feather="instagram"></i></a><a href="https://github.com/jarrywangcn" title="Github"><i data-feather="github"></i></a><a href="https://jarrywangcn.github.io/index.xml/" title="Rss"><i data-feather="rss"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Advent of Code 2018&amp;2019 上星之旅</h1>
+			<div class="meta">Posted at &mdash; Dec 27, 2019</div>
+		</div>
+
+		<div class="markdown">
+			<p>aoc全称<a href="https://adventofcode.com/2019"><strong>advent of code</strong></a>，是每年12月1日开始圣诞节结束的趣味编程比赛，每天两道题，第一道做出来才有机会做第二道，但前面日期的题没做出来也可以做后面日期的题。以数据结构和算法为主，11月cpy推荐我玩（被虐）一下，2018年做到d9，上了16颗星，2019年做到d16，也上了16颗星，d18涉及的吃豆人类似的路径查找实在不会做，就止步了。希望明年可以上更多的星。</p>
+<p>aoc是最近刷题中趣味性最强，最好玩的题目，所以想整理一下上星心得。</p>
+<h2 id="aoc-2018">aoc 2018</h2>
+<h3 id="day1-day2">day1-day2</h3>
+<p>简单到不用说</p>
+<h3 id="day3">day3</h3>
+<p>考二维数组的计算，我用了np.array</p>
+<h3 id="day4">day4</h3>
+<p>这道题对当时的我还蛮难的，是给一串string数据，告诉你guard在哪个时刻睡觉，哪个时刻醒，要你根据数据判断哪个guard睡的最多，并且在哪个分钟睡的最多。
+part2是先判断哪个分钟睡的最多，用的都是dateframe groupby后的sort_values</p>
+<p>写出了个bug是有行代码是验证切割分钟时间的左边界和右边界是否存在 结果边界=0，就是时间是0:00的时候&hellip; 它当做不存在。。。</p>
+<p>这个题目我用了很朴素的做法，cpy科普了离散化处理，但我太懒重新搞一遍，就过了&hellip;</p>
+<h3 id="day5">day5</h3>
+<p>这道题叫消消乐&hellip;第一个递归，bug遇到的是递归的return的结果是什么&hellip;</p>
+<h3 id="day6">day6</h3>
+<p>还是二维数组，但还设计曼哈顿距离，这道题是判断边界的延伸（说起来比较抽象了）</p>
+<p>判断是否延伸我先用了再生成几行Z，看两者的数据有没有差异，有差异的就是infinite，但这样不能解决左上的，一开始没想出来，后来是找出z里最左边和最上边行列unique的值，把这些值的都去掉。</p>
+<p>一开始还想算出可以最小生成的矩阵，减少运算，但这样坐标要做相对处理&hellip; 非常复杂，搞不出来，最后用了绝对的，但计算width和height还是有用</p>
+<h3 id="day7">day7</h3>
+<p>新的数据类型，图。之前没学过图&hellip; 看了一天的资料才知道怎么下手。</p>
+<p>两个bug：</p>
+<ol>
+<li>给的测试数据，一开始入度为0的只有一个，给的数据有4个，除了选择start还要在queue中添加剩余的</li>
+<li>第一遍做出来答案已经是对的了，但忘了英语有26个字母，给的数据，邻接表左边有25个字母，右边有26个，最后的情况是 graph已经被消除等于零了，queue中还有最后一个值是“X”，按我的做法没有添加进去，结束条件是len(graph) == 0</li>
+</ol>
+<h3 id="day8">day8</h3>
+<p>这道题不是自己做出来的&hellip; 知道要用递归，但就是写不出正确的。
+最后看了别人动态规划的思路&hellip;</p>
+<h3 id="day9">day9</h3>
+<p>这道题还是挺朴素的模拟，第二题应该和算法复杂度有关，但我不会做，愣跑了三个半小时跑出了答案。</p>
+<h2 id="aoc-2019">aoc 2019</h2>
+<h3 id="day1">day1</h3>
+<p>简单</p>
+<h3 id="day2">day2</h3>
+<p>part2题目差点看不懂。。。cpy说是图灵机，涉及如何避免可变对象的变化（list传递还要保持原先的list），最后用了暴力string生成新的list&hellip; 来reset
+今年的aoc每隔两天都是An Intcode program的题目，又麻烦又只是模拟，只是更复杂的模拟，太不喜欢做了，把所有相关的题目都跳过了。。。</p>
+<h3 id="day3-1">day3</h3>
+<p>这道题考两个线段的相交点，用了离散化的处理做出来了呢。。。结果part2的题目，如果part1不是用离散化的处理会更好做，所有part2就没做。。。</p>
+<h3 id="day4-1">day4</h3>
+<p>不管它想考我什么，反正我用了正则表达式</p>
+<h3 id="day6-1">day6</h3>
+<p>图算法，用了递归，还涉及了全局函数要写句global&hellip;
+part2还有最小公共祖先。</p>
+<h3 id="day8-1">day8</h3>
+<p>这道题挺简单的，但最后有个根据1/0的值生成出像素，看出密码。我是手动用excel画出来的。。。</p>
+<h3 id="day10">day10</h3>
+<p>题目是要算一个直线的斜率，用二元一次函数直接除出斜率会导致浮点数误差。搞得我去研究了下Decimal，结果最后是用了反三角函数atan才做对。</p>
+<h3 id="day12">day12</h3>
+<p>part2和去年的day9的part2很像，但如果朴素，计算次数是10^10次方&hellip;</p>
+<ol>
+<li>一定要用O(1)的hashmap查找</li>
+<li>优化思路不是数据结构类型的，而是算法类型的，这道题的x,y,z三个坐标是独立的，分别算循环周期，然后算三个周期的最小公倍数。</li>
+</ol>
+<h3 id="day14">day14</h3>
+<p>图，考入度为0且有偏度的图遍历。
+part2又考算法，又考时间复杂度，没做出来。</p>
+<h3 id="day16">day16</h3>
+<p>很简单的模拟</p>
+<h2 id="总结">总结</h2>
+<ol>
+<li>个人认为aoc的题目比单纯刷题好，因为题目和最终答案经常绕了超过三个弯，我从一开始的看完题目就挣扎着写，到写代码前先想好几个主要步骤，每个步骤的函数输入输出分别是什么，什么格式的。aoc2018的题目基本每天我都要做个四五个小时，才能做出来，还动不动写出bug。aoc2019思路对的话，一小时多一点就能搞定了。</li>
+<li>题目难度从一维列表，二维列表，到图，到递归，再往后不知道是什么了。一二维列表目前没问题，图和树只能做最简单的遍历或者最短路径。递归十个有九个想不清楚return回来的是什么</li>
+<li>待深入：
+<ol>
+<li>做题经常不考虑复杂度分析（我连最朴素的都做不出来考虑啥复杂度分析）</li>
+<li>树、图、动态规划、递归&hellip;</li>
+</ol>
+</li>
+</ol>
+<p>这两个月还是有进步一丢丢&hellip;</p>
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/programing">programing</a></li>
+								
+								<li><a href="/tags/aoc">aoc</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'jarrywang';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-158090746-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+</body>
+</html>

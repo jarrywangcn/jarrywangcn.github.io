@@ -1,59 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>99 problems</title>
-    <link>https://jarrywangcn.github.io/tags/poetry/index.xml</link>
-    <description>Recent content on 99 problems</description>
+    <title>poetry on 99 problems</title>
+    <link>http://example.org/tags/poetry/</link>
+    <description>Recent content in poetry on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <atom:link href="https://jarrywangcn.github.io/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Thu, 25 May 2017 16:22:45 +0700</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>二十億光年的孤獨</title>
-      <link>https://jarrywangcn.github.io/post/twenty_billion_light_years_of_loneliness/</link>
+      <link>http://example.org/posts/twenty_billion_light_years_of_loneliness/</link>
       <pubDate>Thu, 25 May 2017 16:22:45 +0700</pubDate>
       
-      <guid>https://jarrywangcn.github.io/post/twenty_billion_light_years_of_loneliness/</guid>
+      <guid>http://example.org/posts/twenty_billion_light_years_of_loneliness/</guid>
       <description>&lt;p&gt;&lt;strong&gt;二十億光年的孤獨&lt;/strong&gt;&lt;/p&gt;
-
 &lt;p&gt;谷川俊太郎&lt;/p&gt;
-
 &lt;p&gt;地球人在小小的地球上&lt;/p&gt;
-
 &lt;p&gt;睡覺 蘇醒 和 工作&lt;/p&gt;
-
 &lt;p&gt;有時想和火星人做朋友&lt;/p&gt;
-
 &lt;p&gt;火星人在小小的火星上&lt;/p&gt;
-
 &lt;p&gt;做著什麼 我不清楚&lt;/p&gt;
-
 &lt;p&gt;或許在睡覺 打扮 和 苦惱&lt;/p&gt;
-
 &lt;p&gt;但我確信他們&lt;/p&gt;
-
 &lt;p&gt;有時想和地球人做朋友&lt;/p&gt;
-
 &lt;p&gt;萬有引力&lt;/p&gt;
-
 &lt;p&gt;是互相吸引的孤獨&lt;/p&gt;
-
 &lt;p&gt;宇宙正在拉扯&lt;/p&gt;
-
 &lt;p&gt;大家於是渴望相識&lt;/p&gt;
-
 &lt;p&gt;宇宙飛快膨脹&lt;/p&gt;
-
 &lt;p&gt;大家為此感到憂愁&lt;/p&gt;
-
 &lt;p&gt;對著二十億光年的孤獨&lt;/p&gt;
-
-&lt;p&gt;我忍不住打了個噴嚏&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/IMG_2655.JPG&#34; alt=&#34;vietnam&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;我忍不住打了個噴嚏&lt;/p&gt;</description>
     </item>
     
   </channel>
