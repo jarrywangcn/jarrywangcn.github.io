@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>chengdu on 99 problems</title>
-    <link>http://example.org/tags/chengdu/</link>
+    <link>https://jarrywangcn.github.io/tags/chengdu/</link>
     <description>Recent content in chengdu on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Mon, 09 Oct 2017 01:10:51 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/chengdu/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jarrywangcn.github.io/tags/chengdu/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>生长于野 而安于室</title>
-      <link>http://example.org/posts/2017_sep/</link>
+      <link>https://jarrywangcn.github.io/posts/2017_sep/</link>
       <pubDate>Mon, 09 Oct 2017 01:10:51 +0800</pubDate>
       
-      <guid>http://example.org/posts/2017_sep/</guid>
+      <guid>https://jarrywangcn.github.io/posts/2017_sep/</guid>
       <description>&lt;h2 id=&#34;一棵&#34;&gt;一棵🌲&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/IMG_7678.jpg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;</description>
     </item>

@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>travel on 99 problems</title>
-    <link>http://example.org/tags/travel/</link>
+    <link>https://jarrywangcn.github.io/tags/travel/</link>
     <description>Recent content in travel on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Fri, 09 Aug 2019 11:18:09 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/travel/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jarrywangcn.github.io/tags/travel/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My days in the sun</title>
-      <link>http://example.org/posts/my_days_in_the_sun/</link>
+      <link>https://jarrywangcn.github.io/posts/my_days_in_the_sun/</link>
       <pubDate>Fri, 09 Aug 2019 11:18:09 +0800</pubDate>
       
-      <guid>http://example.org/posts/my_days_in_the_sun/</guid>
+      <guid>https://jarrywangcn.github.io/posts/my_days_in_the_sun/</guid>
       <description>📷 https://www.douban.com/note/729595622/</description>
     </item>
     
     <item>
       <title>一七年小记</title>
-      <link>http://example.org/posts/notes_of_2017/</link>
+      <link>https://jarrywangcn.github.io/posts/notes_of_2017/</link>
       <pubDate>Wed, 17 Jan 2018 15:12:21 +0800</pubDate>
       
-      <guid>http://example.org/posts/notes_of_2017/</guid>
+      <guid>https://jarrywangcn.github.io/posts/notes_of_2017/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/2913d48ea31d602.jpg&#34; alt=&#34;TITLE&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>二十億光年的孤獨</title>
-      <link>http://example.org/posts/twenty_billion_light_years_of_loneliness/</link>
+      <link>https://jarrywangcn.github.io/posts/twenty_billion_light_years_of_loneliness/</link>
       <pubDate>Thu, 25 May 2017 16:22:45 +0700</pubDate>
       
-      <guid>http://example.org/posts/twenty_billion_light_years_of_loneliness/</guid>
+      <guid>https://jarrywangcn.github.io/posts/twenty_billion_light_years_of_loneliness/</guid>
       <description>&lt;p&gt;&lt;strong&gt;二十億光年的孤獨&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;谷川俊太郎&lt;/p&gt;
 &lt;p&gt;地球人在小小的地球上&lt;/p&gt;

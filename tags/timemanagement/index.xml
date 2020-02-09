@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>timemanagement on 99 problems</title>
-    <link>http://example.org/tags/timemanagement/</link>
+    <link>https://jarrywangcn.github.io/tags/timemanagement/</link>
     <description>Recent content in timemanagement on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Tue, 21 Nov 2017 08:33:03 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/timemanagement/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jarrywangcn.github.io/tags/timemanagement/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>谈谈“任务管理和时间管理”</title>
-      <link>http://example.org/posts/time_management/</link>
+      <link>https://jarrywangcn.github.io/posts/time_management/</link>
       <pubDate>Tue, 21 Nov 2017 08:33:03 +0800</pubDate>
       
-      <guid>http://example.org/posts/time_management/</guid>
+      <guid>https://jarrywangcn.github.io/posts/time_management/</guid>
       <description>&lt;p&gt;单纯的”任务管理和时间管理“十有八九是失败的，还得有配套的身体管理和精力管理，以及减少外界和他人的干扰&lt;/p&gt;</description>
     </item>
     

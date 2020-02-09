@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>aoc on 99 problems</title>
-    <link>http://example.org/tags/aoc/</link>
+    <link>https://jarrywangcn.github.io/tags/aoc/</link>
     <description>Recent content in aoc on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Fri, 27 Dec 2019 09:41:55 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/aoc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jarrywangcn.github.io/tags/aoc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Advent of Code 2018&amp;2019 上星之旅</title>
-      <link>http://example.org/posts/aoc_1819/</link>
+      <link>https://jarrywangcn.github.io/posts/aoc_1819/</link>
       <pubDate>Fri, 27 Dec 2019 09:41:55 +0800</pubDate>
       
-      <guid>http://example.org/posts/aoc_1819/</guid>
+      <guid>https://jarrywangcn.github.io/posts/aoc_1819/</guid>
       <description>&lt;p&gt;aoc全称&lt;a href=&#34;https://adventofcode.com/2019&#34;&gt;&lt;strong&gt;advent of code&lt;/strong&gt;&lt;/a&gt;，是每年12月1日开始圣诞节结束的趣味编程比赛，每天两道题，第一道做出来才有机会做第二道，但前面日期的题没做出来也可以做后面日期的题。以数据结构和算法为主，11月cpy推荐我玩（被虐）一下，2018年做到d9，上了16颗星，2019年做到d16，也上了16颗星，d18涉及的吃豆人类似的路径查找实在不会做，就止步了。希望明年可以上更多的星。&lt;/p&gt;
 &lt;p&gt;aoc是最近刷题中趣味性最强，最好玩的题目，所以想整理一下上星心得。&lt;/p&gt;</description>
     </item>

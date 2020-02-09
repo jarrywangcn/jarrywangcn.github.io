@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>music on 99 problems</title>
-    <link>http://example.org/tags/music/</link>
+    <link>https://jarrywangcn.github.io/tags/music/</link>
     <description>Recent content in music on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Fri, 27 Dec 2019 15:48:14 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/music/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jarrywangcn.github.io/tags/music/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>爵士乐自听记录</title>
-      <link>http://example.org/posts/portrait_in_jazz/</link>
+      <link>https://jarrywangcn.github.io/posts/portrait_in_jazz/</link>
       <pubDate>Fri, 27 Dec 2019 15:48:14 +0800</pubDate>
       
-      <guid>http://example.org/posts/portrait_in_jazz/</guid>
+      <guid>https://jarrywangcn.github.io/posts/portrait_in_jazz/</guid>
       <description>&lt;p&gt;倒是没想到今年能在音乐上说些什么。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2016 Reading and Photography Report</title>
-      <link>http://example.org/posts/2016/</link>
+      <link>https://jarrywangcn.github.io/posts/2016/</link>
       <pubDate>Fri, 30 Dec 2016 20:52:37 +0800</pubDate>
       
-      <guid>http://example.org/posts/2016/</guid>
+      <guid>https://jarrywangcn.github.io/posts/2016/</guid>
       <description>&lt;h2 id=&#34;1-友人&#34;&gt;1. 友人&lt;/h2&gt;
 &lt;p&gt;去年总结时发现一整年没认识一个人 全是老朋友 于是定了个小目标 “年轻人要开放点” 一年过去了 参加了128次社交活动 见了88个人（比去年多了43个） 有41个是第一次见面的 其中有21个值得一见 还有9个人想有机会加深下友谊 #再也不说自己是社恐了# #图是python画的#&lt;/p&gt;</description>
     </item>

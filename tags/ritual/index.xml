@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ritual on 99 problems</title>
-    <link>http://example.org/tags/ritual/</link>
+    <link>https://jarrywangcn.github.io/tags/ritual/</link>
     <description>Recent content in ritual on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Tue, 01 Jan 2019 10:54:50 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/ritual/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jarrywangcn.github.io/tags/ritual/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>读完了也没法早起</title>
-      <link>http://example.org/posts/my-morning-routine/</link>
+      <link>https://jarrywangcn.github.io/posts/my-morning-routine/</link>
       <pubDate>Tue, 01 Jan 2019 10:54:50 +0800</pubDate>
       
-      <guid>http://example.org/posts/my-morning-routine/</guid>
+      <guid>https://jarrywangcn.github.io/posts/my-morning-routine/</guid>
       <description>&lt;p&gt;在每天的起床、洗漱、迈出家门，走进街区，地铁站或停车场，吞咽食物中是否蕴含意义？&lt;/p&gt;
 &lt;p&gt;无数电影小说发生着如此的叙事“我日复一日地过着同样的生活，直到厌倦。”&lt;/p&gt;</description>
     </item>

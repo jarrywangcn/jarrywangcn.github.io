@@ -2,42 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>reading on 99 problems</title>
-    <link>http://example.org/tags/reading/</link>
+    <link>https://jarrywangcn.github.io/tags/reading/</link>
     <description>Recent content in reading on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Tue, 27 Aug 2019 11:32:10 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/reading/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jarrywangcn.github.io/tags/reading/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>服装、个人表达以及社会潮流</title>
-      <link>http://example.org/posts/japanese_ivy/</link>
+      <link>https://jarrywangcn.github.io/posts/japanese_ivy/</link>
       <pubDate>Tue, 27 Aug 2019 11:32:10 +0800</pubDate>
       
-      <guid>http://example.org/posts/japanese_ivy/</guid>
+      <guid>https://jarrywangcn.github.io/posts/japanese_ivy/</guid>
       <description>&lt;p&gt;前半部分是每个章节个人认为有趣部分的简单概括，作者行文的思路是，按照时间叙事，把致力于服装业的人和当时日本乃至世界（主要是美国）的社会背景结合起来。后半部分是个人感想。&lt;/p&gt;
 &lt;p&gt;有图版见豆瓣 &lt;a href=&#34;https://book.douban.com/review/12078051/&#34;&gt;https://book.douban.com/review/12078051/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>读完了也没法早起</title>
-      <link>http://example.org/posts/my-morning-routine/</link>
+      <link>https://jarrywangcn.github.io/posts/my-morning-routine/</link>
       <pubDate>Tue, 01 Jan 2019 10:54:50 +0800</pubDate>
       
-      <guid>http://example.org/posts/my-morning-routine/</guid>
+      <guid>https://jarrywangcn.github.io/posts/my-morning-routine/</guid>
       <description>&lt;p&gt;在每天的起床、洗漱、迈出家门，走进街区，地铁站或停车场，吞咽食物中是否蕴含意义？&lt;/p&gt;
 &lt;p&gt;无数电影小说发生着如此的叙事“我日复一日地过着同样的生活，直到厌倦。”&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>二零一八阅读总结（一）：茶叶</title>
-      <link>http://example.org/posts/2018-reading-tea/</link>
+      <link>https://jarrywangcn.github.io/posts/2018-reading-tea/</link>
       <pubDate>Tue, 01 Jan 2019 10:46:36 +0800</pubDate>
       
-      <guid>http://example.org/posts/2018-reading-tea/</guid>
+      <guid>https://jarrywangcn.github.io/posts/2018-reading-tea/</guid>
       <description>&lt;p&gt;近两年（集中在近一年）茶叶相关的书读的较多，可分为三类：&lt;/p&gt;
 &lt;p&gt;第一是茶叶作为植物和茶叶技术作为工艺的物质层面：如种植环境、茶树栽培、茶叶品种、制作工艺、茶具、泡茶手法等等。&lt;/p&gt;
 &lt;p&gt;第二是与茶相关的社会文化：如日本的茶道、英国的下午茶、国内天南地北的茶馆、台湾的茶艺师以及此中衍生出的社交规范、审美偏好、公共空间。&lt;/p&gt;
@@ -46,19 +46,19 @@
     
     <item>
       <title>一七年小记</title>
-      <link>http://example.org/posts/notes_of_2017/</link>
+      <link>https://jarrywangcn.github.io/posts/notes_of_2017/</link>
       <pubDate>Wed, 17 Jan 2018 15:12:21 +0800</pubDate>
       
-      <guid>http://example.org/posts/notes_of_2017/</guid>
+      <guid>https://jarrywangcn.github.io/posts/notes_of_2017/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;http://ohvamo1vj.bkt.clouddn.com/2913d48ea31d602.jpg&#34; alt=&#34;TITLE&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2016 Reading and Photography Report</title>
-      <link>http://example.org/posts/2016/</link>
+      <link>https://jarrywangcn.github.io/posts/2016/</link>
       <pubDate>Fri, 30 Dec 2016 20:52:37 +0800</pubDate>
       
-      <guid>http://example.org/posts/2016/</guid>
+      <guid>https://jarrywangcn.github.io/posts/2016/</guid>
       <description>&lt;h2 id=&#34;1-友人&#34;&gt;1. 友人&lt;/h2&gt;
 &lt;p&gt;去年总结时发现一整年没认识一个人 全是老朋友 于是定了个小目标 “年轻人要开放点” 一年过去了 参加了128次社交活动 见了88个人（比去年多了43个） 有41个是第一次见面的 其中有21个值得一见 还有9个人想有机会加深下友谊 #再也不说自己是社恐了# #图是python画的#&lt;/p&gt;</description>
     </item>
