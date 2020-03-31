@@ -9,10 +9,37 @@
     <managingEditor>jarrywangcn@outlook.com (jarrywang)</managingEditor>
     <webMaster>jarrywangcn@outlook.com (jarrywang)</webMaster>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 26 Feb 2020 10:32:21 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2020 21:26:29 +0800</lastBuildDate>
     
 	<atom:link href="https://jarrywangcn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>data</title>
+      <link>https://jarrywangcn.github.io/tags/data/</link>
+      <pubDate>Tue, 31 Mar 2020 21:26:29 +0800</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/tags/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programing</title>
+      <link>https://jarrywangcn.github.io/tags/programing/</link>
+      <pubDate>Tue, 31 Mar 2020 21:26:29 +0800</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/tags/programing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://jarrywangcn.github.io/tags/python/</link>
+      <pubDate>Tue, 31 Mar 2020 21:26:29 +0800</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/tags/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>jazz</title>
@@ -74,15 +101,6 @@
       <pubDate>Fri, 27 Dec 2019 09:41:55 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/tags/aoc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programing</title>
-      <link>https://jarrywangcn.github.io/tags/programing/</link>
-      <pubDate>Fri, 27 Dec 2019 09:41:55 +0800</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/tags/programing/</guid>
       <description></description>
     </item>
     
@@ -326,15 +344,6 @@
       <pubDate>Sat, 21 Jan 2017 20:47:56 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/tags/instaraider/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>python</title>
-      <link>https://jarrywangcn.github.io/tags/python/</link>
-      <pubDate>Sat, 21 Jan 2017 20:47:56 +0800</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/tags/python/</guid>
       <description></description>
     </item>
     

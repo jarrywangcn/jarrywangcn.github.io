@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>树的同构 python - Isomorphic - 99 problems</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="树的同构 python - Isomorphic" />
+<meta property="og:description" content="题目见ZJU数据结构 03-树1
+示例代码为C语言，网上文章也多是C语言。python有个是用数组实现的 PTA 7-1 树的同构
+我最后用结点&#43;数组实现（low是low了点&hellip; 但示例里也是一个包含结点数据类型的数组，没差&hellip;
+struct TreeNode { ElementType Elment; Tree Left; Tree Right; } T1[MaxTree], T2[MaxTree]; 以下为python代码：
+核心思想就是判断当前结点是否相同，如果不相同则为假，如果相同就递归判断t1左儿子t2左儿子是否相同，t1右儿子t2右儿子是否相同，否则就交换左右儿子，再进行递归判断
+# 建立结点的class class TreeNode(object): def __init__(self, data = None, left = None, right = None): self.data = data self.left = left self.right = right # 在tree的数组中添加新结点 def append(Tree, index, item): Tree[index] = TreeNode(item[0], item[1], item[2]) # 建造树 def BuildTree(): # n为结点个数 n = int(input()) # check是输入数据处理完后找到树的root check = [0] * n root = None # 生成数量为n个空结点的数组tree Tree = [TreeNode()] * n # 循环处理输入数据 for i in range(n): l = input()." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jarrywangcn.github.io/posts/isomorphic/" />
+<meta property="article:published_time" content="2020-03-31T21:26:29+08:00" />
+<meta property="article:modified_time" content="2020-03-31T21:26:29+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="树的同构 python - Isomorphic"/>
+<meta name="twitter:description" content="题目见ZJU数据结构 03-树1
+示例代码为C语言，网上文章也多是C语言。python有个是用数组实现的 PTA 7-1 树的同构
+我最后用结点&#43;数组实现（low是low了点&hellip; 但示例里也是一个包含结点数据类型的数组，没差&hellip;
+struct TreeNode { ElementType Elment; Tree Left; Tree Right; } T1[MaxTree], T2[MaxTree]; 以下为python代码：
+核心思想就是判断当前结点是否相同，如果不相同则为假，如果相同就递归判断t1左儿子t2左儿子是否相同，t1右儿子t2右儿子是否相同，否则就交换左右儿子，再进行递归判断
+# 建立结点的class class TreeNode(object): def __init__(self, data = None, left = None, right = None): self.data = data self.left = left self.right = right # 在tree的数组中添加新结点 def append(Tree, index, item): Tree[index] = TreeNode(item[0], item[1], item[2]) # 建造树 def BuildTree(): # n为结点个数 n = int(input()) # check是输入数据处理完后找到树的root check = [0] * n root = None # 生成数量为n个空结点的数组tree Tree = [TreeNode()] * n # 循环处理输入数据 for i in range(n): l = input()."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://jarrywangcn.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://jarrywangcn.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://jarrywangcn.github.io/css/custom.css" />
+	
+
+	<script src="https://jarrywangcn.github.io/js/feather.min.js"></script>
+	
+	<script src="https://jarrywangcn.github.io/js/main.js"></script>
+	<script src="https://jarrywangcn.github.io/js/abc.js"></script>
+	<script src="https://jarrywangcn.github.io/js/xyz.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="https://jarrywangcn.github.io/">99 problems</a></h1>
+	<div class="site-description"><h2>Zoo is sad.</h2><nav class="nav social">
+			<ul class="flat"><a href="https://instagram.com/jarrywan9" title="Instagram"><i data-feather="instagram"></i></a><a href="https://github.com/jarrywangcn" title="Github"><i data-feather="github"></i></a><a href="https://jarrywangcn.github.io/index.xml" title="Rss"><i data-feather="rss"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">树的同构 python - Isomorphic</h1>
+			<div class="meta">Posted at &mdash; Mar 31, 2020</div>
+		</div>
+
+		<div class="markdown">
+			<p>题目见ZJU数据结构 <a href="https://pintia.cn/problem-sets/1211841066264109056/problems/1234055373040824320">03-树1</a></p>
+<p>示例代码为C语言，网上文章也多是C语言。python有个是用数组实现的 <a href="https://blog.csdn.net/qq_39760343/article/details/83512918">PTA 7-1 树的同构</a></p>
+<p>我最后用结点+数组实现（low是low了点&hellip; 但示例里也是一个包含结点数据类型的数组，没差&hellip;</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#719e07">struct</span> TreeNode
+{
+  ElementType Elment;
+  Tree Left;
+  Tree Right;
+} T1[MaxTree], T2[MaxTree];
+</code></pre></div><p>以下为python代码：</p>
+<p>核心思想就是判断当前结点是否相同，如果不相同则为假，如果相同就递归判断t1左儿子t2左儿子是否相同，t1右儿子t2右儿子是否相同，否则就交换左右儿子，再进行递归判断</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#586e75"># 建立结点的class</span>
+<span style="color:#719e07">class</span> <span style="color:#268bd2">TreeNode</span>(<span style="color:#b58900">object</span>):
+    <span style="color:#719e07">def</span> __init__(<span style="color:#268bd2">self</span>, data <span style="color:#719e07">=</span> <span style="color:#268bd2">None</span>, left <span style="color:#719e07">=</span> <span style="color:#268bd2">None</span>, right <span style="color:#719e07">=</span> <span style="color:#268bd2">None</span>):
+        <span style="color:#268bd2">self</span><span style="color:#719e07">.</span>data <span style="color:#719e07">=</span> data
+        <span style="color:#268bd2">self</span><span style="color:#719e07">.</span>left <span style="color:#719e07">=</span> left
+        <span style="color:#268bd2">self</span><span style="color:#719e07">.</span>right <span style="color:#719e07">=</span> right
+
+<span style="color:#586e75"># 在tree的数组中添加新结点</span>
+<span style="color:#719e07">def</span> <span style="color:#268bd2">append</span>(Tree, index, item):
+    Tree[index] <span style="color:#719e07">=</span> TreeNode(item[<span style="color:#2aa198">0</span>], item[<span style="color:#2aa198">1</span>], item[<span style="color:#2aa198">2</span>])
+
+<span style="color:#586e75"># 建造树</span>
+<span style="color:#719e07">def</span> <span style="color:#268bd2">BuildTree</span>():
+  	<span style="color:#586e75"># n为结点个数</span>
+    n <span style="color:#719e07">=</span> <span style="color:#b58900">int</span>(<span style="color:#b58900">input</span>())
+    <span style="color:#586e75"># check是输入数据处理完后找到树的root</span>
+    check <span style="color:#719e07">=</span> [<span style="color:#2aa198">0</span>] <span style="color:#719e07">*</span> n
+    root <span style="color:#719e07">=</span> <span style="color:#268bd2">None</span>
+    
+    <span style="color:#586e75"># 生成数量为n个空结点的数组tree</span>
+    Tree <span style="color:#719e07">=</span> [TreeNode()] <span style="color:#719e07">*</span> n
+    
+    <span style="color:#586e75"># 循环处理输入数据</span>
+    <span style="color:#719e07">for</span> i <span style="color:#719e07">in</span> <span style="color:#b58900">range</span>(n):       
+        l <span style="color:#719e07">=</span> <span style="color:#b58900">input</span>()<span style="color:#719e07">.</span>split()
+        
+        <span style="color:#719e07">if</span> l[<span style="color:#2aa198">1</span>] <span style="color:#719e07">==</span> <span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">-</span><span style="color:#2aa198">&#34;</span>:
+            l[<span style="color:#2aa198">1</span>] <span style="color:#719e07">=</span> <span style="color:#268bd2">None</span>
+        <span style="color:#719e07">else</span>:
+            l[<span style="color:#2aa198">1</span>] <span style="color:#719e07">=</span> <span style="color:#b58900">int</span>(l[<span style="color:#2aa198">1</span>])
+            check[l[<span style="color:#2aa198">1</span>]] <span style="color:#719e07">=</span><span style="color:#719e07">+</span> <span style="color:#2aa198">1</span>
+        <span style="color:#719e07">if</span> l[<span style="color:#2aa198">2</span>] <span style="color:#719e07">==</span> <span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">-</span><span style="color:#2aa198">&#34;</span>:
+            l[<span style="color:#2aa198">2</span>] <span style="color:#719e07">=</span> <span style="color:#268bd2">None</span>
+        <span style="color:#719e07">else</span>:
+            l[<span style="color:#2aa198">2</span>] <span style="color:#719e07">=</span> <span style="color:#b58900">int</span>(l[<span style="color:#2aa198">2</span>])
+            check[l[<span style="color:#2aa198">2</span>]] <span style="color:#719e07">=</span><span style="color:#719e07">+</span> <span style="color:#2aa198">1</span>
+        <span style="color:#586e75"># 添加结点</span>
+        append(Tree, i, l)
+        
+		<span style="color:#586e75"># 找到root</span>
+    <span style="color:#719e07">for</span> i <span style="color:#719e07">in</span> <span style="color:#b58900">range</span>(<span style="color:#b58900">len</span>(check)):
+        <span style="color:#719e07">if</span> check[i] <span style="color:#719e07">==</span> <span style="color:#2aa198">0</span>:
+            root <span style="color:#719e07">=</span> i
+    <span style="color:#586e75"># 返回树和结点</span>
+    <span style="color:#719e07">return</span> (Tree, root)
+  
+<span style="color:#586e75"># 判断树的同构</span>
+<span style="color:#719e07">def</span> <span style="color:#268bd2">isomorphic</span>(T1, R1, T2, R2):
+    <span style="color:#586e75"># 两个树的结点数</span>
+    n1 <span style="color:#719e07">=</span> <span style="color:#2aa198">0</span>
+    n2 <span style="color:#719e07">=</span> <span style="color:#2aa198">0</span>
+    
+<span style="color:#586e75"># 处理例外情况</span>
+
+    <span style="color:#586e75"># 如果都为空树，为真</span>
+    <span style="color:#719e07">if</span> <span style="color:#b58900">len</span>(T1) <span style="color:#719e07">==</span> <span style="color:#2aa198">0</span> <span style="color:#719e07">and</span> <span style="color:#b58900">len</span>(T2) <span style="color:#719e07">==</span> <span style="color:#2aa198">0</span>:
+        <span style="color:#719e07">return</span> <span style="color:#268bd2">True</span>
+    
+    <span style="color:#586e75"># 如果只有一个节点</span>
+    <span style="color:#719e07">if</span> (<span style="color:#b58900">len</span>(T1) <span style="color:#719e07">==</span> <span style="color:#2aa198">1</span> <span style="color:#719e07">and</span> <span style="color:#b58900">len</span>(T2) <span style="color:#719e07">==</span> <span style="color:#2aa198">1</span>):
+      	<span style="color:#586e75"># 值相同，为真</span>
+        <span style="color:#719e07">if</span> T1[<span style="color:#2aa198">0</span>]<span style="color:#719e07">.</span>data <span style="color:#719e07">==</span> T2[<span style="color:#2aa198">0</span>]<span style="color:#719e07">.</span>data:
+            <span style="color:#719e07">return</span> <span style="color:#268bd2">True</span>
+        <span style="color:#586e75"># 否则为假</span>
+        <span style="color:#719e07">else</span>:
+            <span style="color:#719e07">return</span> <span style="color:#268bd2">False</span>
+          
+    <span style="color:#586e75"># 如果节点都为零，为真</span>
+    <span style="color:#719e07">if</span> R1 <span style="color:#719e07">==</span> <span style="color:#268bd2">None</span> <span style="color:#719e07">and</span> R2 <span style="color:#719e07">==</span> <span style="color:#268bd2">None</span>:
+        <span style="color:#719e07">return</span> <span style="color:#268bd2">True</span>
+    
+    <span style="color:#586e75"># 如果节点数不同，为假</span>
+    <span style="color:#719e07">if</span> <span style="color:#b58900">len</span>(T1) <span style="color:#719e07">!=</span> <span style="color:#b58900">len</span>(T2):
+        <span style="color:#719e07">return</span> <span style="color:#268bd2">False</span>
+    
+<span style="color:#586e75"># 处理正常情况</span>
+
+    <span style="color:#586e75"># 如果一个为空，一个不为空，为假</span>
+    <span style="color:#719e07">if</span> (R1 <span style="color:#719e07">==</span> <span style="color:#268bd2">None</span> <span style="color:#719e07">and</span> R2 <span style="color:#719e07">!=</span> <span style="color:#268bd2">None</span>) <span style="color:#719e07">or</span> (R1 <span style="color:#719e07">!=</span> <span style="color:#268bd2">None</span> <span style="color:#719e07">and</span> R2 <span style="color:#719e07">==</span> <span style="color:#268bd2">None</span>):
+        <span style="color:#586e75">#print(&#39;tag2&#39;)</span>
+        <span style="color:#719e07">return</span> <span style="color:#268bd2">False</span>
+
+    <span style="color:#586e75"># 如果左儿子都为空，判断右儿子是否同构</span>
+    <span style="color:#719e07">if</span> T1[R1]<span style="color:#719e07">.</span>left <span style="color:#719e07">==</span> <span style="color:#268bd2">None</span> <span style="color:#719e07">and</span> T2[R2]<span style="color:#719e07">.</span>left <span style="color:#719e07">==</span> <span style="color:#268bd2">None</span>:
+        <span style="color:#586e75">#print(&#39;tag3&#39;)</span>
+        <span style="color:#719e07">return</span> isomorphic(T1, T1[R1]<span style="color:#719e07">.</span>right, T2, T2[R2]<span style="color:#719e07">.</span>right)
+    
+    <span style="color:#586e75"># 如果左儿子都不为空且数据还是一样的，对左右儿子进行递归判断</span>
+    <span style="color:#719e07">if</span> (T1[R1]<span style="color:#719e07">.</span>left <span style="color:#719e07">!=</span> <span style="color:#268bd2">None</span> <span style="color:#719e07">and</span> T2[R2]<span style="color:#719e07">.</span>left <span style="color:#719e07">!=</span> <span style="color:#268bd2">None</span>) <span style="color:#719e07">and</span> (T1[T1[R1]<span style="color:#719e07">.</span>left]<span style="color:#719e07">.</span>data <span style="color:#719e07">==</span> T2[T2[R2]<span style="color:#719e07">.</span>left]<span style="color:#719e07">.</span>data):
+        <span style="color:#719e07">return</span> (isomorphic(T1, T1[R1]<span style="color:#719e07">.</span>left, T2, T2[R2]<span style="color:#719e07">.</span>left) <span style="color:#719e07">and</span> isomorphic(T1, T1[R1]<span style="color:#719e07">.</span>right, T2, T2[R2]<span style="color:#719e07">.</span>right))
+    <span style="color:#586e75"># 如果左儿子一个空一个不空或者两个都不同，并且数据不一样，交换左右儿子进行递归判断</span>
+    <span style="color:#719e07">else</span>:
+        <span style="color:#719e07">return</span> (isomorphic(T1, T1[R1]<span style="color:#719e07">.</span>left, T2, T2[R2]<span style="color:#719e07">.</span>right) <span style="color:#719e07">and</span> isomorphic(T1, T1[R1]<span style="color:#719e07">.</span>right, T2, T2[R2]<span style="color:#719e07">.</span>left))
+</code></pre></div>
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/programing">programing</a></li>
+								
+								<li><a href="/tags/python">python</a></li>
+								
+								<li><a href="/tags/data">data</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div>
+		<div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'jarrywang';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © Copyright notice |  <a href="https://github.com/vividvilla/ezhil">Ezhil theme</a> | Built with <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-158090746-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+</body>
+</html>

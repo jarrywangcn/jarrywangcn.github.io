@@ -9,10 +9,123 @@
     <managingEditor>jarrywangcn@outlook.com (jarrywang)</managingEditor>
     <webMaster>jarrywangcn@outlook.com (jarrywang)</webMaster>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sat, 21 Jan 2017 20:47:56 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2020 21:26:29 +0800</lastBuildDate>
     
 	<atom:link href="https://jarrywangcn.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>树的同构 python - Isomorphic</title>
+      <link>https://jarrywangcn.github.io/posts/isomorphic/</link>
+      <pubDate>Tue, 31 Mar 2020 21:26:29 +0800</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/posts/isomorphic/</guid>
+      <description>&lt;p&gt;题目见ZJU数据结构 &lt;a href=&#34;https://pintia.cn/problem-sets/1211841066264109056/problems/1234055373040824320&#34;&gt;03-树1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;示例代码为C语言，网上文章也多是C语言。python有个是用数组实现的 &lt;a href=&#34;https://blog.csdn.net/qq_39760343/article/details/83512918&#34;&gt;PTA 7-1 树的同构&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我最后用结点+数组实现（low是low了点&amp;hellip; 但示例里也是一个包含结点数据类型的数组，没差&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;color:#719e07&#34;&gt;struct&lt;/span&gt; TreeNode
+{
+  ElementType Elment;
+  Tree Left;
+  Tree Right;
+} T1[MaxTree], T2[MaxTree];
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;以下为python代码：&lt;/p&gt;
+&lt;p&gt;核心思想就是判断当前结点是否相同，如果不相同则为假，如果相同就递归判断t1左儿子t2左儿子是否相同，t1右儿子t2右儿子是否相同，否则就交换左右儿子，再进行递归判断&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# 建立结点的class&lt;/span&gt;
+&lt;span style=&#34;color:#719e07&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;TreeNode&lt;/span&gt;(&lt;span style=&#34;color:#b58900&#34;&gt;object&lt;/span&gt;):
+    &lt;span style=&#34;color:#719e07&#34;&gt;def&lt;/span&gt; __init__(&lt;span style=&#34;color:#268bd2&#34;&gt;self&lt;/span&gt;, data &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;, left &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;, right &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;):
+        &lt;span style=&#34;color:#268bd2&#34;&gt;self&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;data &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; data
+        &lt;span style=&#34;color:#268bd2&#34;&gt;self&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; left
+        &lt;span style=&#34;color:#268bd2&#34;&gt;self&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; right
+
+&lt;span style=&#34;color:#586e75&#34;&gt;# 在tree的数组中添加新结点&lt;/span&gt;
+&lt;span style=&#34;color:#719e07&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;append&lt;/span&gt;(Tree, index, item):
+    Tree[index] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; TreeNode(item[&lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt;], item[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;], item[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;])
+
+&lt;span style=&#34;color:#586e75&#34;&gt;# 建造树&lt;/span&gt;
+&lt;span style=&#34;color:#719e07&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;BuildTree&lt;/span&gt;():
+  	&lt;span style=&#34;color:#586e75&#34;&gt;# n为结点个数&lt;/span&gt;
+    n &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;int&lt;/span&gt;(&lt;span style=&#34;color:#b58900&#34;&gt;input&lt;/span&gt;())
+    &lt;span style=&#34;color:#586e75&#34;&gt;# check是输入数据处理完后找到树的root&lt;/span&gt;
+    check &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;*&lt;/span&gt; n
+    root &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;
+    
+    &lt;span style=&#34;color:#586e75&#34;&gt;# 生成数量为n个空结点的数组tree&lt;/span&gt;
+    Tree &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; [TreeNode()] &lt;span style=&#34;color:#719e07&#34;&gt;*&lt;/span&gt; n
+    
+    &lt;span style=&#34;color:#586e75&#34;&gt;# 循环处理输入数据&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#719e07&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;range&lt;/span&gt;(n):       
+        l &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;input&lt;/span&gt;()&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;split()
+        
+        &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;:
+            l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;
+        &lt;span style=&#34;color:#719e07&#34;&gt;else&lt;/span&gt;:
+            l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;int&lt;/span&gt;(l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;])
+            check[l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;]] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;
+        &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;:
+            l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;
+        &lt;span style=&#34;color:#719e07&#34;&gt;else&lt;/span&gt;:
+            l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;int&lt;/span&gt;(l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;])
+            check[l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;]] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;
+        &lt;span style=&#34;color:#586e75&#34;&gt;# 添加结点&lt;/span&gt;
+        append(Tree, i, l)
+        
+		&lt;span style=&#34;color:#586e75&#34;&gt;# 找到root&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#719e07&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;range&lt;/span&gt;(&lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(check)):
+        &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; check[i] &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt;:
+            root &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; i
+    &lt;span style=&#34;color:#586e75&#34;&gt;# 返回树和结点&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; (Tree, root)
+  
+&lt;span style=&#34;color:#586e75&#34;&gt;# 判断树的同构&lt;/span&gt;
+&lt;span style=&#34;color:#719e07&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;isomorphic&lt;/span&gt;(T1, R1, T2, R2):
+    &lt;span style=&#34;color:#586e75&#34;&gt;# 两个树的结点数&lt;/span&gt;
+    n1 &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt;
+    n2 &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt;
+    
+&lt;span style=&#34;color:#586e75&#34;&gt;# 处理例外情况&lt;/span&gt;
+
+    &lt;span style=&#34;color:#586e75&#34;&gt;# 如果都为空树，为真&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(T1) &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(T2) &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt;:
+        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;True&lt;/span&gt;
+    
+    &lt;span style=&#34;color:#586e75&#34;&gt;# 如果只有一个节点&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(T1) &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(T2) &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;):
+      	&lt;span style=&#34;color:#586e75&#34;&gt;# 值相同，为真&lt;/span&gt;
+        &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; T1[&lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;data &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; T2[&lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;data:
+            &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;True&lt;/span&gt;
+        &lt;span style=&#34;color:#586e75&#34;&gt;# 否则为假&lt;/span&gt;
+        &lt;span style=&#34;color:#719e07&#34;&gt;else&lt;/span&gt;:
+            &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;False&lt;/span&gt;
+          
+    &lt;span style=&#34;color:#586e75&#34;&gt;# 如果节点都为零，为真&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; R1 &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; R2 &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;:
+        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;True&lt;/span&gt;
+    
+    &lt;span style=&#34;color:#586e75&#34;&gt;# 如果节点数不同，为假&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(T1) &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(T2):
+        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;False&lt;/span&gt;
+    
+&lt;span style=&#34;color:#586e75&#34;&gt;# 处理正常情况&lt;/span&gt;
+
+    &lt;span style=&#34;color:#586e75&#34;&gt;# 如果一个为空，一个不为空，为假&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; (R1 &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; R2 &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;) &lt;span style=&#34;color:#719e07&#34;&gt;or&lt;/span&gt; (R1 &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; R2 &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;):
+        &lt;span style=&#34;color:#586e75&#34;&gt;#print(&amp;#39;tag2&amp;#39;)&lt;/span&gt;
+        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;False&lt;/span&gt;
+
+    &lt;span style=&#34;color:#586e75&#34;&gt;# 如果左儿子都为空，判断右儿子是否同构&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;:
+        &lt;span style=&#34;color:#586e75&#34;&gt;#print(&amp;#39;tag3&amp;#39;)&lt;/span&gt;
+        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; isomorphic(T1, T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right, T2, T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right)
+    
+    &lt;span style=&#34;color:#586e75&#34;&gt;# 如果左儿子都不为空且数据还是一样的，对左右儿子进行递归判断&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; (T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;) &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; (T1[T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;data &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; T2[T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;data):
+        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; (isomorphic(T1, T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left, T2, T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left) &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; isomorphic(T1, T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right, T2, T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right))
+    &lt;span style=&#34;color:#586e75&#34;&gt;# 如果左儿子一个空一个不空或者两个都不同，并且数据不一样，交换左右儿子进行递归判断&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;else&lt;/span&gt;:
+        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; (isomorphic(T1, T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left, T2, T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right) &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; isomorphic(T1, T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right, T2, T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>使用python下载instagram图片（中国大陆）</title>
