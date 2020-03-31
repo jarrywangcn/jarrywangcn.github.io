@@ -180,6 +180,18 @@ struct TreeNode { ElementType Elment; Tree Left; Tree Right; } T1[MaxTree], T2[M
     <span style="color:#586e75"># 如果左儿子一个空一个不空或者两个都不同，并且数据不一样，交换左右儿子进行递归判断</span>
     <span style="color:#719e07">else</span>:
         <span style="color:#719e07">return</span> (isomorphic(T1, T1[R1]<span style="color:#719e07">.</span>left, T2, T2[R2]<span style="color:#719e07">.</span>right) <span style="color:#719e07">and</span> isomorphic(T1, T1[R1]<span style="color:#719e07">.</span>right, T2, T2[R2]<span style="color:#719e07">.</span>left))
+      
+<span style="color:#586e75"># main</span>
+
+Tree1,r1 <span style="color:#719e07">=</span> BuildTree()
+Tree2,r2 <span style="color:#719e07">=</span> BuildTree()
+
+result <span style="color:#719e07">=</span> isomorphis(Tree1, r1, Tree2, r2)
+
+<span style="color:#719e07">if</span> result:
+    <span style="color:#719e07">print</span>(<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Yes</span><span style="color:#2aa198">&#34;</span>)
+<span style="color:#719e07">else</span>:
+    <span style="color:#719e07">print</span>(<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">No</span><span style="color:#2aa198">&#34;</span>)
 </code></pre></div>
 		</div>
 

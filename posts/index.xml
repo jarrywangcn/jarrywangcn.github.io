@@ -124,6 +124,18 @@
     &lt;span style=&#34;color:#586e75&#34;&gt;# 如果左儿子一个空一个不空或者两个都不同，并且数据不一样，交换左右儿子进行递归判断&lt;/span&gt;
     &lt;span style=&#34;color:#719e07&#34;&gt;else&lt;/span&gt;:
         &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; (isomorphic(T1, T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left, T2, T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right) &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; isomorphic(T1, T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right, T2, T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left))
+      
+&lt;span style=&#34;color:#586e75&#34;&gt;# main&lt;/span&gt;
+
+Tree1,r1 &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; BuildTree()
+Tree2,r2 &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; BuildTree()
+
+result &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; isomorphis(Tree1, r1, Tree2, r2)
+
+&lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; result:
+    &lt;span style=&#34;color:#719e07&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#2aa198&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;Yes&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#719e07&#34;&gt;else&lt;/span&gt;:
+    &lt;span style=&#34;color:#719e07&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#2aa198&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;No&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
