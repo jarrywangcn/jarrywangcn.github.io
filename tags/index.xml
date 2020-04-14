@@ -9,10 +9,28 @@
     <managingEditor>jarrywangcn@outlook.com (jarrywang)</managingEditor>
     <webMaster>jarrywangcn@outlook.com (jarrywang)</webMaster>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 31 Mar 2020 21:26:29 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 20:11:07 +0800</lastBuildDate>
     
 	<atom:link href="https://jarrywangcn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bookreview</title>
+      <link>https://jarrywangcn.github.io/tags/bookreview/</link>
+      <pubDate>Wed, 01 Apr 2020 20:11:07 +0800</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/tags/bookreview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>essay</title>
+      <link>https://jarrywangcn.github.io/tags/essay/</link>
+      <pubDate>Wed, 01 Apr 2020 20:11:07 +0800</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/tags/essay/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>data</title>
@@ -87,15 +105,6 @@
     </item>
     
     <item>
-      <title>essay</title>
-      <link>https://jarrywangcn.github.io/tags/essay/</link>
-      <pubDate>Tue, 11 Feb 2020 13:04:49 +0800</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/tags/essay/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>aoc</title>
       <link>https://jarrywangcn.github.io/tags/aoc/</link>
       <pubDate>Fri, 27 Dec 2019 09:41:55 +0800</pubDate>
@@ -128,15 +137,6 @@
       <pubDate>Mon, 09 Dec 2019 11:23:40 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/tags/photography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bookreview</title>
-      <link>https://jarrywangcn.github.io/tags/bookreview/</link>
-      <pubDate>Tue, 27 Aug 2019 11:32:10 +0800</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/tags/bookreview/</guid>
       <description></description>
     </item>
     
