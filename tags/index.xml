@@ -9,7 +9,7 @@
     <managingEditor>jarrywangcn@outlook.com (jarrywang)</managingEditor>
     <webMaster>jarrywangcn@outlook.com (jarrywang)</webMaster>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 20:11:07 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2020 20:14:47 +0800</lastBuildDate>
     
 	<atom:link href="https://jarrywangcn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,9 +17,27 @@
     <item>
       <title>bookreview</title>
       <link>https://jarrywangcn.github.io/tags/bookreview/</link>
-      <pubDate>Wed, 01 Apr 2020 20:11:07 +0800</pubDate>
+      <pubDate>Thu, 16 Apr 2020 20:14:47 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/tags/bookreview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sociology</title>
+      <link>https://jarrywangcn.github.io/tags/sociology/</link>
+      <pubDate>Thu, 16 Apr 2020 20:14:47 +0800</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/tags/sociology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vietnam</title>
+      <link>https://jarrywangcn.github.io/tags/vietnam/</link>
+      <pubDate>Thu, 16 Apr 2020 20:14:47 +0800</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/tags/vietnam/</guid>
       <description></description>
     </item>
     
@@ -281,15 +299,6 @@
       <pubDate>Wed, 09 Aug 2017 15:19:52 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/tags/hue/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vietnam</title>
-      <link>https://jarrywangcn.github.io/tags/vietnam/</link>
-      <pubDate>Wed, 09 Aug 2017 15:19:52 +0800</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/tags/vietnam/</guid>
       <description></description>
     </item>
     
