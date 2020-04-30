@@ -9,10 +9,28 @@
     <managingEditor>jarrywangcn@outlook.com (jarrywang)</managingEditor>
     <webMaster>jarrywangcn@outlook.com (jarrywang)</webMaster>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 16 Apr 2020 20:14:47 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2020 18:12:07 +0800</lastBuildDate>
     
 	<atom:link href="https://jarrywangcn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>essay</title>
+      <link>https://jarrywangcn.github.io/tags/essay/</link>
+      <pubDate>Thu, 30 Apr 2020 18:12:07 +0800</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/tags/essay/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hiking</title>
+      <link>https://jarrywangcn.github.io/tags/hiking/</link>
+      <pubDate>Thu, 30 Apr 2020 18:12:07 +0800</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/tags/hiking/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>bookreview</title>
@@ -38,15 +56,6 @@
       <pubDate>Thu, 16 Apr 2020 20:14:47 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/tags/vietnam/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>essay</title>
-      <link>https://jarrywangcn.github.io/tags/essay/</link>
-      <pubDate>Wed, 01 Apr 2020 20:11:07 +0800</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/tags/essay/</guid>
       <description></description>
     </item>
     
