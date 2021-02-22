@@ -4,21 +4,41 @@
   
   <url>
     <loc>https://jarrywangcn.github.io/</loc>
-    <lastmod>2020-08-18T17:37:02+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jarrywangcn.github.io/tags/essay/</loc>
-    <lastmod>2020-08-18T17:37:02+08:00</lastmod>
+    <lastmod>2021-02-22T22:08:32+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://jarrywangcn.github.io/posts/</loc>
-    <lastmod>2020-08-18T17:37:02+08:00</lastmod>
+    <lastmod>2021-02-22T22:08:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jarrywangcn.github.io/tags/reading/</loc>
+    <lastmod>2021-02-22T22:08:32+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://jarrywangcn.github.io/tags/</loc>
+    <lastmod>2021-02-22T22:08:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jarrywangcn.github.io/posts/2020_reading/</loc>
+    <lastmod>2021-02-22T22:08:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jarrywangcn.github.io/tags/summary/</loc>
+    <lastmod>2020-12-26T21:40:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jarrywangcn.github.io/posts/2020_summary/</loc>
+    <lastmod>2020-12-26T21:40:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jarrywangcn.github.io/tags/essay/</loc>
     <lastmod>2020-08-18T17:37:02+08:00</lastmod>
   </url>
   
@@ -174,11 +194,6 @@
   
   <url>
     <loc>https://jarrywangcn.github.io/tags/japanese/</loc>
-    <lastmod>2019-08-27T11:32:10+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jarrywangcn.github.io/tags/reading/</loc>
     <lastmod>2019-08-27T11:32:10+08:00</lastmod>
   </url>
   
@@ -408,8 +423,12 @@
   </url>
   
   <url>
+    <loc>https://jarrywangcn.github.io/posts/2020-12-29/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://jarrywangcn.github.io/about/</loc>
-    <lastmod>2016-12-08T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>
