@@ -6,13 +6,29 @@
     <description>Recent content in Tags on 99 problems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <managingEditor>jarrywangcn@outlook.com (jarrywang)</managingEditor>
-    <webMaster>jarrywangcn@outlook.com (jarrywang)</webMaster>
-    <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Mon, 22 Feb 2021 22:08:32 +0000</lastBuildDate>
+    <copyright>© 2016-2021</copyright>
+    <lastBuildDate>Tue, 06 Jul 2021 21:59:03 +0100</lastBuildDate>
     
 	<atom:link href="https://jarrywangcn.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>summary</title>
+      <link>https://jarrywangcn.github.io/tags/summary/</link>
+      <pubDate>Tue, 06 Jul 2021 21:59:03 +0100</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/tags/summary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>photography</title>
+      <link>https://jarrywangcn.github.io/tags/photography/</link>
+      <pubDate>Tue, 15 Jun 2021 23:21:28 +0800</pubDate>
+      
+      <guid>https://jarrywangcn.github.io/tags/photography/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>reading</title>
@@ -20,15 +36,6 @@
       <pubDate>Mon, 22 Feb 2021 22:08:32 +0000</pubDate>
       
       <guid>https://jarrywangcn.github.io/tags/reading/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>summary</title>
-      <link>https://jarrywangcn.github.io/tags/summary/</link>
-      <pubDate>Sat, 26 Dec 2020 21:40:37 +0000</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/tags/summary/</guid>
       <description></description>
     </item>
     
@@ -173,15 +180,6 @@
       <pubDate>Mon, 09 Dec 2019 11:23:40 +0800</pubDate>
       
       <guid>https://jarrywangcn.github.io/tags/magnum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>photography</title>
-      <link>https://jarrywangcn.github.io/tags/photography/</link>
-      <pubDate>Mon, 09 Dec 2019 11:23:40 +0800</pubDate>
-      
-      <guid>https://jarrywangcn.github.io/tags/photography/</guid>
       <description></description>
     </item>
     
