@@ -11,9 +11,10 @@ struct TreeNode { ElementType Elment; Tree Left; Tree Right; } T1[MaxTree], T2[M
 核心思想就是判断当前结点是否相同，如果不相同则为假，如果相同就递归判断t1左儿子t2左儿子是否相同，t1右儿子t2右儿子是否相同，否则就交换左右儿子，再进行递归判断
 # 建立结点的class class TreeNode(object): def __init__(self, data = None, left = None, right = None): self.data = data self.left = left self.right = right # 在tree的数组中添加新结点 def append(Tree, index, item): Tree[index] = TreeNode(item[0], item[1], item[2]) # 建造树 def BuildTree(): # n为结点个数 n = int(input()) # check是输入数据处理完后找到树的root check = [0] * n root = None # 生成数量为n个空结点的数组tree Tree = [TreeNode()] * n # 循环处理输入数据 for i in range(n): l = input()." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jarrywangcn.github.io/posts/isomorphic/" />
+<meta property="og:url" content="https://jarrywangcn.github.io/posts/isomorphic/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-03-31T21:26:29+08:00" />
 <meta property="article:modified_time" content="2020-03-31T21:26:29+08:00" />
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="树的同构 python - Isomorphic"/>
 <meta name="twitter:description" content="题目见ZJU数据结构 03-树1
@@ -83,7 +84,7 @@ struct TreeNode { ElementType Elment; Tree Left; Tree Right; } T1[MaxTree], T2[M
 <p>核心思想就是判断当前结点是否相同，如果不相同则为假，如果相同就递归判断t1左儿子t2左儿子是否相同，t1右儿子t2右儿子是否相同，否则就交换左右儿子，再进行递归判断</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#586e75"># 建立结点的class</span>
 <span style="color:#719e07">class</span> <span style="color:#268bd2">TreeNode</span>(<span style="color:#b58900">object</span>):
-    <span style="color:#719e07">def</span> __init__(<span style="color:#268bd2">self</span>, data <span style="color:#719e07">=</span> <span style="color:#268bd2">None</span>, left <span style="color:#719e07">=</span> <span style="color:#268bd2">None</span>, right <span style="color:#719e07">=</span> <span style="color:#268bd2">None</span>):
+    <span style="color:#719e07">def</span> __init__(<span style="color:#268bd2">self</span>, data <span style="color:#719e07">=</span> <span style="color:#cb4b16">None</span>, left <span style="color:#719e07">=</span> <span style="color:#cb4b16">None</span>, right <span style="color:#719e07">=</span> <span style="color:#cb4b16">None</span>):
         <span style="color:#268bd2">self</span><span style="color:#719e07">.</span>data <span style="color:#719e07">=</span> data
         <span style="color:#268bd2">self</span><span style="color:#719e07">.</span>left <span style="color:#719e07">=</span> left
         <span style="color:#268bd2">self</span><span style="color:#719e07">.</span>right <span style="color:#719e07">=</span> right
@@ -98,7 +99,7 @@ struct TreeNode { ElementType Elment; Tree Left; Tree Right; } T1[MaxTree], T2[M
     n <span style="color:#719e07">=</span> <span style="color:#b58900">int</span>(<span style="color:#b58900">input</span>())
     <span style="color:#586e75"># check是输入数据处理完后找到树的root</span>
     check <span style="color:#719e07">=</span> [<span style="color:#2aa198">0</span>] <span style="color:#719e07">*</span> n
-    root <span style="color:#719e07">=</span> <span style="color:#268bd2">None</span>
+    root <span style="color:#719e07">=</span> <span style="color:#cb4b16">None</span>
     
     <span style="color:#586e75"># 生成数量为n个空结点的数组tree</span>
     Tree <span style="color:#719e07">=</span> [TreeNode()] <span style="color:#719e07">*</span> n
@@ -107,16 +108,16 @@ struct TreeNode { ElementType Elment; Tree Left; Tree Right; } T1[MaxTree], T2[M
     <span style="color:#719e07">for</span> i <span style="color:#719e07">in</span> <span style="color:#b58900">range</span>(n):       
         l <span style="color:#719e07">=</span> <span style="color:#b58900">input</span>()<span style="color:#719e07">.</span>split()
         
-        <span style="color:#719e07">if</span> l[<span style="color:#2aa198">1</span>] <span style="color:#719e07">==</span> <span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">-</span><span style="color:#2aa198">&#34;</span>:
-            l[<span style="color:#2aa198">1</span>] <span style="color:#719e07">=</span> <span style="color:#268bd2">None</span>
+        <span style="color:#719e07">if</span> l[<span style="color:#2aa198">1</span>] <span style="color:#719e07">==</span> <span style="color:#2aa198">&#34;-&#34;</span>:
+            l[<span style="color:#2aa198">1</span>] <span style="color:#719e07">=</span> <span style="color:#cb4b16">None</span>
         <span style="color:#719e07">else</span>:
             l[<span style="color:#2aa198">1</span>] <span style="color:#719e07">=</span> <span style="color:#b58900">int</span>(l[<span style="color:#2aa198">1</span>])
-            check[l[<span style="color:#2aa198">1</span>]] <span style="color:#719e07">=</span><span style="color:#719e07">+</span> <span style="color:#2aa198">1</span>
-        <span style="color:#719e07">if</span> l[<span style="color:#2aa198">2</span>] <span style="color:#719e07">==</span> <span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">-</span><span style="color:#2aa198">&#34;</span>:
-            l[<span style="color:#2aa198">2</span>] <span style="color:#719e07">=</span> <span style="color:#268bd2">None</span>
+            check[l[<span style="color:#2aa198">1</span>]] <span style="color:#719e07">=+</span> <span style="color:#2aa198">1</span>
+        <span style="color:#719e07">if</span> l[<span style="color:#2aa198">2</span>] <span style="color:#719e07">==</span> <span style="color:#2aa198">&#34;-&#34;</span>:
+            l[<span style="color:#2aa198">2</span>] <span style="color:#719e07">=</span> <span style="color:#cb4b16">None</span>
         <span style="color:#719e07">else</span>:
             l[<span style="color:#2aa198">2</span>] <span style="color:#719e07">=</span> <span style="color:#b58900">int</span>(l[<span style="color:#2aa198">2</span>])
-            check[l[<span style="color:#2aa198">2</span>]] <span style="color:#719e07">=</span><span style="color:#719e07">+</span> <span style="color:#2aa198">1</span>
+            check[l[<span style="color:#2aa198">2</span>]] <span style="color:#719e07">=+</span> <span style="color:#2aa198">1</span>
         <span style="color:#586e75"># 添加结点</span>
         append(Tree, i, l)
         
@@ -137,39 +138,39 @@ struct TreeNode { ElementType Elment; Tree Left; Tree Right; } T1[MaxTree], T2[M
 
     <span style="color:#586e75"># 如果都为空树，为真</span>
     <span style="color:#719e07">if</span> <span style="color:#b58900">len</span>(T1) <span style="color:#719e07">==</span> <span style="color:#2aa198">0</span> <span style="color:#719e07">and</span> <span style="color:#b58900">len</span>(T2) <span style="color:#719e07">==</span> <span style="color:#2aa198">0</span>:
-        <span style="color:#719e07">return</span> <span style="color:#268bd2">True</span>
+        <span style="color:#719e07">return</span> <span style="color:#cb4b16">True</span>
     
     <span style="color:#586e75"># 如果只有一个节点</span>
     <span style="color:#719e07">if</span> (<span style="color:#b58900">len</span>(T1) <span style="color:#719e07">==</span> <span style="color:#2aa198">1</span> <span style="color:#719e07">and</span> <span style="color:#b58900">len</span>(T2) <span style="color:#719e07">==</span> <span style="color:#2aa198">1</span>):
       	<span style="color:#586e75"># 值相同，为真</span>
         <span style="color:#719e07">if</span> T1[<span style="color:#2aa198">0</span>]<span style="color:#719e07">.</span>data <span style="color:#719e07">==</span> T2[<span style="color:#2aa198">0</span>]<span style="color:#719e07">.</span>data:
-            <span style="color:#719e07">return</span> <span style="color:#268bd2">True</span>
+            <span style="color:#719e07">return</span> <span style="color:#cb4b16">True</span>
         <span style="color:#586e75"># 否则为假</span>
         <span style="color:#719e07">else</span>:
-            <span style="color:#719e07">return</span> <span style="color:#268bd2">False</span>
+            <span style="color:#719e07">return</span> <span style="color:#cb4b16">False</span>
           
     <span style="color:#586e75"># 如果节点都为零，为真</span>
-    <span style="color:#719e07">if</span> R1 <span style="color:#719e07">==</span> <span style="color:#268bd2">None</span> <span style="color:#719e07">and</span> R2 <span style="color:#719e07">==</span> <span style="color:#268bd2">None</span>:
-        <span style="color:#719e07">return</span> <span style="color:#268bd2">True</span>
+    <span style="color:#719e07">if</span> R1 <span style="color:#719e07">==</span> <span style="color:#cb4b16">None</span> <span style="color:#719e07">and</span> R2 <span style="color:#719e07">==</span> <span style="color:#cb4b16">None</span>:
+        <span style="color:#719e07">return</span> <span style="color:#cb4b16">True</span>
     
     <span style="color:#586e75"># 如果节点数不同，为假</span>
     <span style="color:#719e07">if</span> <span style="color:#b58900">len</span>(T1) <span style="color:#719e07">!=</span> <span style="color:#b58900">len</span>(T2):
-        <span style="color:#719e07">return</span> <span style="color:#268bd2">False</span>
+        <span style="color:#719e07">return</span> <span style="color:#cb4b16">False</span>
     
 <span style="color:#586e75"># 处理正常情况</span>
 
     <span style="color:#586e75"># 如果一个为空，一个不为空，为假</span>
-    <span style="color:#719e07">if</span> (R1 <span style="color:#719e07">==</span> <span style="color:#268bd2">None</span> <span style="color:#719e07">and</span> R2 <span style="color:#719e07">!=</span> <span style="color:#268bd2">None</span>) <span style="color:#719e07">or</span> (R1 <span style="color:#719e07">!=</span> <span style="color:#268bd2">None</span> <span style="color:#719e07">and</span> R2 <span style="color:#719e07">==</span> <span style="color:#268bd2">None</span>):
+    <span style="color:#719e07">if</span> (R1 <span style="color:#719e07">==</span> <span style="color:#cb4b16">None</span> <span style="color:#719e07">and</span> R2 <span style="color:#719e07">!=</span> <span style="color:#cb4b16">None</span>) <span style="color:#719e07">or</span> (R1 <span style="color:#719e07">!=</span> <span style="color:#cb4b16">None</span> <span style="color:#719e07">and</span> R2 <span style="color:#719e07">==</span> <span style="color:#cb4b16">None</span>):
         <span style="color:#586e75">#print(&#39;tag2&#39;)</span>
-        <span style="color:#719e07">return</span> <span style="color:#268bd2">False</span>
+        <span style="color:#719e07">return</span> <span style="color:#cb4b16">False</span>
 
     <span style="color:#586e75"># 如果左儿子都为空，判断右儿子是否同构</span>
-    <span style="color:#719e07">if</span> T1[R1]<span style="color:#719e07">.</span>left <span style="color:#719e07">==</span> <span style="color:#268bd2">None</span> <span style="color:#719e07">and</span> T2[R2]<span style="color:#719e07">.</span>left <span style="color:#719e07">==</span> <span style="color:#268bd2">None</span>:
+    <span style="color:#719e07">if</span> T1[R1]<span style="color:#719e07">.</span>left <span style="color:#719e07">==</span> <span style="color:#cb4b16">None</span> <span style="color:#719e07">and</span> T2[R2]<span style="color:#719e07">.</span>left <span style="color:#719e07">==</span> <span style="color:#cb4b16">None</span>:
         <span style="color:#586e75">#print(&#39;tag3&#39;)</span>
         <span style="color:#719e07">return</span> isomorphic(T1, T1[R1]<span style="color:#719e07">.</span>right, T2, T2[R2]<span style="color:#719e07">.</span>right)
     
     <span style="color:#586e75"># 如果左儿子都不为空且数据还是一样的，对左右儿子进行递归判断</span>
-    <span style="color:#719e07">if</span> (T1[R1]<span style="color:#719e07">.</span>left <span style="color:#719e07">!=</span> <span style="color:#268bd2">None</span> <span style="color:#719e07">and</span> T2[R2]<span style="color:#719e07">.</span>left <span style="color:#719e07">!=</span> <span style="color:#268bd2">None</span>) <span style="color:#719e07">and</span> (T1[T1[R1]<span style="color:#719e07">.</span>left]<span style="color:#719e07">.</span>data <span style="color:#719e07">==</span> T2[T2[R2]<span style="color:#719e07">.</span>left]<span style="color:#719e07">.</span>data):
+    <span style="color:#719e07">if</span> (T1[R1]<span style="color:#719e07">.</span>left <span style="color:#719e07">!=</span> <span style="color:#cb4b16">None</span> <span style="color:#719e07">and</span> T2[R2]<span style="color:#719e07">.</span>left <span style="color:#719e07">!=</span> <span style="color:#cb4b16">None</span>) <span style="color:#719e07">and</span> (T1[T1[R1]<span style="color:#719e07">.</span>left]<span style="color:#719e07">.</span>data <span style="color:#719e07">==</span> T2[T2[R2]<span style="color:#719e07">.</span>left]<span style="color:#719e07">.</span>data):
         <span style="color:#719e07">return</span> (isomorphic(T1, T1[R1]<span style="color:#719e07">.</span>left, T2, T2[R2]<span style="color:#719e07">.</span>left) <span style="color:#719e07">and</span> isomorphic(T1, T1[R1]<span style="color:#719e07">.</span>right, T2, T2[R2]<span style="color:#719e07">.</span>right))
     <span style="color:#586e75"># 如果左儿子一个空一个不空或者两个都不同，并且数据不一样，交换左右儿子进行递归判断</span>
     <span style="color:#719e07">else</span>:
@@ -183,9 +184,9 @@ Tree2,r2 <span style="color:#719e07">=</span> BuildTree()
 result <span style="color:#719e07">=</span> isomorphis(Tree1, r1, Tree2, r2)
 
 <span style="color:#719e07">if</span> result:
-    <span style="color:#719e07">print</span>(<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Yes</span><span style="color:#2aa198">&#34;</span>)
+    <span style="color:#b58900">print</span>(<span style="color:#2aa198">&#34;Yes&#34;</span>)
 <span style="color:#719e07">else</span>:
-    <span style="color:#719e07">print</span>(<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">No</span><span style="color:#2aa198">&#34;</span>)
+    <span style="color:#b58900">print</span>(<span style="color:#2aa198">&#34;No&#34;</span>)
 </code></pre></div>
 		</div>
 

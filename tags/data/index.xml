@@ -31,7 +31,7 @@
 &lt;p&gt;核心思想就是判断当前结点是否相同，如果不相同则为假，如果相同就递归判断t1左儿子t2左儿子是否相同，t1右儿子t2右儿子是否相同，否则就交换左右儿子，再进行递归判断&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#586e75&#34;&gt;# 建立结点的class&lt;/span&gt;
 &lt;span style=&#34;color:#719e07&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;TreeNode&lt;/span&gt;(&lt;span style=&#34;color:#b58900&#34;&gt;object&lt;/span&gt;):
-    &lt;span style=&#34;color:#719e07&#34;&gt;def&lt;/span&gt; __init__(&lt;span style=&#34;color:#268bd2&#34;&gt;self&lt;/span&gt;, data &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;, left &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;, right &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;):
+    &lt;span style=&#34;color:#719e07&#34;&gt;def&lt;/span&gt; __init__(&lt;span style=&#34;color:#268bd2&#34;&gt;self&lt;/span&gt;, data &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt;, left &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt;, right &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt;):
         &lt;span style=&#34;color:#268bd2&#34;&gt;self&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;data &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; data
         &lt;span style=&#34;color:#268bd2&#34;&gt;self&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; left
         &lt;span style=&#34;color:#268bd2&#34;&gt;self&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; right
@@ -46,7 +46,7 @@
     n &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;int&lt;/span&gt;(&lt;span style=&#34;color:#b58900&#34;&gt;input&lt;/span&gt;())
     &lt;span style=&#34;color:#586e75&#34;&gt;# check是输入数据处理完后找到树的root&lt;/span&gt;
     check &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;*&lt;/span&gt; n
-    root &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;
+    root &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt;
     
     &lt;span style=&#34;color:#586e75&#34;&gt;# 生成数量为n个空结点的数组tree&lt;/span&gt;
     Tree &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; [TreeNode()] &lt;span style=&#34;color:#719e07&#34;&gt;*&lt;/span&gt; n
@@ -55,16 +55,16 @@
     &lt;span style=&#34;color:#719e07&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#719e07&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;range&lt;/span&gt;(n):       
         l &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;input&lt;/span&gt;()&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;split()
         
-        &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;:
-            l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;
+        &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;-&amp;#34;&lt;/span&gt;:
+            l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt;
         &lt;span style=&#34;color:#719e07&#34;&gt;else&lt;/span&gt;:
             l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;int&lt;/span&gt;(l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;])
-            check[l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;]] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;
-        &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;:
-            l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;
+            check[l[&lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;]] &lt;span style=&#34;color:#719e07&#34;&gt;=+&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;
+        &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;-&amp;#34;&lt;/span&gt;:
+            l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt;
         &lt;span style=&#34;color:#719e07&#34;&gt;else&lt;/span&gt;:
             l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;int&lt;/span&gt;(l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;])
-            check[l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;]] &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#719e07&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;
+            check[l[&lt;span style=&#34;color:#2aa198&#34;&gt;2&lt;/span&gt;]] &lt;span style=&#34;color:#719e07&#34;&gt;=+&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;
         &lt;span style=&#34;color:#586e75&#34;&gt;# 添加结点&lt;/span&gt;
         append(Tree, i, l)
         
@@ -85,39 +85,39 @@
 
     &lt;span style=&#34;color:#586e75&#34;&gt;# 如果都为空树，为真&lt;/span&gt;
     &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(T1) &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(T2) &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt;:
-        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;True&lt;/span&gt;
+        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;True&lt;/span&gt;
     
     &lt;span style=&#34;color:#586e75&#34;&gt;# 如果只有一个节点&lt;/span&gt;
     &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(T1) &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(T2) &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#2aa198&#34;&gt;1&lt;/span&gt;):
       	&lt;span style=&#34;color:#586e75&#34;&gt;# 值相同，为真&lt;/span&gt;
         &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; T1[&lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;data &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; T2[&lt;span style=&#34;color:#2aa198&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;data:
-            &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;True&lt;/span&gt;
+            &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;True&lt;/span&gt;
         &lt;span style=&#34;color:#586e75&#34;&gt;# 否则为假&lt;/span&gt;
         &lt;span style=&#34;color:#719e07&#34;&gt;else&lt;/span&gt;:
-            &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;False&lt;/span&gt;
+            &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;False&lt;/span&gt;
           
     &lt;span style=&#34;color:#586e75&#34;&gt;# 如果节点都为零，为真&lt;/span&gt;
-    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; R1 &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; R2 &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;:
-        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;True&lt;/span&gt;
+    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; R1 &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; R2 &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt;:
+        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;True&lt;/span&gt;
     
     &lt;span style=&#34;color:#586e75&#34;&gt;# 如果节点数不同，为假&lt;/span&gt;
     &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(T1) &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#b58900&#34;&gt;len&lt;/span&gt;(T2):
-        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;False&lt;/span&gt;
+        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;False&lt;/span&gt;
     
 &lt;span style=&#34;color:#586e75&#34;&gt;# 处理正常情况&lt;/span&gt;
 
     &lt;span style=&#34;color:#586e75&#34;&gt;# 如果一个为空，一个不为空，为假&lt;/span&gt;
-    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; (R1 &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; R2 &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;) &lt;span style=&#34;color:#719e07&#34;&gt;or&lt;/span&gt; (R1 &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; R2 &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;):
+    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; (R1 &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; R2 &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt;) &lt;span style=&#34;color:#719e07&#34;&gt;or&lt;/span&gt; (R1 &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; R2 &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt;):
         &lt;span style=&#34;color:#586e75&#34;&gt;#print(&amp;#39;tag2&amp;#39;)&lt;/span&gt;
-        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;False&lt;/span&gt;
+        &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;False&lt;/span&gt;
 
     &lt;span style=&#34;color:#586e75&#34;&gt;# 如果左儿子都为空，判断右儿子是否同构&lt;/span&gt;
-    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;:
+    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt;:
         &lt;span style=&#34;color:#586e75&#34;&gt;#print(&amp;#39;tag3&amp;#39;)&lt;/span&gt;
         &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; isomorphic(T1, T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right, T2, T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right)
     
     &lt;span style=&#34;color:#586e75&#34;&gt;# 如果左儿子都不为空且数据还是一样的，对左右儿子进行递归判断&lt;/span&gt;
-    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; (T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#268bd2&#34;&gt;None&lt;/span&gt;) &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; (T1[T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;data &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; T2[T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;data):
+    &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; (T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt; &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left &lt;span style=&#34;color:#719e07&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#cb4b16&#34;&gt;None&lt;/span&gt;) &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; (T1[T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;data &lt;span style=&#34;color:#719e07&#34;&gt;==&lt;/span&gt; T2[T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;data):
         &lt;span style=&#34;color:#719e07&#34;&gt;return&lt;/span&gt; (isomorphic(T1, T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left, T2, T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;left) &lt;span style=&#34;color:#719e07&#34;&gt;and&lt;/span&gt; isomorphic(T1, T1[R1]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right, T2, T2[R2]&lt;span style=&#34;color:#719e07&#34;&gt;.&lt;/span&gt;right))
     &lt;span style=&#34;color:#586e75&#34;&gt;# 如果左儿子一个空一个不空或者两个都不同，并且数据不一样，交换左右儿子进行递归判断&lt;/span&gt;
     &lt;span style=&#34;color:#719e07&#34;&gt;else&lt;/span&gt;:
@@ -131,9 +131,9 @@ Tree2,r2 &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; BuildTree()
 result &lt;span style=&#34;color:#719e07&#34;&gt;=&lt;/span&gt; isomorphis(Tree1, r1, Tree2, r2)
 
 &lt;span style=&#34;color:#719e07&#34;&gt;if&lt;/span&gt; result:
-    &lt;span style=&#34;color:#719e07&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#2aa198&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;Yes&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;)
+    &lt;span style=&#34;color:#b58900&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;Yes&amp;#34;&lt;/span&gt;)
 &lt;span style=&#34;color:#719e07&#34;&gt;else&lt;/span&gt;:
-    &lt;span style=&#34;color:#719e07&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#2aa198&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;No&lt;/span&gt;&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;&lt;/span&gt;)
+    &lt;span style=&#34;color:#b58900&#34;&gt;print&lt;/span&gt;(&lt;span style=&#34;color:#2aa198&#34;&gt;&amp;#34;No&amp;#34;&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
